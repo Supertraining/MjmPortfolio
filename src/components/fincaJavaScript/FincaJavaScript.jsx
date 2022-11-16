@@ -7,7 +7,7 @@ export default function FincaJavascript() {
 
 	return (
 		<div className='my-5 align-items-center row'>
-			<div className='col-10'>
+			<div className='col-9'>
 				<a
 					className={
 						theme === 'darkSide'
@@ -24,7 +24,7 @@ export default function FincaJavascript() {
 					/>
 				</a>
 			</div>
-			<div className='col-2'>
+			<div className='col-3'>
 				{theme === 'darkSide' ? (
 					<img
 						className='img-fluid'

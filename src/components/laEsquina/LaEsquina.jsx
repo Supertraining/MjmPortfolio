@@ -11,7 +11,7 @@ export default function LaEsquina() {
 
 	return (
 		<div className='my-5 align-items-center row'>
-			<div className='col-10'>
+			<div className='col-9'>
 				<a
 					className={
 						theme === 'darkSide'
@@ -29,7 +29,7 @@ export default function LaEsquina() {
 				</a>
 			</div>
 			<div
-				className='col-2'
+				className='col-3'
 				ref={ref}>
 				{theme === 'darkSide' ? (
 					<img
