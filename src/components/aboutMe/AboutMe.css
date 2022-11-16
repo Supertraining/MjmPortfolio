@@ -1,0 +1,11 @@
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3vw;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+}
+.aboutMeBorder {
+   border: 2px solid white;
+}

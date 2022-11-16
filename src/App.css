@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto&family=Roboto+Mono&display=swap');
+
+/* body {
+    background-image: url(./assets/img/Hulk-PNG-File.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+html,
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.darkSide {
+	background-color: #000000c9 !important;
+	transition: 2s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lightSide {
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		270deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(73, 162, 255, 0.8239670868347339) 50%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	animation-name: ligth;
+	animation-duration: 2s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes ligth {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
 }

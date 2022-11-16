@@ -1,0 +1,62 @@
+import React from 'react';
+import { useContext } from 'react';
+import ThemeContext from '../../context/ThemeContext';
+import LaEsquina from '../laEsquina/LaEsquina';
+import FincaWeb from '../fincaWeb/FincaWeb';
+import Consultora from '../consultoraWeb/Consultora';
+import FincaJavascript from '../fincaJavaScript/FincaJavaScript';
+import TocaMadera from '../tocaMadera/TocaMadera';
+import FincaStore from '../fincaStore/FincaStore';
+import { useState } from 'react';
+import './Main.css';
+import Footer from '../footer/Footer';
+
+export default function Main() {
+	const { theme } = useContext(ThemeContext);
+	const [upDown, setupDown] = useState('');
+
+	return (
+		<div
+			className={
+				theme === 'darkSide'
+					? `${theme} p-4 row rounded p-3 rounded`
+					: 'lightSide p-3 rounded row'
+			}>
+			<LaEsquina />
+			<FincaWeb />
+			<Consultora />
+			<FincaJavascript />
+			<TocaMadera />
+			<FincaStore />
+			<div className='d-flex justify-content-end'>
+			
+				<a	className={`d-flex justify-content-center flex-nowrap ${upDown} col-4 text-decoration-none text-dark`}
+					onClick={() => {
+						setupDown('up');
+						setTimeout(() => {
+							setupDown('down');
+						}, 3000);
+						setTimeout(() => {
+							setupDown('');
+						}, 10000);
+					}}
+					href='#header'>
+						<div className='shipDialogBox col-4'>
+					{upDown === ''
+						? 'Up! '
+						: upDown === 'down'
+						? 'Good bye!!'
+						: 'YouuuHHuuu'}
+				</div>
+					<img
+						className='img-fluid'
+						src={require('../../assets/img/blue-star-wars-ships-.png')}
+						alt='starShip'
+					/>
+				</a>
+			
+			</div>
+			<Footer />
+		</div>
+	);
+}

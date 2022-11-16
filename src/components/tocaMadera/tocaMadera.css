@@ -1,0 +1,16 @@
+.tocaMadera_ShadowImg {
+    animation-name: bigger;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes bigger {
+    from {
+        transform: scale(0.1);
+        filter: drop-shadow(4px 0px 2px #212529);
+
+    }
+    to {
+        transform: scale(1);
+        filter: drop-shadow(20px -10px 2px #21252967);
+    }
+}
