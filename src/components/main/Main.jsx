@@ -10,9 +10,11 @@ import FincaStore from '../fincaStore/FincaStore';
 import { useState } from 'react';
 import './Main.css';
 import Footer from '../footer/Footer';
+import { LanguageContext } from '../../context/languageContext';
 
 export default function Main() {
 	const { theme } = useContext(ThemeContext);
+	const { language, es, en } = useContext(LanguageContext)
 	const [upDown, setupDown] = useState('');
 
 	return (
@@ -41,12 +43,17 @@ export default function Main() {
 						}, 10000);
 					}}
 					href='#header'>
-						<div className='shipDialogBox col-4'>
-					{upDown === ''
-						? 'Up! '
-						: upDown === 'down'
+						<div className='shipDialogBox col-8'>
+					{(upDown === '' && language === 'es') ? `${es.shipDialogue.up}` : ''}
+					{(upDown === '' && language === 'en') ? `${en.shipDialogue.up}` : ''}
+					{upDown === 'up' ? `${en.shipDialogue.travel}` : ''}
+					{(upDown === 'down' && language === 'es') ? `${es.shipDialogue.down}` : ''}
+					{(upDown === 'down' && language === 'en') ? `${en.shipDialogue.down}` : ''}
+
+				
+						{/* : upDown === 'down'
 						? 'Good bye!!'
-						: 'YouuuHHuuu'}
+						: 'YouuuHHuuu' */}
 				</div>
 					<img
 						className='img-fluid'

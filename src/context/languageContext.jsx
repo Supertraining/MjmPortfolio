@@ -15,6 +15,11 @@ const en = {
 		title: 'About me.',
 		text: 'In this portfolio, made with React JS you will be able to see some projects I did, to keep my skills sharp while I look for my first work experience for the IT industry.',
 	},
+	shipDialogue : {
+		up : 'Going up?',
+		travel : 'YouuuHHuuu',
+		down: 'GoodBye!'
+	}
 };
 const es = {
 	side: 'Elige un bando',
@@ -29,6 +34,11 @@ const es = {
 		title: 'Sobre mí.',
 		text: 'En este portfolio, realizado con React JS podrá ver algunos proyectos que hice, para mantener mis habilidades en forma mientras busco mi primera experiencia laboral para la industria de TI.',
 	},
+	shipDialogue : {
+		up : 'Hacia arriba?',
+		travel : 'YouuuHHuuu',
+		down: 'Adiós!'
+	}
 };
 
 export const LanguageContext = createContext();
