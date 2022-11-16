@@ -19,6 +19,11 @@ const en = {
 		up : 'Going up?',
 		travel : 'YouuuHHuuu',
 		down: 'GoodBye!'
+	},
+	r2D2 : {
+		hello : '¡¡Hello', 
+		msgThx: 'thx for texting me!!',
+		msgSent: '¡¡Msg sent! thank you!!'
 	}
 };
 const es = {
@@ -38,6 +43,11 @@ const es = {
 		up : 'Hacia arriba?',
 		travel : 'YouuuHHuuu',
 		down: 'Adiós!'
+	},
+	r2D2 : {
+		hello : '¡¡Hola', 
+		msgThx: 'gracias por escribirme!!',
+		msgSent: '¡¡Msj enviado!! Gracias!!'
 	}
 };
 

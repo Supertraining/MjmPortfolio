@@ -10,7 +10,6 @@ export default function Header() {
 	const { theme, handleTheme } = useContext(ThemeContext);
 	const {language, handleLanguage, es, en} = useContext(LanguageContext)
 	const [renderForm, setRenderForm] = useState(false);
-	const [r2D2, setR2D2] = useState(false);
 
 	return (
 		<header
@@ -124,7 +123,6 @@ export default function Header() {
 					className='header_LinkStyle my-2 rounded'
 					onClick={() => {
 						setRenderForm(true);
-						setR2D2(false);
 					}}>
 					{language === 'es' ? es.contactBtn : en.contactBtn}
 				</button>
@@ -148,20 +146,6 @@ export default function Header() {
 				}>
 				<ContactMe
 					setRenderForm={setRenderForm}
-					setR2D2={setR2D2}
-				/>
-			</div>
-			<div
-				className={
-					r2D2 === false
-						? 'col-2 d-none position-absolute'
-						: 'col-2 position-absolute r2D2'
-				}>
-				<p className={theme === 'darkSide' ? 'text-white' : ''}>Msg send! thank you!</p>{' '}
-				<img
-					className='img-fluid'
-					src={require('../../assets/img/r2d2_128.png')}
-					alt=''
 				/>
 			</div>
 		</header>
