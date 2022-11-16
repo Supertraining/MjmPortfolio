@@ -85,6 +85,15 @@ export default function FincaStore() {
 						alt='bootstrap'
 					/>
 				</div>
+				<div className='mx-1 col-2 text-center'>
+					<img
+						className={
+							theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'img-fluid'
+						}
+						src={require('../../assets/icons/skills/firebase.png')}
+						alt='Firebase'
+					/>
+				</div>
 			</div>
 		</div>
 	);
