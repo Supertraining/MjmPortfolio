@@ -3,6 +3,11 @@ header select {
 	font-weight: bold;
 	font-size: 2vw;
 }
+@media (min-width:767px) and (max-width: 991px) {
+	header select { 
+		font-size: 1vw;
+	}
+}
 @media (min-width:991px) {
 	header select {
 		font-size: 1.5vw;
