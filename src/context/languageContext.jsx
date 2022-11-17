@@ -13,7 +13,7 @@ const en = {
 	contactBtn: 'Contact me',
 	aboutMe: {
 		title: 'About me.',
-		text: 'In this portfolio, made with React JS you will be able to see some projects I did, to keep my skills sharp while I look for my first work experience for the IT industry.',
+		text: 'In this portfolio, made with React JS you will be able to see some projects I made, to keep my skills sharp, while I look for my first work experience for the IT industry.',
 	},
 	shipDialogue : {
 		up : 'Going up?',
@@ -37,7 +37,7 @@ const es = {
 	contactBtn: 'Contactame',
 	aboutMe: {
 		title: 'Sobre mí.',
-		text: 'En este portfolio, realizado con React JS podrá ver algunos proyectos que hice, para mantener mis habilidades en forma mientras busco mi primera experiencia laboral para la industria de TI.',
+		text: 'En este portfolio, realizado con React JS podrá ver algunos proyectos que realicé, para mantener mis habilidades en forma, mientras busco mi primera experiencia laboral para la industria de TI.',
 	},
 	shipDialogue : {
 		up : 'Hacia arriba?',
