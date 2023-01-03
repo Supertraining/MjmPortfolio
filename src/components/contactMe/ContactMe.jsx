@@ -130,7 +130,7 @@ export default function ContactMe({ setRenderForm }) {
 						onClick={() => {
 							setRenderForm(false);
 						}}>
-						Hide me
+						Close
 					</button>
 				</div>
 			</form>
