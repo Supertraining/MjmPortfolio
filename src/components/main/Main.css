@@ -1,6 +1,6 @@
 .up {
     transition: 1.1s;
-    transform: translateY(-800%);
+    transform: translateY(-950%);
 }
 @media (max-width: 1200px) {
     .up {

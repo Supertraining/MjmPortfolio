@@ -7,8 +7,8 @@ export default function ContactMe({ setRenderForm }) {
 	const [name, setName] = useState('');
 	const [msg, setMsg] = useState('');
 	const [r2D2, setR2D2] = useState(false);
-	const {language, es, en} = useContext(LanguageContext)
-	
+	const { language, es, en } = useContext(LanguageContext)
+
 	const getData = () => {
 		fetch('https://formsubmit.co/ajax/maranga_matias@hotmail.com', {
 			method: 'POST',
@@ -40,8 +40,8 @@ export default function ContactMe({ setRenderForm }) {
 					<>
 						{(name) && (language === 'en') ? `${en.r2D2.hello} ${name} ${en.r2D2.msgThx}` : '...'}
 						{(name) && (language === 'es') ? `${es.r2D2.hello} ${name} ${es.r2D2.msgThx}` : '...'}
-						{(r2D2 === true && language === 'en')  ? `${en.r2D2.msgSent}` : ''}
-						{(r2D2 === true && language === 'es')  ? `${es.r2D2.msgSent}` : ''} 
+						{(r2D2 === true && language === 'en') ? `${en.r2D2.msgSent}` : ''}
+						{(r2D2 === true && language === 'es') ? `${es.r2D2.msgSent}` : ''}
 					</>
 				</div>
 
@@ -113,7 +113,7 @@ export default function ContactMe({ setRenderForm }) {
 								e.preventDefault();
 								getData();
 								setTimeout(() => {
-								setRenderForm(false);	
+									setRenderForm(false);
 								}, 3000);
 								setR2D2(true);
 								setTimeout(() => {
@@ -123,14 +123,15 @@ export default function ContactMe({ setRenderForm }) {
 								setMsg('');
 							}
 						}}>
-						Send
+						{language == 'en' ? en.formSubmit : es.formSubmit}
 					</button>
 					<button
 						className='text-decoration-none rounded form_HideForm'
 						onClick={() => {
 							setRenderForm(false);
 						}}>
-						Close
+						{language == 'en' ? en.formClose : es.formClose}
+
 					</button>
 				</div>
 			</form>

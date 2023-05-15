@@ -11,6 +11,8 @@ const en = {
 		profession: 'Full Stack Developer',
 	},
 	contactBtn: 'Contact me',
+	formSubmit: 'Send',
+	formClose: 'Close',
 	aboutMe: {
 		title: 'About me.',
 		text: 'In this portfolio, you will be able to see some of the projects I have worked on.',
@@ -40,6 +42,8 @@ const es = {
 		profession: 'Desarrollador Full Stack',
 	},
 	contactBtn: 'Contactame',
+	formSubmit: 'Enviar',
+	formClose: 'Cerrar',
 	aboutMe: {
 		title: 'Sobre mí.',
 		text: 'En este portafolio podrás ver algunos de los proyectos en los que he trabajado.',
