@@ -3,9 +3,6 @@ import { useContext } from 'react';
 import ThemeContext from '../../context/ThemeContext';
 import LaEsquina from '../laEsquina/LaEsquina';
 import FincaWeb from '../fincaWeb/FincaWeb';
-import Consultora from '../consultoraWeb/Consultora';
-import FincaJavascript from '../fincaJavaScript/FincaJavaScript';
-import TocaMadera from '../tocaMadera/TocaMadera';
 import FincaStore from '../fincaStore/FincaStore';
 import { useState } from 'react';
 import './Main.css';
@@ -26,9 +23,6 @@ export default function Main() {
 			}>
 			<LaEsquina />
 			<FincaWeb />
-			<Consultora />
-			<FincaJavascript />
-			<TocaMadera />
 			<FincaStore />
 			<div className='d-flex justify-content-end'>
 			

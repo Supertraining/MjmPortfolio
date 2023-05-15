@@ -18,7 +18,7 @@ export default function Header() {
 				<select
 					name='language'
 					id='language'
-					className={theme === 'darkSide'? 'col-2  my-2 bg-dark text-white' : 'col-2 col-md-1 my-2'}
+					className={theme === 'darkSide'? 'col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 my-2 bg-dark text-white' : 'col-2 col-md-1 my-2'}
 					onChange={handleLanguage}>
 					<option value='en'>EN</option>
 					<option value='es'>ES</option>

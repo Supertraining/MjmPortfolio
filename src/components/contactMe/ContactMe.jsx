@@ -48,7 +48,7 @@ export default function ContactMe({ setRenderForm }) {
 				<div className='d-flex align-items-end'>
 					<div className='d-flex flex-column my-1'>
 						<a
-							className='m-1 d-flex align-items-center text-decoration-none text-dark Linkedin'
+							className='m-1 d-flex align-items-center text-decoration-none text-primary Linkedin'
 							href='https://www.linkedin.com/in/matias-maranga/'
 							target='_blank'
 							rel='noreferrer'>
