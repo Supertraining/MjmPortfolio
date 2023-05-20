@@ -17,7 +17,7 @@ export default function LaEsquina() {
 		<div className='my-5 align-items-center flex flex-column row'>
 			<div className='col-12'>
 
-				<iframe title='DalleClone' className='w-100 p-2 bg-dark' src='https://famous-griffin-70d0cd.netlify.app'></iframe>
+				<iframe title='DalleClone' className='w-100 p-2 bg-dark' src='https://famous-griffin-70d0cd.netlify.app' height={'500px'}></iframe>
 
 				<a
 					className={

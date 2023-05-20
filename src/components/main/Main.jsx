@@ -26,7 +26,7 @@ export default function Main() {
 			<FincaStore />
 			<div className='d-flex justify-content-end'>
 			
-				<a	className={`d-flex justify-content-center flex-nowrap ${upDown} col-4 text-decoration-none text-dark`}
+				<a	className={`d-flex justify-content-center flex-nowrap ${upDown} col-4 text-decoration-none text-dark mx-3`}
 					onClick={() => {
 						setupDown('up');
 						setTimeout(() => {
@@ -44,10 +44,6 @@ export default function Main() {
 					{(upDown === 'down' && language === 'es') ? `${es.shipDialogue.down}` : ''}
 					{(upDown === 'down' && language === 'en') ? `${en.shipDialogue.down}` : ''}
 
-				
-						{/* : upDown === 'down'
-						? 'Good bye!!'
-						: 'YouuuHHuuu' */}
 				</div>
 					<img
 						className='img-fluid'

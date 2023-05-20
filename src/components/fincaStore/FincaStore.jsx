@@ -12,7 +12,7 @@ export default function FincaStore() {
 		<div className='my-5 align-items-center row'>
 			<div className='col-12'>
 
-				<iframe title='DalleClone' className='w-100 p-2 bg-white' src='https://effortless-bienenstitch-3d5aa3.netlify.app/'></iframe>
+				<iframe title='DalleClone' className='w-100 p-2 bg-white' src='https://effortless-bienenstitch-3d5aa3.netlify.app/' height={'500px'}></iframe>
 
 				<a
 					className={

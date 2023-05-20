@@ -1,47 +1,47 @@
 .up {
     transition: 1.1s;
-    transform: translateY(-950%);
+    transform: translateY(-1300%);
 }
 @media (max-width: 1200px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-700%);
+        transform: translateY(-1250%);
     }
 }
 @media (max-width: 991px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-700%);
+        transform: translateY(-1180%);
     }
 }
 @media (max-width: 767px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-800%);
+        transform: translateY(-1220%);
     }
 }
 @media (max-width: 575px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-700%);
+        transform: translateY(-1250%);
     }
 }
 @media (max-width: 500px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-800%);
+        transform: translateY(-1350%);
     }
 } 
 @media (max-width: 440px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-900%);
+        transform: translateY(-1450%);
     }
 } 
 @media (max-width: 400px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-1100%);
+        transform: translateY(-1600%);
     }
 } 
 
