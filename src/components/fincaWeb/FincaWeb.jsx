@@ -18,7 +18,7 @@ export default function FincaWeb() {
 		<div className='my-5 align-items-center flex flex-column row'>
 			<div className='col-12'>
 
-				<iframe title='DalleClone' className='w-100 p-2 bg-white' src='https://fincaelboleado.000webhostapp.com/' height={'500px'}></iframe>
+				<iframe title='DalleClone' className='w-100 p-2 bg-white' src='https://euphonious-cassata-3ddb7a.netlify.app/' height={'500px'}></iframe>
 
 				<a
 					className={
