@@ -123,14 +123,14 @@ export default function ContactMe({ setRenderForm }) {
 								setMsg('');
 							}
 						}}>
-						{language == 'en' ? en.formSubmit : es.formSubmit}
+						{language === 'en' ? en.formSubmit : es.formSubmit}
 					</button>
 					<button
 						className='text-decoration-none rounded form_HideForm'
 						onClick={() => {
 							setRenderForm(false);
 						}}>
-						{language == 'en' ? en.formClose : es.formClose}
+						{language === 'en' ? en.formClose : es.formClose}
 
 					</button>
 				</div>
