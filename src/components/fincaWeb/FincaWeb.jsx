@@ -26,7 +26,7 @@ export default function FincaWeb() {
 							? 'text-decoration-none text-white'
 							: 'text-decoration-none text-dark fw-bold'
 					}
-					href='https://fincaelboleado.000webhostapp.com/'
+					href='https://euphonious-cassata-3ddb7a.netlify.app/'
 					target={'_blank'}
 					rel='noreferrer'>{language === 'es' ? es.links.web : en.links.web}
 				</a>
