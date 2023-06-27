@@ -29,6 +29,13 @@ export default function FincaWeb() {
 					href='https://euphonious-cassata-3ddb7a.netlify.app/'
 					target={'_blank'}
 					rel='noreferrer'>{language === 'es' ? es.links.web : en.links.web}
+
+					<i class={
+						theme === 'darkSide'
+							? 'bi bi-hand-index-fill text-white'
+							: 'bi bi-hand-index-fill'
+					}>
+					</i>
 				</a>
 			</div>
 

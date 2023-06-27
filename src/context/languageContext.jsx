@@ -28,8 +28,9 @@ const en = {
 		msgSent: '¡¡Msg sent! thank you!!'
 	},
 	links: {
-		app: 'Go to App.',
-		web: 'go to website',
+		app: 'Click here to try the App.',
+		web: 'Click here to go to the website',
+		doc: 'Click here to Try the API with Swagger'
 	} 
 	
 };
@@ -59,8 +60,9 @@ const es = {
 		msgSent: '¡¡Msj enviado!! Gracias!!'
 	},
 	links: {
-		app: 'Ir a la App.',
-		web: 'Ir al sitio web',
+		app: 'Hace click aquí para probar la App.',
+		web: 'Hace click aquí para ir al sitio web',
+		doc: 'Hace click aquí para probar la API con Swagger'
 	} 
 };
 

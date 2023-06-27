@@ -23,6 +23,13 @@ export default function FincaStore() {
 					href='https://effortless-bienenstitch-3d5aa3.netlify.app/'
 					target={'_blank'}
 					rel='noreferrer'>{language === 'es' ? es.links.app : en.links.app}
+
+					<i class={
+						theme === 'darkSide'
+							? 'bi bi-hand-index-fill text-white'
+							: 'bi bi-hand-index-fill'
+					}>
+					</i>
 				</a>
 			</div>
 

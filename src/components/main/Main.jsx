@@ -4,6 +4,7 @@ import ThemeContext from '../../context/ThemeContext';
 import LaEsquina from '../laEsquina/LaEsquina';
 import FincaWeb from '../fincaWeb/FincaWeb';
 import FincaStore from '../fincaStore/FincaStore';
+import EcommerceAPI from '../ecommerceAPI/EcommerceAPI.jsx'
 import { useState } from 'react';
 import './Main.css';
 import Footer from '../footer/Footer';
@@ -24,6 +25,7 @@ export default function Main() {
 			<LaEsquina />
 			<FincaWeb />
 			<FincaStore />
+			<EcommerceAPI />
 			<div className='d-flex justify-content-end'>
 			
 				<a	className={`d-flex justify-content-center flex-nowrap ${upDown} col-4 text-decoration-none text-dark mx-3`}

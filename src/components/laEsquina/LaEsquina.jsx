@@ -28,6 +28,12 @@ export default function LaEsquina() {
 					href='https://famous-griffin-70d0cd.netlify.app/'
 					target={'_blank'}
 					rel='noreferrer'>{language === 'es' ? es.links.app : en.links.app}
+
+					<i class={
+						theme === 'darkSide'
+							? 'bi bi-hand-index-fill text-white'
+							: 'bi bi-hand-index-fill'
+					}></i>
 				</a>
 
 			</div>
@@ -42,14 +48,14 @@ export default function LaEsquina() {
 					<img
 						className={theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'}
 						src={require('../../assets/icons/skills/mongodb_original_logo_icon_146424.png')}
-						alt='HTML5'
+						alt='MongoDb'
 					/>
 				</div>
 				<div className='mx-1 col-2 text-center'>
 					<img
 						className={theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'}
 						src={require('../../assets/icons/skills/express_original_wordmark_logo_icon_146528.png')}
-						alt='css'
+						alt='Express'
 					/>
 				</div>
 
@@ -64,7 +70,7 @@ export default function LaEsquina() {
 					<img
 						className={theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'}
 						src={require('../../assets/icons/skills/nodejs_original_logo_icon_146411.png')}
-						alt='bootstrap'
+						alt='NodeJs'
 					/>
 				</div>
 				<div
