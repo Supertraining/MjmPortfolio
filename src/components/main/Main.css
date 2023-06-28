@@ -1,47 +1,72 @@
+
 .up {
     transition: 1.1s;
-    transform: translateY(-1300%);
+    transform: translateY(-1700%);
 }
 @media (max-width: 1200px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-1250%);
+        transform: translateY(-1620%);
     }
 }
 @media (max-width: 991px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-1180%);
+        transform: translateY(-1550%);
     }
 }
 @media (max-width: 767px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-1220%);
+        transform: translateY(-1600%);
     }
 }
 @media (max-width: 575px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-1250%);
+        transform: translateY(-1450%);
+    }
+}
+@media (max-width: 540px) {
+    .up {
+        transition: 1.1s;
+        transform: translateY(-1600%);
     }
 }
 @media (max-width: 500px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-1350%);
+        transform: translateY(-1650%);
+    }
+} 
+@media (max-width: 470px) {
+    .up {
+        transition: 1.1s;
+        transform: translateY(-1750%);
     }
 } 
 @media (max-width: 440px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-1450%);
+        transform: translateY(-1850%);
+    }
+} 
+@media (max-width: 420px) {
+    .up {
+        transition: 1.1s;
+        transform: translateY(-2050%);
     }
 } 
 @media (max-width: 400px) {
     .up {
         transition: 1.1s;
-        transform: translateY(-1600%);
+        transform: translateY(-2100%);
+    }
+} 
+@media (max-width: 370px) {
+    .up {
+        transition: 1.1s;
+        transform: translateY(-2300%);
     }
 } 
 
@@ -51,6 +76,7 @@
     transform: translateY(0px);
     transition-delay: 2s;
 }
+
 .shipDialogBox {
     transition: 1s;
     font-size: 2vw;
