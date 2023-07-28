@@ -1,101 +1,117 @@
-
 .up {
-    transition: 1.1s;
-    transform: translateY(-1700%);
+  transition: 1.1s;
+  position: fixed;
+  top: 5%;
+  right: 8%;
+  transform: translateY(550%);
+  z-index: 9999;
 }
-@media (max-width: 1200px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-1620%);
-    }
-}
-@media (max-width: 991px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-1550%);
-    }
-}
-@media (max-width: 767px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-1600%);
-    }
-}
-@media (max-width: 575px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-1450%);
-    }
-}
-@media (max-width: 540px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-1600%);
-    }
-}
-@media (max-width: 500px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-1650%);
-    }
-} 
-@media (max-width: 470px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-1750%);
-    }
-} 
-@media (max-width: 440px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-1850%);
-    }
-} 
-@media (max-width: 420px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-2050%);
-    }
-} 
-@media (max-width: 400px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-2100%);
-    }
-} 
-@media (max-width: 370px) {
-    .up {
-        transition: 1.1s;
-        transform: translateY(-2300%);
-    }
-} 
 
+.up.active {
+  transform: translateY(0);
+}
 
-.down {
-    transition: 5s;
-    transform: translateY(0px);
-    transition-delay: 2s;
+.blueStarWarsTakeOff {
+  font-weight: bold;
+  font-size: clamp(2rem, 1vw, 2rem);
+  color: black;
+}
+.arrow-light-one,
+.arrow-light-two,
+.arrow-light-three,
+.arrow-light-four {
+  animation-name: arrowTilt;
+  animation-iteration-count: infinite;
+}
+.arrow-light-one {
+  animation-duration: 1.5s;
+}
+.arrow-light-two {
+  animation-duration: 2s;
+}
+.arrow-light-three {
+  animation-duration: 3s;
+}
+.arrow-light-four {
+  animation-duration: 4s;
+}
+
+@keyframes arrowTilt {
+  0% {
+    color: black;
+  }
+  100% {
+    color: yellow;
+  }
+}
+.arrow-dark-one,
+.arrow-dark-two,
+.arrow-dark-three,
+.arrow-dark-four {
+  animation-name: arrowTiltDark;
+  animation-iteration-count: infinite;
+}
+.arrow-dark-one {
+  animation-duration: 1.5s;
+}
+.arrow-dark-two {
+  animation-duration: 2s;
+}
+.arrow-dark-three {
+  animation-duration: 3s;
+}
+.arrow-dark-four {
+  animation-duration: 4s;
+}
+
+@keyframes arrowTiltDark {
+  0% {
+    color: black;
+  }
+  100% {
+    color: rgb(3, 253, 3);
+  }
+}
+.arrow-text-dark {
+  color: rgb(3, 253, 3);
+}
+.arrow-text-light {
+  color: black;
+}
+
+.arrows-shadow {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.blueStarWarsShip-dark {
+  max-width: 132px;
+  max-height: 192px;
+  filter: drop-shadow(0px 35px 12px white);
+}
+.blueStarWarsShip {
+  max-width: 132px;
+  max-height: 192px;
+  filter: drop-shadow(0px 35px 12px blue);
 }
 
 .shipDialogBox {
-    transition: 1s;
-    font-size: 2vw;
-	font-family: 'Roboto Mono', monospace;
-    border: 3px solid black;
-    background: #fff;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 40% 100% 100% 40%;
-    font-weight:bolder;
+  transition: 1s;
+  font-size: clamp(0.6rem, 1vw, 2rem);
+  font-family: 'Roboto Mono', monospace;
+  border: 3px solid black;
+  background: #fff;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 40% 100% 100% 40%;
+  font-weight: bolder;
 }
 
 .skillsLogoShadow {
-	filter:drop-shadow(0px 4px 6px white);
+  filter: drop-shadow(0px 4px 6px white);
 }
 .skillsDarkLogoShadow {
-	filter:drop-shadow(0px 4px 6px black);
+  filter: drop-shadow(0px 4px 6px black);
 }
-div div span.fw-bold{
-    font-size: 0.8rem !important;
-    
+div div span.fw-bold {
+  font-size: 0.8rem !important;
 }

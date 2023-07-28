@@ -1,3 +1,39 @@
-.ShadowImg {
-  filter: drop-shadow(4px 10px 2px #212529);
+.falconTakeOff {
+  animation-name: falconTakeOff;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes falconTakeOff {
+  0% {
+  filter: drop-shadow(11px 22px 0px #212529);
+  transform: translateY(0px) matrix3d(
+      1,0,0,0,
+      0,1,0,0,
+      0,0,1,0,
+      -50,-100,0,1.1
+    );
+  }
+  50% {
+      transform: matrix3d(
+    1,0,0,0,
+    0,1,0,0,
+    0,0,1,0,
+    0,0,0,0.9
+  )
+  }
+  100% {
+      filter: drop-shadow(11px 72px 5px #21252967);
+      transform: translateY(-50px) matrix3d(
+          1,0,0,0,
+          0,1,0,0,
+          0,0,1,0,
+          10,100,0,1.1
+        );
+  }
+
+}
+.img-size {
+  max-width: 100px;
+  max-height: 100px;
 }

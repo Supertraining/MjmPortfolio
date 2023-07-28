@@ -31,6 +31,7 @@ header label {
 	animation-name: blackened;
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
+	height: 130px;
 }
 @keyframes blackened {
 	from {
@@ -44,6 +45,7 @@ header label {
 	animation-name: lightened;
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
+	height: 130px;
 }
 @keyframes lightened {
 	from {
@@ -53,7 +55,12 @@ header label {
 		filter: brightness(100%);
 	}
 }
-
+.moonIconLight {
+	filter: drop-shadow(3px -1px 1px #212529);
+}
+.moonIconDark {
+	filter: drop-shadow(3px -1px 1px rgb(170, 169, 169)) ;
+}
 .darthWithSword {
 	animation-name: darkforce;
 	animation-duration: 2s;
@@ -102,7 +109,7 @@ header small {
 @media (min-width: 882px) {
 	header p,
 	header small {
-		font-size: 2vw;
+		font-size: 1.5vw;
 	}
 	header h1 {
 		font-size: 3vw;

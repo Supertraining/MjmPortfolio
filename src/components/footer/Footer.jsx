@@ -10,7 +10,7 @@ export default function Footer() {
     const date = new Date().getFullYear()
 
 	return(
-        <footer className={theme === 'darkSide' ? 'border rounded w-50 text-center p-2 text-white' : 'border border-dark rounded w-50 text-center p-2'}>
+        <footer className={theme === 'darkSide' ? 'border rounded col-12 text-center p-2 text-white mt-5' : 'border border-dark rounded col-12 text-center p-2 mt-5'}>
             <p><img className={theme === 'darkSide' ? 'bg-white rounded-5' : ''} src={require('../../assets/icons/derechos-de-autor-blackx16.png')} alt="" /> Copyright:<span>{date}</span></p>
         </footer>
     )

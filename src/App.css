@@ -2,31 +2,31 @@
 
 html,
 body {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .darkSide {
-	background-color: #000000c9 !important;
-	transition: 2s;
+  background-color: #000000c9 !important;
+  transition: 2s;
 }
 
 .lightSide {
-	background: rgb(255, 255, 255);
-	background: linear-gradient(
-		270deg,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(73, 162, 255, 0.8239670868347339) 50%,
-		rgba(255, 255, 255, 1) 100%
-	);
-	animation-name: ligth;
-	animation-duration: 2s;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(73, 162, 255, 0.8239670868347339) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  animation-name: ligth;
+  animation-duration: 2s;
 }
 @keyframes ligth {
-	from {
-		opacity: 0.1;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
