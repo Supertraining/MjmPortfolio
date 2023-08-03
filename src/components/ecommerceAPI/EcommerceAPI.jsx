@@ -70,7 +70,7 @@ export default function EcommerceAPI() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src={ require('../../assets/icons/skills/mongodb_original_logo_icon_146424.png') }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691096639/portfolio/icons/skills/mongodb_original_logo_icon_146424_rhahyl.png'
               alt='MongoDb'
             />
           </div>
@@ -82,7 +82,7 @@ export default function EcommerceAPI() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src={ require('../../assets/icons/skills/express_original_wordmark_logo_icon_146528.png') }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691096637/portfolio/icons/skills/express_original_wordmark_logo_icon_146528_harl5b.png'
               alt='Express'
             />
           </div>
@@ -94,7 +94,7 @@ export default function EcommerceAPI() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src={ require('../../assets/icons/skills/nodejs_original_logo_icon_146411.png') }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691096639/portfolio/icons/skills/nodejs_original_logo_icon_146411_nzatgu.png'
               alt='NodeJs'
             />
           </div>
@@ -105,14 +105,14 @@ export default function EcommerceAPI() {
             { theme === 'darkSide' ? (
               <img
                 className='img-size'
-                src={ require('../../assets/img/Tie_Defender.png') }
+                src='https://res.cloudinary.com/marangadev/image/upload/v1691095507/portfolio/Tie_Defender_v0kguq.png'
                 alt='tieDefender'
               />
             ) : (
               <img
                 className={ inView ? 'img-size falconTakeOff' : 'img-size' }
-                src={ require('../../assets/img/Millenium_Falcon.png') }
-                alt='xWing'
+                src='https://res.cloudinary.com/marangadev/image/upload/v1691095505/portfolio/Millenium_Falcon_cwqypk.png'
+                alt='Falcon'
               />
             ) }
           </div>

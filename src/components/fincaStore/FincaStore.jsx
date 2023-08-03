@@ -64,11 +64,7 @@ export default function FincaStore() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src={
-                theme === 'darkSide'
-                  ? require('../../assets/icons/skills/react_original.png')
-                  : require('../../assets/icons/skills/react_original.png')
-              }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691096641/portfolio/icons/skills/react_original_x7gbx4.png'
               alt='React'
             />
           </div>
@@ -79,7 +75,7 @@ export default function FincaStore() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src={ require('../../assets/icons/skills/html-5.png') }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691096638/portfolio/icons/skills/html-5_tyfvds.png'
               alt='HTML5'
             />
           </div>
@@ -90,7 +86,7 @@ export default function FincaStore() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src={ require('../../assets/icons/skills/css-3.png') }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691096637/portfolio/icons/skills/css-3_ovas2l.png'
               alt='css'
             />
           </div>
@@ -101,7 +97,7 @@ export default function FincaStore() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src={ require('../../assets/icons/skills/bootstrap.png') }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691096637/portfolio/icons/skills/bootstrap_x8t65y.png'
               alt='bootstrap'
             />
           </div>
@@ -112,7 +108,7 @@ export default function FincaStore() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src={ require('../../assets/icons/skills/firebase.png') }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691096638/portfolio/icons/skills/firebase_gk3cy2.png'
               alt='Firebase'
             />
           </div>
@@ -121,13 +117,13 @@ export default function FincaStore() {
             { theme === 'darkSide' ? (
               <img
                 className='img-fluid'
-                src={ require('../../assets/img/blackSoldier.png') }
+                src='https://res.cloudinary.com/marangadev/image/upload/v1691095504/portfolio/blackSoldier_so4ido.png'
                 alt='tieFighter'
               />
             ) : (
               <img
                 className='img-fluid fincaStore_ShadowImg'
-                src={ require('../../assets/img/lightSoldier.png') }
+                src='https://res.cloudinary.com/marangadev/image/upload/v1691095505/portfolio/lightSoldier_g0kxp7.png'
                 alt='xWing'
               />
             ) }

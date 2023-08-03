@@ -33,7 +33,7 @@ export default function ContactMe({ setRenderForm }) {
 					<div className={'col-2'}>
 						<img
 							className='img-fluid'
-							src={require('../../assets/img/r2d2_128.png')}
+							src='https://res.cloudinary.com/marangadev/image/upload/v1691095506/portfolio/r2d2_128_bnldyd.png'
 							alt=''
 						/>
 					</div>
@@ -54,7 +54,7 @@ export default function ContactMe({ setRenderForm }) {
 							rel='noreferrer'>
 							<img
 								className='form_Div_Img mx-1 rounded-5'
-								src={require('../../assets/icons/linkedin.png')}
+								src='https://res.cloudinary.com/marangadev/image/upload/v1691096590/portfolio/icons/linkedin_o993nl.png'
 								alt='Linkedin'
 							/>
 							Linkedin
@@ -74,7 +74,7 @@ export default function ContactMe({ setRenderForm }) {
 						<div className='m-1 d-flex align-items-center'>
 							<img
 								className='form_Div_Img mx-1'
-								src={require('../../assets/icons/emailx32.png')}
+								src='https://res.cloudinary.com/marangadev/image/upload/v1691096590/portfolio/icons/emailx32_nis0ny.png'
 								alt='e-mail'
 							/>{' '}
 							marangamatias@gmail.com
@@ -86,7 +86,7 @@ export default function ContactMe({ setRenderForm }) {
 							rel='noreferrer'>
 							<img
 								className='form_Div_Img mx-1'
-								src={require('../../assets/icons/whatsappx32.png')}
+								src='https://res.cloudinary.com/marangadev/image/upload/v1691096590/portfolio/icons/whatsappx32_abgwck.png'
 								alt='whapp'
 							/>{' '}
 							+5491150111375

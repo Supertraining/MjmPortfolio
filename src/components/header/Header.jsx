@@ -9,11 +9,11 @@ import { LanguageContext } from '../../context/languageContext';
 export default function Header() {
   const { theme, handleTheme } = useContext(ThemeContext);
   const { language, handleLanguage, es, en } = useContext(LanguageContext);
-  const [renderForm, setRenderForm] = useState(false);
+  const [ renderForm, setRenderForm ] = useState(false);
 
   return (
     <header
-      className={`row align-items-center justify-content-evenly ${theme} rounded`}
+      className={ `row align-items-center justify-content-evenly ${theme} rounded` }
       id='header'
     >
       <select
@@ -24,7 +24,7 @@ export default function Header() {
             ? 'col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 my-2 bg-dark text-white'
             : 'col-2 col-md-1 my-2'
         }
-        onChange={handleLanguage}
+        onChange={ handleLanguage }
       >
         <option value='en'>EN</option>
         <option value='es'>ES</option>
@@ -32,13 +32,13 @@ export default function Header() {
       <div className='col-12 text-center p-2 d-flex justify-content-center'>
         <div className='col-2 flex-wrap'>
           <img
-            src={require('../../assets/img/yoda256.png')}
+            src='https://res.cloudinary.com/marangadev/image/upload/v1691095511/portfolio/yoda256_mkvlg4.png'
             alt=''
-            className={theme === 'darkSide' ? 'img-fluid yodaShadow' : 'img-fluid yodaLight'}
+            className={ theme === 'darkSide' ? 'img-fluid yodaShadow' : 'img-fluid yodaLight' }
           />
         </div>
-        <small className={theme === 'darkSide' ? 'my-4 mx-3 text-white' : 'my-4 mx-3'}>
-          {language === 'es' ? es.side : en.side}
+        <small className={ theme === 'darkSide' ? 'my-4 mx-3 text-white' : 'my-4 mx-3' }>
+          { language === 'es' ? es.side : en.side }
         </small>
         <input
           className='m-1 my-5'
@@ -46,7 +46,7 @@ export default function Header() {
           name='theme'
           id='lightSide'
           value='lightSide'
-          onClick={handleTheme}
+          onClick={ handleTheme }
           defaultChecked
         />
         <label
@@ -55,11 +55,11 @@ export default function Header() {
         >
           <img
             className='rounded-4 img-fluid'
-            src={require('../../assets/icons/Stormtrooperx48.png')}
-            alt='Darth'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1691096590/portfolio/icons/Stormtrooperx48_hocyhp.png'
+            alt='stormtrooper'
           />
-          
-          <i className={theme === 'darkSide' ? 'bi bi-brightness-high-fill mx-1 text-white ' : 'bi bi-brightness-high-fill mx-1'}></i>
+
+          <i className={ theme === 'darkSide' ? 'bi bi-brightness-high-fill mx-1 text-white ' : 'bi bi-brightness-high-fill mx-1' }></i>
         </label>
         <input
           className='m-1 my-5'
@@ -67,7 +67,7 @@ export default function Header() {
           name='theme'
           id='darkSide'
           value='darkSide'
-          onClick={handleTheme}
+          onClick={ handleTheme }
         />
         <label
           className='m-1 my-4 col-1'
@@ -75,28 +75,26 @@ export default function Header() {
         >
           <img
             className='rounded-4 img-fluid'
-            src={require('../../assets/icons/Darth-Vaderx48.png')}
+            src='https://res.cloudinary.com/marangadev/image/upload/v1691096589/portfolio/icons/Darth-Vaderx48_h1p99d.png'
             alt='Darth'
           />
-          <i className={theme === 'darkSide' ? 'bi bi-moon-fill mx-1 moonIconDark' : 'bi bi-moon-fill mx-1 text-white moonIconLight'}></i>
+          <i className={ theme === 'darkSide' ? 'bi bi-moon-fill mx-1 moonIconDark' : 'bi bi-moon-fill mx-1 text-white moonIconLight' }></i>
         </label>
       </div>
 
       <div className='col-4 mt-5 d-flex justify-content-end'>
         <>
-          {theme === 'darkSide' ? (
+          { theme === 'darkSide' &&
             <img
               className='darthWithSword img-fluid'
-              src={require('../../assets/img/Vaderx256.png')}
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691095510/portfolio/Vaderx256_fstdcy.png'
               alt='bdarth'
             />
-          ) : (
-            ''
-          )}
+          }
         </>
         <img
-          src={require('../../assets/img/myImg.png')}
-          className={theme === 'darkSide' ? 'd-none' : 'header_Img img-fluid'}
+          src='https://res.cloudinary.com/marangadev/image/upload/v1691095505/portfolio/myImg_dkc8tx.png'
+          className={ theme === 'darkSide' ? 'd-none' : 'header_Img img-fluid' }
           alt='myPng'
         />
       </div>
@@ -106,27 +104,27 @@ export default function Header() {
         }
       >
         <img
-          className={theme === 'darkSide' ? 'stormTroopers img-fluid d-none' : 'img-fluid'}
-          src={require('../../assets/img/Stormtroopersx128.png')}
+          className={ theme === 'darkSide' ? 'stormTroopers img-fluid d-none' : 'img-fluid' }
+          src='https://res.cloudinary.com/marangadev/image/upload/v1691095506/portfolio/Stormtroopersx128_au221l.png'
           alt='Stormtroopers'
         />
-        <p>{language === 'es' ? es.greet.hello : en.greet.hello}</p>
-        <p>{language === 'es' ? es.greet.myNameIs : en.greet.myNameIs}</p>
-        <h1>{language === 'es' ? es.greet.name : en.greet.name}</h1>
-        <small>{language === 'es' ? es.greet.profession : en.greet.profession}</small>
+        <p>{ language === 'es' ? es.greet.hello : en.greet.hello }</p>
+        <p>{ language === 'es' ? es.greet.myNameIs : en.greet.myNameIs }</p>
+        <h1>{ language === 'es' ? es.greet.name : en.greet.name }</h1>
+        <small>{ language === 'es' ? es.greet.profession : en.greet.profession }</small>
         <br />
         <button
           className='header_LinkStyle my-2 rounded'
-          onClick={() => {
+          onClick={ () => {
             setRenderForm(true);
-          }}
+          } }
         >
-          {language === 'es' ? es.contactBtn : en.contactBtn}
+          { language === 'es' ? es.contactBtn : en.contactBtn }
         </button>
       </div>
       <div className='col-4 mt-5'>
         <img
-          src={require('../../assets/img/myImg.svg').default}
+          src='https://res.cloudinary.com/marangadev/image/upload/v1691095505/portfolio/myImg_fd22ng.svg'
           className={
             theme === 'darkSide'
               ? 'svgWhite header_Img pb-4 img-fluid'
@@ -140,7 +138,7 @@ export default function Header() {
           renderForm === true ? 'position-absolute col-7 col-sm-6 col-md-5 col-xl-5' : 'd-none'
         }
       >
-        <ContactMe setRenderForm={setRenderForm} />
+        <ContactMe setRenderForm={ setRenderForm } />
       </div>
     </header>
   );

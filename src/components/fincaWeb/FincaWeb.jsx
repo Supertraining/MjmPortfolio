@@ -72,7 +72,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
             }
-            src={ require('../../assets/icons/skills/html-5.png') }
+            src='https://res.cloudinary.com/marangadev/image/upload/v1691096638/portfolio/icons/skills/html-5_tyfvds.png'
             alt='HTML5'
           />
         </div>
@@ -81,7 +81,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
             }
-            src={ require('../../assets/icons/skills/css-3.png') }
+            src='https://res.cloudinary.com/marangadev/image/upload/v1691096637/portfolio/icons/skills/css-3_ovas2l.png'
             alt='css'
           />
         </div>
@@ -90,7 +90,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
             }
-            src={ require('../../assets/icons/skills/JS.png') }
+            src='https://res.cloudinary.com/marangadev/image/upload/v1691096638/portfolio/icons/skills/JS_mvmpo4.png'
             alt='JavaScript'
           />
         </div>
@@ -99,7 +99,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
             }
-            src={ require('../../assets/icons/skills/sass.png') }
+            src='https://res.cloudinary.com/marangadev/image/upload/v1691096641/portfolio/icons/skills/sass_mn1xxq.png'
             alt='Sass'
           />
         </div>
@@ -108,7 +108,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
             }
-            src={ require('../../assets/icons/skills/bootstrap.png') }
+            src='https://res.cloudinary.com/marangadev/image/upload/v1691096637/portfolio/icons/skills/bootstrap_x8t65y.png'
             alt='bootstrap'
           />
         </div>
@@ -120,13 +120,13 @@ export default function FincaWeb() {
           { theme === 'darkSide' ? (
             <img
               className='img-fluid'
-              src={ require('../../assets/img/AT-AT_35441.png') }
-              alt='tieFighter'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691095503/portfolio/AT-AT_35441_iqpelv.png'
+              alt='AT-AT'
             />
           ) : (
             <img
               className={ inView ? 'img-fluid fincaWebTakeOff' : 'img-fluid' }
-              src={ require('../../assets/img/X-Wing_-_02_35411.png') }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1691095510/portfolio/X-Wing_-_02_35411_ifnjwx.png'
               alt='xWing'
             />
           ) }
