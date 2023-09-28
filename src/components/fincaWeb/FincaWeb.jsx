@@ -24,7 +24,7 @@ export default function FincaWeb() {
         <iframe
           title='DalleClone'
           className='w-100 p-2 bg-white'
-          src='https://euphonious-cassata-3ddb7a.netlify.app/'
+          src='https://finca-el-boleado.netlify.app'
           height={ '500px' }
         ></iframe>
 
@@ -42,7 +42,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'd-flex align-items-center' : 'd-flex align-items-center'
             }
-            href='https://euphonious-cassata-3ddb7a.netlify.app/'
+            href='https://finca-el-boleado.netlify.app'
             target={ '_blank' }
             rel='noreferrer'
           >

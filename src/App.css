@@ -16,7 +16,7 @@ body {
   background: linear-gradient(
     270deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(73, 162, 255, 0.8239670868347339) 50%,
+    #85ff8f 50%,
     rgba(255, 255, 255, 1) 100%
   );
   animation-name: ligth;

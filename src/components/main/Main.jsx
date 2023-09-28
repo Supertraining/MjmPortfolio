@@ -14,7 +14,7 @@ import ProductsAndMessages from '../productsAndMessages/ProductsAndMessages';
 export default function Main() {
   const { theme } = useContext(ThemeContext);
   const { language, es, en } = useContext(LanguageContext);
-  const [upDown, setupDown] = useState('');
+  const [ upDown, setupDown ] = useState('');
 
   return (
     <div
@@ -29,7 +29,7 @@ export default function Main() {
       <div className='col 12 d-flex justify-content-end my-3'>
         <a
           className='col-2  text-decoration-none'
-          onClick={() => {
+          onClick={ () => {
             setupDown('active');
             setTimeout(() => {
               setupDown('active down');
@@ -37,7 +37,7 @@ export default function Main() {
             setTimeout(() => {
               setupDown('down');
             }, 4000);
-          }}
+          } }
           href='#header'>
           <div className='d-flex flex-column align-items-center arrows-shadow'>
             <i
@@ -64,22 +64,22 @@ export default function Main() {
                   ? 'bi bi-chevron-compact-up blueStarWarsTakeOff arrow-dark-four'
                   : 'bi bi-chevron-compact-up blueStarWarsTakeOff arrow-light-four'
               }></i>
-            <span className={theme === 'darkSide' ? 'arrow-text-dark' : 'arrow-text-light'}>
+            <span className={ theme === 'darkSide' ? 'arrow-text-dark' : 'arrow-text-light' }>
               UP
             </span>
           </div>
         </a>
       </div>
 
-      <div className={`d-flex justify-content-end up ${upDown}`}>
+      <div className={ `d-flex justify-content-end up ${upDown}` }>
         <div className='shipDialogBox col-3 col-sm-2 col-lg-1'>
-          {upDown === 'active' && `${en.shipDialogue.travel}`}
-          {(upDown === 'active down' || upDown === 'down') &&
+          { upDown === 'active' && `${en.shipDialogue.travel}` }
+          { (upDown === 'active down' || upDown === 'down') &&
             language === 'es' &&
-            `${es.shipDialogue.down}`}
-          {(upDown === 'active down' || upDown === 'down') &&
+            `${es.shipDialogue.down}` }
+          { (upDown === 'active down' || upDown === 'down') &&
             language === 'en' &&
-            `${en.shipDialogue.down}`}
+            `${en.shipDialogue.down}` }
         </div>
         <img
           className={
@@ -92,8 +92,8 @@ export default function Main() {
         />
       </div>
 
-			<Footer />
-			
+      <Footer />
+
     </div>
   );
 }

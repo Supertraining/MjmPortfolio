@@ -19,7 +19,7 @@ export default function FincaStore() {
         <iframe
           title='DalleClone'
           className='w-100 p-2 bg-white'
-          src='https://effortless-bienenstitch-3d5aa3.netlify.app/'
+          src='finca-el-boleado-store.netlify.app'
           height={ '500px' }></iframe>
 
         <div className='d-flex align-items-center'>
@@ -35,7 +35,7 @@ export default function FincaStore() {
             className={
               theme === 'darkSide' ? 'd-flex align-items-center' : 'd-flex align-items-center'
             }
-            href='https://effortless-bienenstitch-3d5aa3.netlify.app/'
+            href='finca-el-boleado-store.netlify.app'
             target={ '_blank' }
             rel='noreferrer'>
             <i
