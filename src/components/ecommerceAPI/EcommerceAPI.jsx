@@ -3,7 +3,6 @@ import ThemeContext from '../../context/ThemeContext';
 import './ecommerceAPI.css';
 import { LanguageContext } from '../../context/languageContext';
 import { useInView } from 'react-intersection-observer';
-
 export default function EcommerceAPI() {
   const { theme } = useContext(ThemeContext);
   const { language, es, en } = useContext(LanguageContext);
@@ -21,11 +20,7 @@ export default function EcommerceAPI() {
         <div className='col-12 text-center my-1 bg-light'>
           <p className={ theme === 'darkSide' ? 'text-dark bg-light p-2' : 'text-center fw-bold bg-light p-2' }>{ language === 'es' ? es.description.ecommerceBack : en.description.ecommerceBack }</p>
         </div>
-        <iframe
-          title='eCommerceAPI'
-          className='w-100 p-2 bg-white'
-          src='https://backend-32190.onrender.com/docs/'
-          height={ '500px' }></iframe>
+        <img src='https://res.cloudinary.com/marangadev/image/upload/v1696626918/portfolio/Swagger-UI_y88j5q.webp' className='img-fluid' alt="" />
 
       </div>
 
@@ -48,14 +43,14 @@ export default function EcommerceAPI() {
             target={ '_blank' }
             rel='noreferrer'>
             <i
-              class={
+              className={
                 theme === 'darkSide'
                   ? 'bi bi-arrow-right-short fs-4 text-white'
                   : 'bi bi-arrow-right-short fs-4 text-dark'
               }></i>
 
             <i
-              class={
+              className={
                 theme === 'darkSide'
                   ? 'bi bi-hand-index-fill text-white fs-2'
                   : 'bi bi-hand-index-fill fs-2 text-dark'
@@ -70,7 +65,7 @@ export default function EcommerceAPI() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691096639/portfolio/icons/skills/mongodb_original_logo_icon_146424_rhahyl.png'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600608/portfolio/icons/skills/mongodb_original_logo_icon_146424_rhahyl_frdqck.png'
               alt='MongoDb'
             />
           </div>
@@ -82,7 +77,7 @@ export default function EcommerceAPI() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691096637/portfolio/icons/skills/express_original_wordmark_logo_icon_146528_harl5b.png'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600605/portfolio/icons/skills/express_original_wordmark_logo_icon_146528_harl5b_tkfzkd.png'
               alt='Express'
             />
           </div>
@@ -94,7 +89,7 @@ export default function EcommerceAPI() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691096639/portfolio/icons/skills/nodejs_original_logo_icon_146411_nzatgu.png'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600609/portfolio/icons/skills/nodejs_original_logo_icon_146411_nzatgu_flx0r7.png'
               alt='NodeJs'
             />
           </div>
@@ -105,13 +100,13 @@ export default function EcommerceAPI() {
             { theme === 'darkSide' ? (
               <img
                 className='img-size'
-                src='https://res.cloudinary.com/marangadev/image/upload/v1691095507/portfolio/Tie_Defender_v0kguq.png'
+                src='https://res.cloudinary.com/marangadev/image/upload/v1696600623/portfolio/Tie_Defender_v0kguq_r0c4se.webp'
                 alt='tieDefender'
               />
             ) : (
               <img
                 className={ inView ? 'img-size falconTakeOff' : 'img-size' }
-                src='https://res.cloudinary.com/marangadev/image/upload/v1691095505/portfolio/Millenium_Falcon_cwqypk.png'
+                src='https://res.cloudinary.com/marangadev/image/upload/v1696600618/portfolio/Millenium_Falcon_cwqypk_g1a5az.webp'
                 alt='Falcon'
               />
             ) }

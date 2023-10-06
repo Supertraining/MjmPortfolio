@@ -18,7 +18,7 @@ export default function Footer() {
       <p>
         <img
           className={theme === 'darkSide' ? 'bg-white rounded-5' : ''}
-          src='https://res.cloudinary.com/marangadev/image/upload/v1691096589/portfolio/icons/derechos-de-autor-blackx16_d9o7n1.png '
+          src='https://res.cloudinary.com/marangadev/image/upload/v1696600600/portfolio/icons/derechos-de-autor-blackx16_d9o7n1_pfdxam.png'
           alt=''
         />{' '}
         Copyright:<span>{date}</span>

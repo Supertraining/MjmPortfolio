@@ -1,95 +1,110 @@
 import React, { useContext } from 'react';
-import { useInView } from 'react-intersection-observer';
 import ThemeContext from '../../context/ThemeContext';
 import './consultora.css';
+import { LanguageContext } from '../../context/languageContext';
 
 export default function Consultora() {
 	const { theme } = useContext(ThemeContext);
-	const { ref, inView } = useInView({
-		threshold: 0,
-	});
+	const { language, es, en } = useContext(LanguageContext);
+
 
 	return (
-		<div className='my-5 align-items-center row'>
-			<div className='col-9'>
-				<a
-					className={
-						theme === 'darkSide'
-							? 'text-decoration-none text-white'
-							: 'text-decoration-none text-dark w-100'
-					}
-					href='https://supertraining.github.io/Template_Consultora/'
-					target={'_blank'}
-					rel='noreferrer'>
-					<img
-						src={require('../../assets/img/consultoraImg.png')}
-						alt='imgConsultoraWeb'
-						className='rounded img-fluid'
-					/>
-				</a>
+		<div className={ theme === 'darkSide'
+			? 'my-1 border border-light text-white col-12 rounded align-items-center flex flex-column row p-3'
+			: 'my-1 border border-dark col-12 rounded align-items-center flex flex-column row p-3' }>
+
+			<div className='col-12'>
+				<div className='col-12 text-center bg-light p-1 my-1 rounded'>
+					<p className={ theme === 'darkSide' ? 'text-dark bg-light p-2' : 'text-center fw-bold bg-light p-2' }>{ language === 'es' ? es.description.consultora : en.description.consultora }</p>
+				</div>
+				<img src='https://res.cloudinary.com/marangadev/image/upload/v1696626919/portfolio/Consultora-Cc_m4xcrv.webp' className='img-fluid' alt="" />
+				<div className='d-flex align-items-center'>
+					<span
+						className={
+							theme === 'darkSide'
+								? 'text-decoration-none text-white fw-bold'
+								: 'text-decoration-none text-dark fw-bold'
+						}>
+						{ language === 'es' ? es.links.app : en.links.app }
+					</span>
+					<a
+						className={
+							theme === 'darkSide' ? 'd-flex align-items-center' : 'd-flex align-items-center'
+						}
+						href='https://consultoracc.netlify.app/'
+						target={ '_blank' }
+						rel='noreferrer'>
+						<i
+							className={
+								theme === 'darkSide'
+									? 'bi bi-arrow-right-short fs-4 text-white'
+									: 'bi bi-arrow-right-short fs-4 text-dark'
+							}></i>
+
+						<i
+							className={
+								theme === 'darkSide'
+									? 'bi bi-hand-index-fill text-white fs-2'
+									: 'bi bi-hand-index-fill fs-2 text-dark'
+							}></i>
+					</a>
+				</div>
 			</div>
+
 			<div
-				className='col-3'
-				ref={ref}>
-				{theme === 'darkSide' ? (
-					<img
-						className='img-fluid'
-						src={require('../../assets/img/AT-AT_35441.png')}
-						alt='allTerrain'
-					/>
-				) : (
-					<img
-						className={inView ? 'img-fluid consultoraTakeOff' : 'img-fluid'}
-						src={require('../../assets/img/Millenium_Falcon.png')}
-						alt='xWing'
-					/>
-				)}
-			</div>
-			<div
-				className={
-					theme === 'darkSide'
-						? 'my-1 border border-light text-white p-3 col-10 rounded d-flex justify-content-evenly align-items-center'
-						: 'my-1 border border-dark p-3 col-10 rounded d-flex justify-content-evenly align-items-center'
-				}>
+				className='d-flex justify-content-evenly align-items-center'>
 				<div className='mx-1 col-2 text-center'>
 					<img
-						className={theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'img-fluid'}
-						src={require('../../assets/icons/skills/html-5.png')}
+						className={
+							theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
+						}
+						src='https://res.cloudinary.com/marangadev/image/upload/v1696600606/portfolio/icons/skills/html-5_tyfvds_azrstw.png'
 						alt='HTML5'
 					/>
-					<span className='fw-bold'>58.9%</span>
 				</div>
 				<div className='mx-1 col-2 text-center'>
 					<img
-						className={theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'img-fluid'}
-						src={require('../../assets/icons/skills/css-3.png')}
+						className={
+							theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
+						}
+						src='https://res.cloudinary.com/marangadev/image/upload/v1696600604/portfolio/icons/skills/css-3_ovas2l_o28rrj.png'
 						alt='css'
 					/>
-					<span className='fw-bold mx-1'>19.2%</span>
 				</div>
 				<div className='mx-1 col-2 text-center'>
 					<img
-						className={theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'img-fluid'}
-						src={require('../../assets/icons/skills/JS.png')}
-						alt='JavaScript'
-					/>
-					<span className='fw-bold mx-1'>4.1%</span>
-				</div>
-				<div className='mx-1 col-2 text-center'>
-					<img
-						className={theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'img-fluid'}
-						src={require('../../assets/icons/skills/sass.png')}
+						className={
+							theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
+						}
+						src='https://res.cloudinary.com/marangadev/image/upload/v1691096641/portfolio/icons/skills/sass_mn1xxq.png'
 						alt='Sass'
 					/>
-					<span className='fw-bold mx-1'>17.8%</span>
 				</div>
 				<div className='mx-1 col-2 text-center'>
 					<img
-						className={theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'img-fluid'}
-						src={require('../../assets/icons/skills/bootstrap.png')}
+						className={
+							theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
+						}
+						src='https://res.cloudinary.com/marangadev/image/upload/v1696600603/portfolio/icons/skills/bootstrap_x8t65y_bf8cox.png'
 						alt='bootstrap'
 					/>
-					<span className='fw-bold'>FWK</span>
+				</div>
+				<div
+					className='col-3 col-lg-2'
+				>
+					{ theme === 'darkSide' ? (
+						<img
+							className='img-fluid'
+							src='https://res.cloudinary.com/marangadev/image/upload/v1696600615/portfolio/IG-88.com_odjz2o_wlxbfi.webp'
+							alt='IG-88'
+						/>
+					) : (
+						<img
+							className='img-fluid'
+							src='https://res.cloudinary.com/marangadev/image/upload/v1696600598/portfolio/C-3PO.com_ghibno_owfgjq.webp'
+							alt='C-3PO'
+						/>
+					) }
 				</div>
 			</div>
 		</div>

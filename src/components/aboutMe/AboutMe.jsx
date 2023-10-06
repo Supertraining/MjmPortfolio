@@ -8,14 +8,18 @@ export default function AboutMe() {
   const { language, es, en } = useContext(LanguageContext);
 
   return (
-    <div
-      className={
-        theme === 'darkSide'
-          ? `row text-center text-white rounded p-3 aboutMeBorder ${theme}`
-          : 'row text-center bg-success rounded p-3 lightSide aboutMeBorder'
-      }
-    >
-      <p className='aboutMe-description'>{ language === 'es' ? es.aboutMe.text : en.aboutMe.text } <a className='text-decoration-none' href='https://render.com/'>render <i className="bi bi-box-arrow-up-right text-primary "></i></a></p>
-    </div>
+    
+
+      <div
+        className={
+          theme === 'darkSide'
+            ? `darkSide text-center p-3 text-white row justify-content-center`
+            : 'lightSide p-3 rounded row justify-content-center'
+        }
+      >
+        <p className='aboutMe-description aboutMeBorder rounded'>{ language === 'es' ? es.aboutMe.text : en.aboutMe.text } <a className='text-decoration-none' href='https://render.com/'>render <i className="bi bi-box-arrow-up-right text-primary "></i></a></p>
+      </div>
+
+
   );
 }

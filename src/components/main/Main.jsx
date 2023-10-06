@@ -10,6 +10,7 @@ import './Main.css';
 import Footer from '../footer/Footer';
 import { LanguageContext } from '../../context/languageContext';
 import ProductsAndMessages from '../productsAndMessages/ProductsAndMessages';
+import Consultora from '../consultoraWeb/Consultora';
 
 export default function Main() {
   const { theme } = useContext(ThemeContext);
@@ -19,13 +20,15 @@ export default function Main() {
   return (
     <div
       className={
-        theme === 'darkSide' ? `${theme} p-4 row rounded p-3 rounded` : 'lightSide p-3 rounded row'
+        theme === 'darkSide' ? `${theme} p-4 row rounded p-3 rounded justify-content-center` : 'lightSide p-3 rounded row justify-content-center'
       }>
       <Dalle />
       <EcommerceAPI />
       <ProductsAndMessages />
       <FincaStore />
       <FincaWeb />
+      <Consultora />
+      
       <div className='col 12 d-flex justify-content-end my-3'>
         <a
           className='col-2  text-decoration-none'
@@ -87,7 +90,7 @@ export default function Main() {
               ? 'col-3 col-sm-2 blueStarWarsShip-dark'
               : 'col-3 col-sm-2 blueStarWarsShip'
           }
-          src='https://res.cloudinary.com/marangadev/image/upload/v1691095504/portfolio/blue-star-wars-ships-_l6sgnk.png'
+          src='https://res.cloudinary.com/marangadev/image/upload/v1696600597/portfolio/blue-star-wars-ships-_l6sgnk_mv93xm.webp'
           alt='starShip'
         />
       </div>

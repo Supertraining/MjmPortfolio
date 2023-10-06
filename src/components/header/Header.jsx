@@ -32,8 +32,9 @@ export default function Header() {
       <div className='col-12 text-center p-2 d-flex justify-content-center'>
         <div className='col-2 flex-wrap'>
           <img
-            src='https://res.cloudinary.com/marangadev/image/upload/v1691095511/portfolio/yoda256_mkvlg4.png'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1696600629/portfolio/yoda256_mkvlg4_svonoo.webp'
             alt=''
+            
             className={ theme === 'darkSide' ? 'img-fluid yodaShadow' : 'img-fluid yodaLight' }
           />
         </div>
@@ -55,7 +56,7 @@ export default function Header() {
         >
           <img
             className='rounded-4 img-fluid'
-            src='https://res.cloudinary.com/marangadev/image/upload/v1691096590/portfolio/icons/Stormtrooperx48_hocyhp.png'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1696600613/portfolio/icons/Stormtrooperx48_hocyhp_uips0d.png'
             alt='stormtrooper'
           />
 
@@ -75,7 +76,7 @@ export default function Header() {
         >
           <img
             className='rounded-4 img-fluid'
-            src='https://res.cloudinary.com/marangadev/image/upload/v1691096589/portfolio/icons/Darth-Vaderx48_h1p99d.png'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1696600599/portfolio/icons/Darth-Vaderx48_h1p99d_w5ecnx.png'
             alt='Darth'
           />
           <i className={ theme === 'darkSide' ? 'bi bi-moon-fill mx-1 moonIconDark' : 'bi bi-moon-fill mx-1 text-white moonIconLight' }></i>
@@ -87,13 +88,13 @@ export default function Header() {
           { theme === 'darkSide' &&
             <img
               className='darthWithSword img-fluid'
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691095510/portfolio/Vaderx256_fstdcy.png'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600627/portfolio/Vaderx256_fstdcy_dwwbyk.webp'
               alt='bdarth'
             />
           }
         </>
         <img
-          src='https://res.cloudinary.com/marangadev/image/upload/v1691095505/portfolio/myImg_dkc8tx.png'
+          src='https://res.cloudinary.com/marangadev/image/upload/v1696600619/portfolio/myImg_dkc8tx_xj0trs.webp'
           className={ theme === 'darkSide' ? 'd-none' : 'header_Img img-fluid' }
           alt='myPng'
         />
@@ -105,7 +106,7 @@ export default function Header() {
       >
         <img
           className={ theme === 'darkSide' ? 'stormTroopers img-fluid d-none' : 'img-fluid' }
-          src='https://res.cloudinary.com/marangadev/image/upload/v1691095506/portfolio/Stormtroopersx128_au221l.png'
+          src='https://res.cloudinary.com/marangadev/image/upload/v1696600622/portfolio/Stormtroopersx128_au221l_fc7zts.webp'
           alt='Stormtroopers'
         />
         <p>{ language === 'es' ? es.greet.hello : en.greet.hello }</p>

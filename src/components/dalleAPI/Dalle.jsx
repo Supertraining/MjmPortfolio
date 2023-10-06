@@ -16,17 +16,14 @@ export default function Dalle() {
     <div className={
       theme === 'darkSide'
         ? 'my-1 border border-light text-white col-12 rounded align-items-center flex flex-column row p-3'
-        : 'my-1 border border-dark col-12 rounded align-items-center flex flex-column row p-3'}>
+        : 'my-1 border border-dark col-12 rounded align-items-center flex flex-column row p-3' }>
 
       <div className='col-12'>
-        <div className='col-12 text-center bg-light p-1 my-1'>
+        <div className='col-12 text-center bg-light p-1 my-1 rounded'>
           <p className={ theme === 'darkSide' ? 'text-dark bg-light p-2' : 'text-center fw-bold bg-light p-2' }>{ language === 'es' ? es.description.dalle : en.description.dalle }</p>
         </div>
-        <iframe
-          title='DalleClone'
-          className='w-100 p-2 bg-dark'
-          src='https://famous-griffin-70d0cd.netlify.app'
-          height={ '500px' }></iframe>
+
+        <img src='https://res.cloudinary.com/marangadev/image/upload/v1696626919/portfolio/DALL-E-2-0_lpu1mi.webp' className='img-fluid rounded' alt="" />
 
         <div className='d-flex align-items-center'>
           <span
@@ -41,7 +38,7 @@ export default function Dalle() {
             className={
               theme === 'darkSide' ? 'd-flex align-items-center' : 'd-flex align-items-center'
             }
-            href='https://famous-griffin-70d0cd.netlify.app/'
+            href='https://dall-e-clone-blog.netlify.app/'
             target={ '_blank' }
             rel='noreferrer'>
             <i
@@ -70,7 +67,7 @@ export default function Dalle() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691096639/portfolio/icons/skills/mongodb_original_logo_icon_146424_rhahyl.png'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600608/portfolio/icons/skills/mongodb_original_logo_icon_146424_rhahyl_frdqck.png'
               alt='MongoDb'
             />
           </div>
@@ -81,7 +78,7 @@ export default function Dalle() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691096637/portfolio/icons/skills/express_original_wordmark_logo_icon_146528_harl5b.png'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600605/portfolio/icons/skills/express_original_wordmark_logo_icon_146528_harl5b_tkfzkd.png'
               alt='Express'
             />
           </div>
@@ -93,8 +90,8 @@ export default function Dalle() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691096641/portfolio/icons/skills/react_original_x7gbx4.png'
-              alt='JavaScript'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600612/portfolio/icons/skills/react_original_x7gbx4_il1yxb.png'
+              alt='React'
             />
           </div>
           <div className='mx-1 col-2 text-center'>
@@ -104,7 +101,7 @@ export default function Dalle() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691096639/portfolio/icons/skills/nodejs_original_logo_icon_146411_nzatgu.png'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600609/portfolio/icons/skills/nodejs_original_logo_icon_146411_nzatgu_flx0r7.png'
               alt='NodeJs'
             />
           </div>
@@ -114,13 +111,13 @@ export default function Dalle() {
             { theme === 'darkSide' ? (
               <img
                 className='img-size'
-                src='https://res.cloudinary.com/marangadev/image/upload/v1691095505/portfolio/Death_Star_256_cd9pam.png'
+                src='https://res.cloudinary.com/marangadev/image/upload/v1696600598/portfolio/Death_Star_256_cd9pam_w2p37h.webp'
                 alt='deathStar'
               />
             ) : (
               <img
                 className={ inView ? 'dalleShipTakeOff img-size' : 'img-size' }
-                src='https://res.cloudinary.com/marangadev/image/upload/v1691095505/portfolio/Imperial_Star_Destroyer_t3jovq.png'
+                src='https://res.cloudinary.com/marangadev/image/upload/v1696600615/portfolio/Imperial_Star_Destroyer_t3jovq_zl17x8.webp'
                 alt='imperialStar'
               />
             ) }

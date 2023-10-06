@@ -21,12 +21,7 @@ export default function FincaWeb() {
         <div className='col-12 text-center bg-light p-1 my-1'>
           <p className={ theme === 'darkSide' ? 'text-dark bg-light p-2' : 'text-center fw-bold bg-light p-2' }>{ language === 'es' ? es.description.fincaWeb : en.description.fincaWeb }</p>
         </div>
-        <iframe
-          title='DalleClone'
-          className='w-100 p-2 bg-white'
-          src='https://finca-el-boleado.netlify.app'
-          height={ '500px' }
-        ></iframe>
+        <img src='https://res.cloudinary.com/marangadev/image/upload/v1696626922/portfolio/Finca-El-Boleado-web_wbgnyf.webp' className='img-fluid' alt="" />
 
         <div className='d-flex align-items-center'>
           <span
@@ -42,12 +37,12 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'd-flex align-items-center' : 'd-flex align-items-center'
             }
-            href='https://finca-el-boleado.netlify.app'
+            href='https://finca-el-boleado.netlify.app/'
             target={ '_blank' }
             rel='noreferrer'
           >
             <i
-              class={
+              className={
                 theme === 'darkSide'
                   ? 'bi bi-arrow-right-short fs-4 text-white'
                   : 'bi bi-arrow-right-short fs-4 text-dark'
@@ -55,7 +50,7 @@ export default function FincaWeb() {
             ></i>
 
             <i
-              class={
+              className={
                 theme === 'darkSide'
                   ? 'bi bi-hand-index-fill text-white fs-2'
                   : 'bi bi-hand-index-fill fs-2 text-dark'
@@ -72,7 +67,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
             }
-            src='https://res.cloudinary.com/marangadev/image/upload/v1691096638/portfolio/icons/skills/html-5_tyfvds.png'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1696600606/portfolio/icons/skills/html-5_tyfvds_azrstw.png'
             alt='HTML5'
           />
         </div>
@@ -81,7 +76,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
             }
-            src='https://res.cloudinary.com/marangadev/image/upload/v1691096637/portfolio/icons/skills/css-3_ovas2l.png'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1696600604/portfolio/icons/skills/css-3_ovas2l_o28rrj.png'
             alt='css'
           />
         </div>
@@ -90,7 +85,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
             }
-            src='https://res.cloudinary.com/marangadev/image/upload/v1691096638/portfolio/icons/skills/JS_mvmpo4.png'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1696600607/portfolio/icons/skills/JS_mvmpo4_kg3k0e.png'
             alt='JavaScript'
           />
         </div>
@@ -108,7 +103,7 @@ export default function FincaWeb() {
             className={
               theme === 'darkSide' ? 'skillsLogoShadow img-fluid' : 'skillsDarkLogoShadow img-fluid'
             }
-            src='https://res.cloudinary.com/marangadev/image/upload/v1691096637/portfolio/icons/skills/bootstrap_x8t65y.png'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1696600603/portfolio/icons/skills/bootstrap_x8t65y_bf8cox.png'
             alt='bootstrap'
           />
         </div>
@@ -120,13 +115,13 @@ export default function FincaWeb() {
           { theme === 'darkSide' ? (
             <img
               className='img-fluid'
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691095503/portfolio/AT-AT_35441_iqpelv.png'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600594/portfolio/AT-AT_35441_iqpelv_acaieh.webp'
               alt='AT-AT'
             />
           ) : (
             <img
               className={ inView ? 'img-fluid fincaWebTakeOff' : 'img-fluid' }
-              src='https://res.cloudinary.com/marangadev/image/upload/v1691095510/portfolio/X-Wing_-_02_35411_ifnjwx.png'
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600628/portfolio/X-Wing_-_02_35411_ifnjwx_zksdvb.webp'
               alt='xWing'
             />
           ) }

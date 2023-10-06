@@ -6,27 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
-.darkSide {
-  background-color: #000000c9 !important;
-  transition: 2s;
-}
 
 .lightSide {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 0%,
-    #85ff8f 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  animation-name: ligth;
-  animation-duration: 2s;
+  background: rgb(185 210 235 / 51%);
+  transition: 1s;
 }
-@keyframes ligth {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
