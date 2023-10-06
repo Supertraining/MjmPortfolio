@@ -13,7 +13,7 @@ export default function AboutMe() {
       <div
         className={
           theme === 'darkSide'
-            ? `darkSide text-center p-3 text-white row justify-content-center`
+            ? `text-center p-3 text-white row justify-content-center`
             : 'lightSide p-3 rounded row justify-content-center'
         }
       >
