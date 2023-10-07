@@ -124,7 +124,7 @@ export default function Header() {
       </div>
       <div className='col-4 mt-5'>
         <img
-          src='https://res.cloudinary.com/marangadev/image/upload/v1691095505/portfolio/myImg_fd22ng.svg'
+          src='https://res.cloudinary.com/marangadev/image/upload/v1696600620/portfolio/myImg_fd22ng_c7cfzf.svg'
           className={
             theme === 'darkSide'
               ? 'svgWhite header_Img pb-4 img-fluid'
