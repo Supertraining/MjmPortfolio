@@ -1,0 +1,74 @@
+input, textarea {
+    margin: 1px;
+	background-color: #cd8694;
+    border: none;
+}
+
+form {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    font-size: 1.6vw;
+}
+
+@keyframes fadeIn {
+    from {  opacity: 0; 
+            transform: scale(0.5);
+        }
+    to {    opacity: 0.9;
+        transform: scale(1.5);
+
+        }
+}
+
+@media (min-width:576px ){
+    form {
+        font-size: 1.4vw;  
+    }
+    
+}
+@media (min-width:992px ){
+    form {
+        font-size: 1.3vw;  
+    }
+    
+}
+@media (min-width:1200px ){
+    form {
+        font-size: 1.1vw;  
+	    font-family: 'Roboto Mono', monospace;
+    }
+    
+}
+.form_HideForm {
+    padding: 1px 6px;
+	background-color: #cd8694;
+    color: black;
+}
+form button {
+	background-color: #cd8694;
+    border: none;
+}
+.form_Div_Img {
+    max-width: 16px;
+    max-height: 16px;
+}
+.Linkedin {
+    width: fit-content;
+}
+.Linkedin:hover {
+    color: #0a66c2 !important;
+}
+.Linkedin:hover img {
+    background-color: #0a66c263;
+}
+.whatsapp {
+    width: fit-content;
+}
+.whatsapp:hover {
+    color: #46c756 !important;
+}
+.whatsapp:hover img {
+    background-color: #46c75563;
+    border-radius: 200px 200px 200px 0px;
+}

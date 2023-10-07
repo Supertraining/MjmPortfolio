@@ -1,0 +1,16 @@
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.aboutMeTitle {
+  font-size: 3.5vw;
+}
+
+.aboutMeBorder {
+  border: 2px solid white;
+}
+
+.aboutMe-description {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+

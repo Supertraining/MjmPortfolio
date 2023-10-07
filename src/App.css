@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto&family=Roboto+Mono&display=swap');
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lightSide {
+  background: rgb(185 210 235 / 51%);
+  transition: 1s;
+}
+

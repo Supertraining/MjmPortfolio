@@ -1,0 +1,139 @@
+header select {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+	font-size: 2vw;
+}
+@media (min-width:767px) and (max-width: 991px) {
+	header select { 
+		font-size: 1vw;
+	}
+}
+@media (min-width:991px) {
+	header select {
+		font-size: 1.5vw;
+	}
+}
+@media (min-width:1200px) {
+	header select {
+		font-size: 1.2vw;
+	}
+}
+header input[type='radio'] {
+	border: 0px;
+	width: 1rem;
+	height: 1rem;
+	background-color: black !important;
+}
+header label {
+	height: fit-content;
+}
+.yodaShadow {
+	animation-name: blackened;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	height: 130px;
+}
+@keyframes blackened {
+	from {
+		filter: brightness(100%);
+	}
+	to {
+		filter: brightness(0%);
+	}
+}
+.yodaLight {
+	animation-name: lightened;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	height: 130px;
+}
+@keyframes lightened {
+	from {
+		filter: brightness(0%);
+	}
+	to {
+		filter: brightness(100%);
+	}
+}
+.moonIconLight {
+	filter: drop-shadow(3px -1px 1px #212529);
+}
+.moonIconDark {
+	filter: drop-shadow(3px -1px 1px rgb(170, 169, 169)) ;
+}
+.darthWithSword {
+	animation-name: darkforce;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes darkforce {
+	from {
+		opacity: 0.1;
+		filter: drop-shadow(500px 0px 2px);
+	}
+	to {
+		opacity: 1;
+		filter: drop-shadow(22px 0px 2px);
+	}
+}
+.svgWhite {
+	filter: invert(1);
+}
+header p {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 3vw;
+}
+header h1 {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 600;
+	font-size: 5vw;
+}
+header small {
+	font-family: 'Fasthand', cursive;
+	letter-spacing: 1px;
+	font-size: 3.5vw;
+}
+.header_LinkStyle {
+	background-color: #cd8694;
+	border: none;
+	margin-left: 5px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2vw;
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+}
+.header_LinkStyle:hover {
+	color: white;
+}
+@media (min-width: 882px) {
+	header p,
+	header small {
+		font-size: 1.5vw;
+	}
+	header h1 {
+		font-size: 3vw;
+	}
+}
+.r2D2 {
+    display: block !important;
+    animation-name: desapear;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    left: 450px;
+}
+@keyframes desapear {
+    0% {
+        display: block !important;
+        opacity: 1;
+    }
+    80% {
+        display: block!important;
+        opacity: 0.5;
+    }
+    100% {
+        display: none !important;
+        opacity: 0;
+    }
+
+}
