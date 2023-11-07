@@ -1,10 +1,10 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState, lazy, Suspense } from 'react';
 import ThemeContext from '../../context/ThemeContext';
-import BackgroundLight from '../backGroundLight/BackgroundLight';
-import BackgroundDark from '../backgroundDark/BackgroundDark';
+
+const BackgroundLight = lazy(() => import('../backGroundLight/BackgroundLight'));
+const BackgroundDark = lazy(() => import('../backgroundDark/BackgroundDark'));
 
 const Background = () => {
-
 
   const { theme } = useContext(ThemeContext);
   const [ dark, setDark ] = useState(false)
@@ -18,15 +18,10 @@ const Background = () => {
   }, [ theme ])
 
   return (
-    <div>
-      {
-        dark
-          ? <BackgroundDark />
-          : <BackgroundLight />
-      }
-    </div>
-
-  )
+    <Suspense fallback={ <div>Loading...</div> }>
+      { dark ? <BackgroundDark /> : <BackgroundLight /> }
+    </Suspense>
+  );
 }
 
 export default Background
