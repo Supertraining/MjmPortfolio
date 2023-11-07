@@ -1,7 +1,7 @@
 .up {
   transition: 1.1s;
   position: fixed;
-  top: 5%;
+  top: 26%;
   right: 8%;
   transform: translateY(550%);
   z-index: 9999;
