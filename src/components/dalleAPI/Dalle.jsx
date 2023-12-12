@@ -15,47 +15,46 @@ export default function Dalle() {
   return (
     <div className={
       theme === 'darkSide'
-        ? 'my-1 border border-light text-white col-12 rounded align-items-center flex flex-column  p-3'
-        : 'my-1 border border-dark col-12 rounded align-items-center flex flex-column  p-3' }>
+        ? 'my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
+        : 'bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2' }>
 
-      <div className='col-12'>
-        <div className='col-12 text-center bg-light p-1 my-1 rounded'>
-          <p className={ theme === 'darkSide' ? 'text-dark bg-light p-2' : 'text-center fw-bold bg-light p-2' }>{ language === 'es' ? es.description.dalle : en.description.dalle }</p>
+      <div className='col-12 d-flex flex-column flex-md-row justify-content-evenly'>
+
+        <div className='col-12 col-md-4 d-flex flex-column align-items-md-center justify-content-md-center gap-1'>
+          <h2 className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>#Dalle clone</h2>
+          <h5 className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>{ language === 'es' ? es.description.description : en.description.description }</h5>
+          <p className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>{ language === 'es' ? es.description.dalle : en.description.dalle }</p>
         </div>
 
-        <img src='https://res.cloudinary.com/marangadev/image/upload/v1696626919/portfolio/DALL-E-2-0_lpu1mi.webp' className='img-fluid rounded' alt="" />
+        <iframe src="https://dall-e-clone-blog.netlify.app/" id="iframe" loading="lazy" className={ theme === 'darkSide'
+          ? 'col-12 col-md-7 rounded'
+          : 'col-12 col-md-7 rounded border border-dark' }></iframe>
 
-        <div className='d-flex align-items-center'>
-          <span
+      </div>
+
+      <div className='d-flex align-items-center justify-content-center'>
+        <a
+          className={
+            theme === 'darkSide' ? 'd-flex align-items-center rounded text-decoration-none p-2' : 'd-flex align-items-center rounded text-decoration-none p-2'
+          }
+          href='https://dall-e-clone-blog.netlify.app/'
+          target={ '_blank' }
+          rel='noreferrer'>
+          <p
             className={
               theme === 'darkSide'
-                ? 'text-decoration-none text-white fw-bold'
-                : 'text-decoration-none text-dark fw-bold'
+                ? 'text-decoration-none text-white'
+                : 'text-decoration-none text-dark'
             }>
             { language === 'es' ? es.links.app : en.links.app }
-          </span>
-          <a
+          </p>
+          <i
             className={
-              theme === 'darkSide' ? 'd-flex align-items-center' : 'd-flex align-items-center'
-            }
-            href='https://dall-e-clone-blog.netlify.app/'
-            target={ '_blank' }
-            rel='noreferrer'>
-            <i
-              className={
-                theme === 'darkSide'
-                  ? 'bi bi-arrow-right-short fs-4 text-white'
-                  : 'bi bi-arrow-right-short fs-4 text-dark'
-              }></i>
-
-            <i
-              className={
-                theme === 'darkSide'
-                  ? 'bi bi-hand-index-fill text-white fs-2'
-                  : 'bi bi-hand-index-fill fs-2 text-dark'
-              }></i>
-          </a>
-        </div>
+              theme === 'darkSide'
+                ? 'bi bi-link-45deg text-white fs-2'
+                : 'bi bi-link-45deg fs-2 text-dark'
+            }></i>
+        </a>
       </div>
 
       <div>
@@ -124,7 +123,7 @@ export default function Dalle() {
           </div>
         </div>
 
-        <div className='col-12 text-center'>
+        <div className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'text-dark p-2 text-center my-1 rounded  fw-bold' }>
           <h6 className='text-center col-12 fw-bold'>
             { language === 'es' ? es.dependencies.dep : en.dependencies.dep }
           </h6>

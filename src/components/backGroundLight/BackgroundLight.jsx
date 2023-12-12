@@ -7,7 +7,7 @@ const BackgroundLight = () => {
   return (
     <div>
       <video loop autoPlay muted id='bg-video'>
-        <source src={ videoUrl } type='video/webm' />
+        <source src={ videoUrl } type='video/mp4' />
       </video>
     </div>
   )

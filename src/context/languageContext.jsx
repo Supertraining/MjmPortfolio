@@ -35,6 +35,7 @@ const en = {
 		dep: 'Dependencies',
 	},
 	description: {
+		description: 'Description',
 		dalle: 'This Web App uses the OpenAI API to generate images from text.',
 		ecommerceBack: 'This RESTful API allows creating, querying, updating, and deleting users, products, and shopping carts. It is documented in Swagger, which allows testing its functionality in the browser.',
 		productsAndMssgs: 'This RESTful API includes a simple front-end built with the EJS template engine and Bootstrap, which allows testing some of its functionalities such as creating a user, adding, querying, updating, and deleting products from MySQL database, or leaving a message in the chat room, whose history will be stored in MongoDB. This API uses WebSockets for communication between the client and the server. Also, it allows performing these actions through HTTP requests and additionally provides some extras, such as accessing a very simple mock created with Faker or server information.',
@@ -76,6 +77,7 @@ const es = {
 		dep: 'Dependencias',
 	},
 	description: {
+		description: 'Descripción',
 		dalle: 'Esta Web App utiliza la API de OpenAI para crear imágenes a partir de texto.',
 		ecommerceBack: 'Esta API restful permite crear, consultar, actualizar y eliminar usuarios, productos y carritos. La misma esta documentada en Swagger lo que permite probar su funcionalidad en el navegador.',
 		productsAndMssgs: 'Esta API RESTful incluye un front sencillo realizado en el motor de plantillas EJS y Bootstrap que permite probar algunas de sus funcionalidades como crear un usuario, agregar, consultar, actualizar y eliminar productos a la base de datos MySQL o dejar un mensaje en la sala de chat, cuyo historial se almacenara en MongoDB. Esta API utiliza WebSockets para la comunicación entre el cliente y el servidor. También, permite realizar estas acciones mediante peticiones HTTP y ademas algunos extras, como acceder a un mock muy sencillo realizado con Faker o a información del servidor.',

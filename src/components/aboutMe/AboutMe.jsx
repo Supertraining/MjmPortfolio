@@ -17,7 +17,10 @@ export default function AboutMe() {
           : 'lightSide p-3 row justify-content-center'
       }
     >
-      <p className='aboutMe-description aboutMeBorder rounded'>{ language === 'es' ? es.aboutMe.text : en.aboutMe.text } <a className='text-decoration-none' href='https://render.com/'>render <i className="bi bi-box-arrow-up-right text-primary "></i></a></p>
+      <p className={
+        theme === 'darkSide'
+          ? 'aboutMe-description aboutMeBorder rounded'
+          : 'bg-light aboutMe-description aboutMeBorder rounded' }>{ language === 'es' ? es.aboutMe.text : en.aboutMe.text } <a className='text-decoration-none' href='https://render.com/'>render <i className="bi bi-box-arrow-up-right text-primary "></i></a></p>
     </div>
 
 

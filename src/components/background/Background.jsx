@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState, lazy, Suspense } from 'react';
 import ThemeContext from '../../context/ThemeContext';
+import './background.css'
 
 const BackgroundLight = lazy(() => import('../backGroundLight/BackgroundLight'));
 const BackgroundDark = lazy(() => import('../backgroundDark/BackgroundDark'));
@@ -18,7 +19,7 @@ const Background = () => {
   }, [ theme ])
 
   return (
-    <Suspense fallback={ <div>Loading...</div> }>
+    <Suspense fallback={ <div className='spinner-border text-info spinner'></div> }>
       { dark ? <BackgroundDark /> : <BackgroundLight /> }
     </Suspense>
   );
