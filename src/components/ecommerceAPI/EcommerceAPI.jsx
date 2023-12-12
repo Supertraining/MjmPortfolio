@@ -37,7 +37,7 @@ export default function EcommerceAPI() {
           className={
             theme === 'darkSide' ? 'd-flex align-items-center rounded text-decoration-none p-2' : 'd-flex align-items-center rounded text-decoration-none p-2'
           }
-          href='https://dall-e-clone-blog.netlify.app/'
+          href='https://backend-32190.onrender.com/docs/'
           target={ '_blank' }
           rel='noreferrer'>
           <p

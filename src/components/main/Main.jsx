@@ -74,7 +74,7 @@ export default function Main() {
       </div>
 
       <div className={ `d-flex justify-content-end up ${upDown}` }>
-        <div className='shipDialogBox col-3 col-sm-2 col-lg-1'>
+        {/* <div className='shipDialogBox col-3 col-sm-2 col-lg-1'>
           { upDown === 'active' && `${en.shipDialogue.travel}` }
           { (upDown === 'active down' || upDown === 'down') &&
             language === 'es' &&
@@ -82,7 +82,7 @@ export default function Main() {
           { (upDown === 'active down' || upDown === 'down') &&
             language === 'en' &&
             `${en.shipDialogue.down}` }
-        </div>
+        </div> */}
         <img
           className={
             theme === 'darkSide'
