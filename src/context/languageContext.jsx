@@ -1,6 +1,6 @@
-import React from 'react';
 import { useState } from 'react';
 import { createContext } from 'react';
+import PropTypes from 'prop-types';
 
 const en = {
 	side: 'Choose a side',
@@ -15,10 +15,6 @@ const en = {
 	formClose: 'Close',
 	aboutMe: {
 		text: 'Here you can find some projects in which I have worked, below each one you can see the technologies used to develop them. The backend deploys where made on render.com free service so they may take a moment to load. Feel free to contact me if you have any questions or comments.',
-	},
-	shipDialogue: {
-		travel: 'YouuuHHuuu',
-		down: 'GoodBye!'
 	},
 	r2D2: {
 		hello: '¡¡Hello',
@@ -57,10 +53,6 @@ const es = {
 	formClose: 'Cerrar',
 	aboutMe: {
 		text: 'Aquí podrás encontrar algunos proyectos en los que he trabajado, debajo de cada uno de ellos se pueden observar las tecnologías utilizadas para desarrollarlos. Los deploys de backend fueron realizados en el servicio gratuito de render.com por lo que pueden tomar un momento para cargar. Siéntete libre de contactarme si tienes alguna pregunta o comentario.',
-	},
-	shipDialogue: {
-		travel: 'YouuuHHuuu',
-		down: '¡Adiós!'
 	},
 	r2D2: {
 		hello: '¡¡Hola',
@@ -105,5 +97,9 @@ export const LanguageProvider = ({ children }) => {
 
 	return <LanguageContext.Provider value={ data }>{ children }</LanguageContext.Provider>;
 };
+
+LanguageProvider.propTypes = {
+	children: PropTypes.node
+} 
 
 export default LanguageProvider;

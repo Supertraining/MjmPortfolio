@@ -12,33 +12,60 @@ export default function EcommerceAPI() {
   });
 
   return (
-    <div className={
-      theme === 'darkSide'
-        ? 'my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column  p-3 gap-2'
-        : 'bg-light my-1 border border-dark col-12 rounded align-items-center flex flex-column p-3 gap-2' }>
-
+    <div
+      className={
+        theme === 'darkSide'
+          ? 'my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column  p-3 gap-2'
+          : 'bg-light my-1 border border-dark col-12 rounded align-items-center flex flex-column p-3 gap-2'
+      }>
       <div className='col-12 d-flex flex-column flex-md-row justify-content-evenly'>
-
         <div className='col-12 col-md-4 d-flex flex-column align-items-md-center justify-content-md-center gap-1'>
-          <h2 className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>#E-commerce API</h2>
-          <h5 className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>{ language === 'es' ? es.description.description : en.description.description }</h5>
-          <p className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>{ language === 'es' ? es.description.ecommerceBack : en.description.ecommerceBack }</p>
+          <h2
+            className={
+              theme === 'darkSide'
+                ? 'text-light p-2 text-center my-1 rounded'
+                : 'p-2 text-center my-1 rounded  fw-bold'
+            }>
+            #E-commerce API
+          </h2>
+          <h5
+            className={
+              theme === 'darkSide'
+                ? 'text-light p-2 text-center my-1 rounded'
+                : 'p-2 text-center my-1 rounded  fw-bold'
+            }>
+            {language === 'es' ? es.description.description : en.description.description}
+          </h5>
+          <p
+            className={
+              theme === 'darkSide'
+                ? 'text-light p-2 text-center my-1 rounded'
+                : 'p-2 text-center my-1 rounded  fw-bold'
+            }>
+            {language === 'es' ? es.description.ecommerceBack : en.description.ecommerceBack}
+          </p>
         </div>
 
-        <iframe src="https://backend-32190.onrender.com/docs/" id="iframe" loading="lazy" className={ theme === 'darkSide'
-          ? 'col-12 col-md-7 rounded'
-          : 'col-12 col-md-7 rounded border border-dark' }></iframe>
-
+        <img
+          src='https://res.cloudinary.com/marangadev/image/upload/v1696626918/portfolio/Swagger-UI_y88j5q.webp'
+          alt='Ecommerce_API'
+          className={
+            theme === 'darkSide'
+              ? 'col-12 col-md-7 rounded'
+              : 'col-12 col-md-7 rounded border border-dark'
+          }
+        />
       </div>
-
 
       <div className='d-flex align-items-center justify-content-center'>
         <a
           className={
-            theme === 'darkSide' ? 'd-flex align-items-center rounded text-decoration-none p-2' : 'd-flex align-items-center rounded text-decoration-none p-2'
+            theme === 'darkSide'
+              ? 'd-flex align-items-center rounded text-decoration-none p-2'
+              : 'd-flex align-items-center rounded text-decoration-none p-2'
           }
           href='https://backend-32190.onrender.com/docs/'
-          target={ '_blank' }
+          target={'_blank'}
           rel='noreferrer'>
           <p
             className={
@@ -46,7 +73,7 @@ export default function EcommerceAPI() {
                 ? 'text-decoration-none text-white'
                 : 'text-decoration-none text-dark'
             }>
-            { language === 'es' ? es.links.app : en.links.app }
+            {language === 'es' ? es.links.app : en.links.app}
           </p>
           <i
             className={
@@ -58,7 +85,6 @@ export default function EcommerceAPI() {
       </div>
 
       <div>
-
         <div className='p-3 col-12 rounded d-flex justify-content-evenly align-items-center'>
           <div className='mx-1 col-2 text-center'>
             <img
@@ -98,8 +124,8 @@ export default function EcommerceAPI() {
 
           <div
             className='col-2'
-            ref={ ref }>
-            { theme === 'darkSide' ? (
+            ref={ref}>
+            {theme === 'darkSide' ? (
               <img
                 className='img-size'
                 src='https://res.cloudinary.com/marangadev/image/upload/v1696600623/portfolio/Tie_Defender_v0kguq_r0c4se.webp'
@@ -107,25 +133,30 @@ export default function EcommerceAPI() {
               />
             ) : (
               <img
-                className={ inView ? 'img-size falconTakeOff' : 'img-size' }
+                className={inView ? 'img-size falconTakeOff' : 'img-size'}
                 src='https://res.cloudinary.com/marangadev/image/upload/v1696600618/portfolio/Millenium_Falcon_cwqypk_g1a5az.webp'
                 alt='Falcon'
               />
-            ) }
+            )}
           </div>
         </div>
 
-        <div className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'text-dark p-2 text-center my-1 rounded  fw-bold' }>
+        <div
+          className={
+            theme === 'darkSide'
+              ? 'text-light p-2 text-center my-1 rounded'
+              : 'text-dark p-2 text-center my-1 rounded  fw-bold'
+          }>
           <h6 className='text-center col-12 fw-bold'>
-            { language === 'es' ? es.dependencies.dep : en.dependencies.dep }
+            {language === 'es' ? es.dependencies.dep : en.dependencies.dep}
           </h6>
           <p>
-            <strong>backend:</strong> bcrypt | connect-mongo | dotenv | ejs | express | express-fileupload | express-session | mongoose | nodemailer | nodemon | passport | passport-local | swagger-jsdoc | swagger-ui-express | twilio | winston
+            <strong>backend:</strong> bcrypt | connect-mongo | dotenv | ejs | express |
+            express-fileupload | express-session | mongoose | nodemailer | nodemon | passport |
+            passport-local | swagger-jsdoc | swagger-ui-express | twilio | winston
           </p>
         </div>
-
       </div>
     </div>
-
   );
 }

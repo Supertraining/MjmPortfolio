@@ -7,31 +7,60 @@ export default function FincaStore() {
   const { language, es, en } = useContext(LanguageContext);
 
   return (
-    <div className={
-      theme === 'darkSide'
-        ? 'my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
-        : 'bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2' }>
-
+    <div
+      className={
+        theme === 'darkSide'
+          ? 'my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
+          : 'bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
+      }>
       <div className='col-12 d-flex flex-column flex-md-row justify-content-evenly'>
-
         <div className='col-12 col-md-4 d-flex flex-column align-items-md-center justify-content-md-center gap-1'>
-          <h2 className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>#Finca El Boleado Store</h2>
-          <h5 className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>{ language === 'es' ? es.description.description : en.description.description }</h5>
-          <p className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>{ language === 'es' ? es.description.fincaStore : en.description.fincaStore }</p>
+          <h2
+            className={
+              theme === 'darkSide'
+                ? 'text-light p-2 text-center my-1 rounded'
+                : 'p-2 text-center my-1 rounded  fw-bold'
+            }>
+            #Finca El Boleado Store
+          </h2>
+          <h5
+            className={
+              theme === 'darkSide'
+                ? 'text-light p-2 text-center my-1 rounded'
+                : 'p-2 text-center my-1 rounded  fw-bold'
+            }>
+            {language === 'es' ? es.description.description : en.description.description}
+          </h5>
+          <p
+            className={
+              theme === 'darkSide'
+                ? 'text-light p-2 text-center my-1 rounded'
+                : 'p-2 text-center my-1 rounded  fw-bold'
+            }>
+            {language === 'es' ? es.description.fincaStore : en.description.fincaStore}
+          </p>
         </div>
 
-        <iframe src="https://finca-el-boleado-store.netlify.app/" id="iframe" loading="lazy" className={ theme === 'darkSide'
-          ? 'col-12 col-md-7 rounded'
-          : 'col-12 col-md-7 rounded border border-dark' }></iframe>
+        <img
+          src='https://res.cloudinary.com/marangadev/image/upload/v1696626920/portfolio/finca-el-boleado_zl9n1y.webp'
+          alt='Finca_El_Boleado_store'
+          className={
+            theme === 'darkSide'
+              ? 'col-12 col-md-7 rounded'
+              : 'col-12 col-md-7 rounded border border-dark'
+          }
+        />
       </div>
 
       <div className='d-flex align-items-center justify-content-center'>
         <a
           className={
-            theme === 'darkSide' ? 'd-flex align-items-center rounded text-decoration-none p-2' : 'd-flex align-items-center rounded text-decoration-none p-2'
+            theme === 'darkSide'
+              ? 'd-flex align-items-center rounded text-decoration-none p-2'
+              : 'd-flex align-items-center rounded text-decoration-none p-2'
           }
           href='https://finca-el-boleado-store.netlify.app/'
-          target={ '_blank' }
+          target={'_blank'}
           rel='noreferrer'>
           <p
             className={
@@ -39,7 +68,7 @@ export default function FincaStore() {
                 ? 'text-decoration-none text-white'
                 : 'text-decoration-none text-dark'
             }>
-            { language === 'es' ? es.links.app : en.links.app }
+            {language === 'es' ? es.links.app : en.links.app}
           </p>
           <i
             className={
@@ -49,7 +78,6 @@ export default function FincaStore() {
             }></i>
         </a>
       </div>
-
 
       <div className='col-12'>
         <div className='p-3 col-12 rounded d-flex justify-content-evenly align-items-center'>
@@ -110,7 +138,7 @@ export default function FincaStore() {
           </div>
 
           <div className='col-2'>
-            { theme === 'darkSide' ? (
+            {theme === 'darkSide' ? (
               <img
                 className='img-fluid'
                 src='https://res.cloudinary.com/marangadev/image/upload/v1696600596/portfolio/blackSoldier_so4ido_puefvs.webp'
@@ -122,13 +150,18 @@ export default function FincaStore() {
                 src='https://res.cloudinary.com/marangadev/image/upload/v1696600617/portfolio/lightSoldier_g0kxp7_ham8ch.webp'
                 alt='lightSoldier'
               />
-            ) }
+            )}
           </div>
         </div>
 
-        <div className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'text-dark p-2 text-center my-1 rounded  fw-bold' }>
+        <div
+          className={
+            theme === 'darkSide'
+              ? 'text-light p-2 text-center my-1 rounded'
+              : 'text-dark p-2 text-center my-1 rounded  fw-bold'
+          }>
           <h6 className='text-center col-12 fw-bold'>
-            { language === 'es' ? es.dependencies.dep : en.dependencies.dep }
+            {language === 'es' ? es.dependencies.dep : en.dependencies.dep}
           </h6>
           <p>
             <strong>Frontend:</strong> firebase | react | react-dom | react-router-dom

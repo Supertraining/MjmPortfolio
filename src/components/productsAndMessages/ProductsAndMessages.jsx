@@ -12,45 +12,71 @@ export default function ProductsAndMessages() {
       className={
         theme === 'darkSide'
           ? 'my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
-          : 'bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2' }>
-
+          : 'bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
+      }>
       <div className='col-12 d-flex flex-column flex-md-row justify-content-evenly'>
-
         <div className='col-12 col-md-4 d-flex flex-column align-items-md-center justify-content-md-center gap-1'>
-          <h2 className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>#Products handle and chat</h2>
-          <h5 className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>{ language === 'es' ? es.description.description : en.description.description }</h5>
-          <p className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'p-2 text-center my-1 rounded  fw-bold' }>
-            { language === 'es' ? es.description.productsAndMssgs : en.description.productsAndMssgs }
+          <h2
+            className={
+              theme === 'darkSide'
+                ? 'text-light p-2 text-center my-1 rounded'
+                : 'p-2 text-center my-1 rounded  fw-bold'
+            }>
+            #Products handle and chat
+          </h2>
+          <h5
+            className={
+              theme === 'darkSide'
+                ? 'text-light p-2 text-center my-1 rounded'
+                : 'p-2 text-center my-1 rounded  fw-bold'
+            }>
+            {language === 'es' ? es.description.description : en.description.description}
+          </h5>
+          <p
+            className={
+              theme === 'darkSide'
+                ? 'text-light p-2 text-center my-0 rounded'
+                : 'p-2 text-center my-1 rounded  fw-bold'
+            }>
+            {language === 'es' ? es.description.productsAndMssgs : en.description.productsAndMssgs}
+
+            <a
+              className='text-decoration-none mx-3'
+              href='https://productsandmssgs.onrender.com/api/productos-test'
+              target='_blank'
+              rel='noreferrer'>
+              Mock <i className='bi bi-box-arrow-up-right text-primary '></i>
+            </a>
+            <a
+              className='text-decoration-none mx-3'
+              href='https://productsandmssgs.onrender.com/api/info'
+              target='_blank'
+              rel='noreferrer'>
+              Server_Info <i className='bi bi-box-arrow-up-right text-primary '></i>
+            </a>
           </p>
-          <a
-            className='text-decoration-none mx-3'
-            href='https://productsandmssgs.onrender.com/api/productos-test'
-            target='_blank'
-            rel='noreferrer'>
-            Mock <i className='bi bi-box-arrow-up-right text-primary '></i>
-          </a>
-          <a
-            className='text-decoration-none mx-3'
-            href='https://productsandmssgs.onrender.com/api/info'
-            target='_blank'
-            rel='noreferrer'>
-            Server_Info <i className='bi bi-box-arrow-up-right text-primary '></i>
-          </a>
         </div>
 
-        <iframe src="https://productsandmssgs.onrender.com/login" id="iframe" loading="lazy" className={ theme === 'darkSide'
-          ? 'col-12 col-md-7 rounded'
-          : 'col-12 col-md-7 rounded border border-dark' }></iframe>
-        
+        <img
+          src='https://res.cloudinary.com/marangadev/image/upload/v1696626923/portfolio/LoginMssgAndProd_bfenfz.webp'
+          alt='Products_and_messages_API'
+          className={
+            theme === 'darkSide'
+              ? 'col-12 col-md-7 rounded iframe-height'
+              : 'col-12 col-md-7 rounded border border-dark iframe-height'
+          }
+        />
       </div>
 
       <div className='d-flex align-items-center justify-content-center'>
         <a
           className={
-            theme === 'darkSide' ? 'd-flex align-items-center rounded text-decoration-none p-2' : 'd-flex align-items-center rounded text-decoration-none p-2'
+            theme === 'darkSide'
+              ? 'd-flex align-items-center rounded text-decoration-none p-2'
+              : 'd-flex align-items-center rounded text-decoration-none p-2'
           }
           href='https://dall-e-clone-blog.netlify.app/'
-          target={ '_blank' }
+          target={'_blank'}
           rel='noreferrer'>
           <p
             className={
@@ -58,7 +84,7 @@ export default function ProductsAndMessages() {
                 ? 'text-decoration-none text-white'
                 : 'text-decoration-none text-dark'
             }>
-            { language === 'es' ? es.links.app : en.links.app }
+            {language === 'es' ? es.links.app : en.links.app}
           </p>
           <i
             className={
@@ -108,7 +134,7 @@ export default function ProductsAndMessages() {
           </div>
 
           <div className='col-2'>
-            { theme === 'darkSide' ? (
+            {theme === 'darkSide' ? (
               <img
                 className='img-size'
                 src='https://res.cloudinary.com/marangadev/image/upload/v1696600625/portfolio/vaderToy_uojbtf_xzpzrd.webp'
@@ -120,13 +146,18 @@ export default function ProductsAndMessages() {
                 src='https://res.cloudinary.com/marangadev/image/upload/v1696600616/portfolio/Lego-Luke_wkyka2_dyunqs.webp'
                 alt='LegoLuke'
               />
-            ) }
+            )}
           </div>
         </div>
 
-        <div className={ theme === 'darkSide' ? 'text-light p-2 text-center my-1 rounded' : 'text-dark p-2 text-center my-1 rounded  fw-bold' }>
+        <div
+          className={
+            theme === 'darkSide'
+              ? 'text-light p-2 text-center my-1 rounded'
+              : 'text-dark p-2 text-center my-1 rounded  fw-bold'
+          }>
           <h6 className='text-center col-12 fw-bold'>
-            { language === 'es' ? es.dependencies.dep : en.dependencies.dep }
+            {language === 'es' ? es.dependencies.dep : en.dependencies.dep}
           </h6>
           <p>
             <strong>backend:</strong> axios | bcrypt | compression | connect-mongo | cors | dotenv |

@@ -1,6 +1,6 @@
-import React from 'react'
 import { useState } from 'react';
-import { createContext } from 'react'
+import { createContext } from 'react';
+import PropTypes from 'prop-types';
 
 const ThemeContext = createContext();
 
@@ -26,6 +26,10 @@ const ThemeProvider = ( { children } ) =>  {
         </ThemeContext.Provider>
     );
 }
+
+ThemeProvider.propTypes = {
+    children: PropTypes.node
+} 
 
 export default ThemeContext;
 export { ThemeProvider };
