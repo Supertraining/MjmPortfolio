@@ -19,8 +19,8 @@ export default function FincaWeb() {
           ? 'my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
           : 'bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
       }>
-      <div className='col-12 d-flex flex-column flex-md-row justify-content-evenly'>
-        <div className='col-12 col-md-4 d-flex flex-column align-items-md-center justify-content-md-center gap-1'>
+      <div className='col-12 d-flex flex-column flex-xl-row justify-content-evenly'>
+        <div className='col-12 col-xl-4 d-flex flex-column align-items-xl-center justify-content-xl-center gap-1'>
           <h2
             className={
               theme === 'darkSide'
@@ -35,7 +35,7 @@ export default function FincaWeb() {
                 ? 'text-light p-2 text-center my-1 rounded'
                 : 'p-2 text-center my-1 rounded  fw-bold'
             }>
-            {language === 'es' ? es.description.description : en.description.description}
+            { language === 'es' ? es.description.description : en.description.description }
           </h5>
           <p
             className={
@@ -43,47 +43,54 @@ export default function FincaWeb() {
                 ? 'text-light p-2 text-center my-1 rounded'
                 : 'p-2 text-center my-1 rounded  fw-bold'
             }>
-            {language === 'es' ? es.description.fincaWeb : en.description.fincaWeb}
+            { language === 'es' ? es.description.fincaWeb : en.description.fincaWeb }
           </p>
         </div>
 
-        <img
-          src='https://res.cloudinary.com/marangadev/image/upload/v1696626922/portfolio/Finca-El-Boleado-web_wbgnyf.webp'
-          alt='Finca_El_Boleado_web'
+        <div
           className={
             theme === 'darkSide'
-              ? 'col-12 col-md-7 rounded'
-              : 'col-12 col-md-7 rounded border border-dark'
-          }
-        />
+              ? 'col-12 col-xl-7 rounded d-flex flex-column'
+              : 'col-12 col-xl-7 rounded border border-dark d-flex flex-column'
+          }>
+
+          <img
+            src='https://res.cloudinary.com/marangadev/image/upload/v1696626922/portfolio/Finca-El-Boleado-web_wbgnyf.webp'
+            alt='Finca_El_Boleado_web'
+            className='col-12  rounded'
+          />
+
+          <div className='d-flex align-items-center justify-content-center'>
+            <a
+              className={
+                theme === 'darkSide'
+                  ? 'd-flex align-items-center rounded text-decoration-none p-2'
+                  : 'd-flex align-items-center rounded text-decoration-none p-2'
+              }
+              href='https://dall-e-clone-blog.netlify.app/'
+              target={ '_blank' }
+              rel='noreferrer'>
+              <p
+                className={
+                  theme === 'darkSide'
+                    ? 'text-decoration-none text-white'
+                    : 'text-decoration-none text-dark'
+                }>
+                { language === 'es' ? es.links.app : en.links.app }
+              </p>
+              <i
+                className={
+                  theme === 'darkSide'
+                    ? 'bi bi-link-45deg text-white fs-2'
+                    : 'bi bi-link-45deg fs-2 text-dark'
+                }></i>
+            </a>
+          </div>
+
+        </div>
+
       </div>
 
-      <div className='d-flex align-items-center justify-content-center'>
-        <a
-          className={
-            theme === 'darkSide'
-              ? 'd-flex align-items-center rounded text-decoration-none p-2'
-              : 'd-flex align-items-center rounded text-decoration-none p-2'
-          }
-          href='https://dall-e-clone-blog.netlify.app/'
-          target={'_blank'}
-          rel='noreferrer'>
-          <p
-            className={
-              theme === 'darkSide'
-                ? 'text-decoration-none text-white'
-                : 'text-decoration-none text-dark'
-            }>
-            {language === 'es' ? es.links.app : en.links.app}
-          </p>
-          <i
-            className={
-              theme === 'darkSide'
-                ? 'bi bi-link-45deg text-white fs-2'
-                : 'bi bi-link-45deg fs-2 text-dark'
-            }></i>
-        </a>
-      </div>
 
       <div className='p-3 col-12 rounded d-flex justify-content-evenly align-items-center'>
         <div className='mx-1 col-2 text-center'>
@@ -134,8 +141,8 @@ export default function FincaWeb() {
 
         <div
           className='col-3 col-lg-2'
-          ref={ref}>
-          {theme === 'darkSide' ? (
+          ref={ ref }>
+          { theme === 'darkSide' ? (
             <img
               className='img-fluid'
               src='https://res.cloudinary.com/marangadev/image/upload/v1696600594/portfolio/AT-AT_35441_iqpelv_acaieh.webp'
@@ -143,11 +150,11 @@ export default function FincaWeb() {
             />
           ) : (
             <img
-              className={inView ? 'img-fluid fincaWebTakeOff' : 'img-fluid'}
+              className={ inView ? 'img-fluid fincaWebTakeOff' : 'img-fluid' }
               src='https://res.cloudinary.com/marangadev/image/upload/v1696600628/portfolio/X-Wing_-_02_35411_ifnjwx_zksdvb.webp'
               alt='xWing'
             />
-          )}
+          ) }
         </div>
       </div>
     </div>

@@ -1,9 +1,10 @@
 import { useContext } from 'react';
-import ThemeContext from '../../context/ThemeContext';
-import './ecommerceAPI.css';
-import { LanguageContext } from '../../context/languageContext';
 import { useInView } from 'react-intersection-observer';
-export default function EcommerceAPI() {
+import ThemeContext from '../../context/ThemeContext';
+import './clubManager.css';
+import { LanguageContext } from '../../context/languageContext';
+
+export default function ClubManager() {
   const { theme } = useContext(ThemeContext);
   const { language, es, en } = useContext(LanguageContext);
 
@@ -15,18 +16,19 @@ export default function EcommerceAPI() {
     <div
       className={
         theme === 'darkSide'
-          ? 'my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column justify-content-center p-3 gap-2'
-          : 'bg-light my-1 border border-dark col-12 rounded align-items-center flex flex-column justify-content-center p-3 gap-2'
+          ? 'my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
+          : 'bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2'
       }>
       <div className='col-12 d-flex flex-column flex-xl-row justify-content-evenly'>
-        <div className='col-12 col-xl-4 d-flex flex-column align-items-xl-center justify-content-xl-center gap-1'>
+        <div className='col-12 col-xl-4 d-flex flex-column align-items-md-center justify-content-md-center gap-1'>
           <h2
             className={
               theme === 'darkSide'
                 ? 'text-light p-2 text-center my-1 rounded'
-                : 'p-2 text-center my-1 rounded  fw-bold'
+                : 'p-2 text-center my-1 rounded  fw-bold d-flex align-items-center justify-content-center'
             }>
-            #E-commerce API
+            #Club Manager
+            <img src="https://res.cloudinary.com/marangadev/image/upload/v1703874602/1055203_7150_ssqb92.svg" className='under-construction-img' alt="" />
           </h2>
           <h5
             className={
@@ -42,31 +44,31 @@ export default function EcommerceAPI() {
                 ? 'text-light p-2 text-center my-1 rounded'
                 : 'p-2 text-center my-1 rounded  fw-bold'
             }>
-            { language === 'es' ? es.description.ecommerceBack : en.description.ecommerceBack }
+            { language === 'es' ? es.description.clubManager : en.description.clubManager }
           </p>
         </div>
 
-        <div className={
-          theme === 'darkSide'
-            ? 'col-12 col-xl-7 rounded d-flex flex-column'
-            : 'col-12 col-xl-7 rounded border border-dark d-flex flex-column'
-        }>
+        <div
+          className={
+            theme === 'darkSide'
+              ? 'col-12 col-xl-7 rounded d-flex flex-column'
+              : 'col-12 col-xl-7 rounded border border-dark d-flex flex-column'
+          }>
 
           <img
-            src='https://res.cloudinary.com/marangadev/image/upload/v1696626918/portfolio/Swagger-UI_y88j5q.webp'
-            alt='Ecommerce_API'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1703862474/Club-Manager_bgmnaj.webp'
+            alt='CLubManager App'
             className='col-12 rounded'
-            
           />
 
-          <div className='d-flex align-items-center justify-content-center'>
+          <div className='d-flex flex-column flex-lg-row p-1 align-items-center justify-content-center  gap-1 links-font-size'>
             <a
               className={
                 theme === 'darkSide'
                   ? 'd-flex align-items-center rounded text-decoration-none p-2'
                   : 'd-flex align-items-center rounded text-decoration-none p-2'
               }
-              href='https://backend-32190.onrender.com/docs/'
+              href='https://club-manager-admin.netlify.app/login'
               target={ '_blank' }
               rel='noreferrer'>
               <p
@@ -75,7 +77,7 @@ export default function EcommerceAPI() {
                     ? 'text-decoration-none text-white d-flex align-items-center m-0'
                     : 'text-decoration-none text-dark d-flex align-items-center m-0'
                 }>
-                Docs
+                Admin Mode
               </p>
               <i
                 className={
@@ -84,37 +86,60 @@ export default function EcommerceAPI() {
                     : 'bi bi-link-45deg fs-2 text-dark'
                 }></i>
             </a>
-
             <a
               className={
                 theme === 'darkSide'
                   ? 'd-flex align-items-center rounded text-decoration-none p-2'
                   : 'd-flex align-items-center rounded text-decoration-none p-2'
               }
-              href='https://github.com/Supertraining/ecommerceAPI'
+              href='https://club-manager-client.netlify.app/'
               target={ '_blank' }
               rel='noreferrer'>
-
+              <p
+                className={
+                  theme === 'darkSide'
+                    ? 'text-decoration-none text-white d-flex align-items-center m-0'
+                    : 'text-decoration-none text-dark d-flex align-items-center m-0'
+                }>
+                User Mode
+              </p>
+              <i
+                className={
+                  theme === 'darkSide'
+                    ? 'bi bi-link-45deg text-white fs-2'
+                    : 'bi bi-link-45deg fs-2 text-dark'
+                }></i>
+            </a>
+            <a
+              className={
+                theme === 'darkSide'
+                  ? 'd-flex align-items-center rounded text-decoration-none p-2'
+                  : 'd-flex align-items-center rounded text-decoration-none p-2'
+              }
+              href='https://github.com/Supertraining/ClubManager'
+              target={ '_blank' }
+              rel='noreferrer'>
               <p
                 className={
                   theme === 'darkSide'
                     ? 'text-decoration-none text-white d-flex align-items-center m-0'
                     : 'text-decoration-none text-dark d-flex align-items-center m-0 f-4'
                 }>
-                <i className="bi bi-chevron-left fs-2"></i>
+                <i className='bi bi-chevron-left fs-2'></i>
                 Repo
-                <i className="bi bi-chevron-right fs-2"></i>
+                <i className='bi bi-chevron-right fs-2'></i>
               </p>
-
-
             </a>
-
+            Testing credentials:
+            <ul className='list-unstyled m-0'>
+              <li>username: bmyguest@fakemail.com</li>
+              <li>password: @bmyguest1234</li>
+            </ul>
           </div>
 
         </div>
 
       </div>
-
 
       <div>
         <div className='p-3 col-12 rounded d-flex justify-content-evenly align-items-center'>
@@ -129,7 +154,6 @@ export default function EcommerceAPI() {
               alt='MongoDb'
             />
           </div>
-
           <div className='mx-1 col-2 text-center'>
             <img
               className={
@@ -149,25 +173,35 @@ export default function EcommerceAPI() {
                   ? 'skillsLogoShadow img-fluid'
                   : 'skillsDarkLogoShadow img-fluid'
               }
+              src='https://res.cloudinary.com/marangadev/image/upload/v1696600612/portfolio/icons/skills/react_original_x7gbx4_il1yxb.png'
+              alt='React'
+            />
+          </div>
+          <div className='mx-1 col-2 text-center'>
+            <img
+              className={
+                theme === 'darkSide'
+                  ? 'skillsLogoShadow img-fluid'
+                  : 'skillsDarkLogoShadow img-fluid'
+              }
               src='https://res.cloudinary.com/marangadev/image/upload/v1696600609/portfolio/icons/skills/nodejs_original_logo_icon_146411_nzatgu_flx0r7.png'
               alt='NodeJs'
             />
           </div>
-
           <div
             className='col-2'
             ref={ ref }>
             { theme === 'darkSide' ? (
               <img
                 className='img-size'
-                src='https://res.cloudinary.com/marangadev/image/upload/v1696600623/portfolio/Tie_Defender_v0kguq_r0c4se.webp'
-                alt='tieDefender'
+                src='https://res.cloudinary.com/marangadev/image/upload/v1696600598/portfolio/Death_Star_256_cd9pam_w2p37h.webp'
+                alt='deathStar'
               />
             ) : (
               <img
-                className={ inView ? 'img-size falconTakeOff' : 'img-size' }
-                src='https://res.cloudinary.com/marangadev/image/upload/v1696600618/portfolio/Millenium_Falcon_cwqypk_g1a5az.webp'
-                alt='Falcon'
+                className={ inView ? 'dalleShipTakeOff img-size' : 'img-size' }
+                src='https://res.cloudinary.com/marangadev/image/upload/v1696600615/portfolio/Imperial_Star_Destroyer_t3jovq_zl17x8.webp'
+                alt='imperialStar'
               />
             ) }
           </div>
@@ -183,8 +217,14 @@ export default function EcommerceAPI() {
             { language === 'es' ? es.dependencies.dep : en.dependencies.dep }
           </h6>
           <p>
-            <strong>backend:</strong> bcrypt | connect-mongo | dotenv | ejs | express |
-            express-fileupload | express-session | mongoose | nodemailer | nodemon | jsonwebtoken | swagger-jsdoc | swagger-ui-express | twilio | winston
+            <strong>Backend:</strong> bcrypt | connect-mongo | cors| dotenv | express |
+            express-validator | helmet | jsonwebtoken | mongoose | node-cron | nodemailer | unidecode |
+            uuid | winston
+          </p>
+          <p>
+            <strong>Frontend:</strong> axios | bootstrap | js-cookie | react | react-bootstrap |
+            react-date-time-picker-popup | react-dom | react-hook-form | react-intersection-observer |
+            react-router-dom | react-toastify | unidecode | uuid | validator
           </p>
         </div>
       </div>
