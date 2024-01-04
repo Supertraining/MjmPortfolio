@@ -76,7 +76,7 @@ export default function FincaWeb() {
                     ? 'text-decoration-none text-white'
                     : 'text-decoration-none text-dark'
                 }>
-                { language === 'es' ? es.links.app : en.links.app }
+                { language === 'es' ? es.links.web : en.links.web }
               </p>
               <i
                 className={
