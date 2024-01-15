@@ -28,7 +28,6 @@ export default function ClubManager() {
                 : 'p-2 text-center my-1 rounded  fw-bold d-flex align-items-center justify-content-center'
             }>
             #Club Manager
-            <img src="https://res.cloudinary.com/marangadev/image/upload/v1703874602/1055203_7150_ssqb92.svg" className='under-construction-img' alt="" />
           </h2>
           <h5
             className={
@@ -56,7 +55,7 @@ export default function ClubManager() {
           }>
 
           <img
-            src='https://res.cloudinary.com/marangadev/image/upload/v1703862474/Club-Manager_bgmnaj.webp'
+            src='https://res.cloudinary.com/marangadev/image/upload/v1705344036/Club-Manager_gdk7ea.webp'
             alt='CLubManager App'
             className='col-12 rounded'
           />
