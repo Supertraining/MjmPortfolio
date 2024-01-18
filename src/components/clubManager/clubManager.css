@@ -4,9 +4,12 @@
   animation-fill-mode: both;
   animation-timing-function: ease-in;
 }
-.img-size {
-  max-height: 100px;
-  max-width: 100px;
+.img-underConst-l {
+  max-width: 190px;
+}
+.img-underConst-d {
+  max-width: 190px;
+  filter: grayscale(1);
 }
 
 @keyframes imperialStarTakeOff {

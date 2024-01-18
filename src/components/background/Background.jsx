@@ -2,7 +2,7 @@ import { useContext, useEffect, useState, lazy, Suspense } from 'react';
 import ThemeContext from '../../context/ThemeContext';
 import './background.css';
 
-const BackgroundLight = lazy(() => import('../backGroundLight/BackgroundLight'));
+// const BackgroundLight = lazy(() => import('../backGroundLight/BackgroundLight'));
 const BackgroundDark = lazy(() => import('../backgroundDark/BackgroundDark'));
 
 const Background = () => {
@@ -19,7 +19,7 @@ const Background = () => {
 
   return (
     <Suspense fallback={<div className='dark-bg'></div>}>
-      {dark ? <BackgroundDark/> : <BackgroundLight/> }
+      {dark && <BackgroundDark/> }
     </Suspense>
   );
 };

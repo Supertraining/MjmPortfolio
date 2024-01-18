@@ -3,7 +3,6 @@ import { useInView } from 'react-intersection-observer';
 import ThemeContext from '../../context/ThemeContext';
 import './clubManager.css';
 import { LanguageContext } from '../../context/languageContext';
-
 export default function ClubManager() {
   const { theme } = useContext(ThemeContext);
   const { language, es, en } = useContext(LanguageContext);
@@ -21,21 +20,28 @@ export default function ClubManager() {
       }>
       <div className='col-12 d-flex flex-column flex-xl-row justify-content-evenly'>
         <div className='col-12 col-xl-4 d-flex flex-column align-items-md-center justify-content-md-center gap-1'>
-          <h2
-            className={
-              theme === 'darkSide'
-                ? 'text-light p-2 text-center my-1 rounded'
-                : 'p-2 text-center my-1 rounded  fw-bold d-flex align-items-center justify-content-center'
-            }>
-            #Club Manager
-          </h2>
+          <div className='d-flex flex-column align-items-center justify-content-center w-100 bg-transparent'>
+            <h2
+              className={
+                theme === 'darkSide'
+                  ? 'text-light p-2 text-center my-1 rounded'
+                  : 'p-2 text-center my-1 rounded  fw-bold d-flex align-items-center justify-content-center'
+              }>
+              #Club Manager
+            </h2>
+            <img
+              className={theme === 'darkSide' ? 'img-underConst-d' : 'img-underConst-l'}
+              src='https://res.cloudinary.com/marangadev/image/upload/v1705612164/underConstruction.com_x96ysy.webp'
+              alt='Image work in progress'
+            />
+          </div>
           <h5
             className={
               theme === 'darkSide'
                 ? 'text-light p-2 text-center my-1 rounded'
                 : 'p-2 text-center my-1 rounded  fw-bold'
             }>
-            { language === 'es' ? es.description.description : en.description.description }
+            {language === 'es' ? es.description.description : en.description.description}
           </h5>
           <p
             className={
@@ -43,7 +49,7 @@ export default function ClubManager() {
                 ? 'text-light p-2 text-center my-1 rounded'
                 : 'p-2 text-center my-1 rounded  fw-bold'
             }>
-            { language === 'es' ? es.description.clubManager : en.description.clubManager }
+            {language === 'es' ? es.description.clubManager : en.description.clubManager}
           </p>
         </div>
 
@@ -53,7 +59,6 @@ export default function ClubManager() {
               ? 'col-12 col-xl-7 rounded d-flex flex-column gap-space'
               : 'col-12 col-xl-7 rounded border border-dark d-flex flex-column gap-space'
           }>
-
           <img
             src='https://res.cloudinary.com/marangadev/image/upload/v1705344036/Club-Manager_gdk7ea.webp'
             alt='CLubManager App'
@@ -68,7 +73,7 @@ export default function ClubManager() {
                   : 'd-flex align-items-center rounded text-decoration-none p-2'
               }
               href='https://club-manager-admin.netlify.app/login'
-              target={ '_blank' }
+              target={'_blank'}
               rel='noreferrer'>
               <p
                 className={
@@ -92,7 +97,7 @@ export default function ClubManager() {
                   : 'd-flex align-items-center rounded text-decoration-none p-2'
               }
               href='https://club-manager-client.netlify.app/'
-              target={ '_blank' }
+              target={'_blank'}
               rel='noreferrer'>
               <p
                 className={
@@ -116,7 +121,7 @@ export default function ClubManager() {
                   : 'd-flex align-items-center rounded text-decoration-none p-2'
               }
               href='https://github.com/Supertraining/ClubManager'
-              target={ '_blank' }
+              target={'_blank'}
               rel='noreferrer'>
               <p
                 className={
@@ -135,9 +140,7 @@ export default function ClubManager() {
               <li>password: @bmyguest1234</li>
             </ul>
           </div>
-
         </div>
-
       </div>
 
       <div>
@@ -189,8 +192,8 @@ export default function ClubManager() {
           </div>
           <div
             className='col-2'
-            ref={ ref }>
-            { theme === 'darkSide' ? (
+            ref={ref}>
+            {theme === 'darkSide' ? (
               <img
                 className='img-size'
                 src='https://res.cloudinary.com/marangadev/image/upload/v1696600598/portfolio/Death_Star_256_cd9pam_w2p37h.webp'
@@ -198,11 +201,11 @@ export default function ClubManager() {
               />
             ) : (
               <img
-                className={ inView ? 'dalleShipTakeOff img-size' : 'img-size' }
+                className={inView ? 'dalleShipTakeOff img-size' : 'img-size'}
                 src='https://res.cloudinary.com/marangadev/image/upload/v1696600615/portfolio/Imperial_Star_Destroyer_t3jovq_zl17x8.webp'
                 alt='imperialStar'
               />
-            ) }
+            )}
           </div>
         </div>
 
@@ -213,17 +216,17 @@ export default function ClubManager() {
               : 'text-dark p-2 text-center my-1 rounded  fw-bold'
           }>
           <h6 className='text-center col-12 fw-bold'>
-            { language === 'es' ? es.dependencies.dep : en.dependencies.dep }
+            {language === 'es' ? es.dependencies.dep : en.dependencies.dep}
           </h6>
           <p>
             <strong>Backend:</strong> bcrypt | connect-mongo | cors| dotenv | express |
-            express-validator | helmet | jsonwebtoken | mongoose | node-cron | nodemailer | unidecode |
-            uuid | winston
+            express-validator | helmet | jsonwebtoken | mongoose | node-cron | nodemailer |
+            unidecode | uuid | winston
           </p>
           <p>
             <strong>Frontend:</strong> axios | bootstrap | js-cookie | react | react-bootstrap |
-            react-date-time-picker-popup | react-dom | react-hook-form | react-intersection-observer |
-            react-router-dom | react-toastify | unidecode | uuid | validator
+            react-date-time-picker-popup | react-dom | react-hook-form | react-intersection-observer
+            | react-router-dom | react-toastify | unidecode | uuid | validator
           </p>
         </div>
       </div>
