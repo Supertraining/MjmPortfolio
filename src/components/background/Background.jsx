@@ -1,28 +1,27 @@
 import { useContext, useEffect, useState, lazy, Suspense } from 'react';
 import ThemeContext from '../../context/ThemeContext';
-import './background.css'
+import './background.css';
 
 const BackgroundLight = lazy(() => import('../backGroundLight/BackgroundLight'));
 const BackgroundDark = lazy(() => import('../backgroundDark/BackgroundDark'));
 
 const Background = () => {
-
   const { theme } = useContext(ThemeContext);
-  const [ dark, setDark ] = useState(false)
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
     if (theme === 'darkSide') {
-      setDark(true)
+      setDark(true);
     } else {
-      setDark(false)
+      setDark(false);
     }
-  }, [ theme ])
+  }, [theme]);
 
   return (
-    <Suspense fallback={ <div className='spinner-border text-info spinner'></div> }>
-      { dark ? <BackgroundDark /> : <BackgroundLight /> }
+    <Suspense fallback={<div className='dark-bg'></div>}>
+      {dark ? <BackgroundDark/> : <BackgroundLight/> }
     </Suspense>
   );
-}
+};
 
-export default Background
+export default Background;

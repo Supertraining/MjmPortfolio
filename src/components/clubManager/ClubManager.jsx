@@ -50,8 +50,8 @@ export default function ClubManager() {
         <div
           className={
             theme === 'darkSide'
-              ? 'col-12 col-xl-7 rounded d-flex flex-column'
-              : 'col-12 col-xl-7 rounded border border-dark d-flex flex-column'
+              ? 'col-12 col-xl-7 rounded d-flex flex-column gap-space'
+              : 'col-12 col-xl-7 rounded border border-dark d-flex flex-column gap-space'
           }>
 
           <img
