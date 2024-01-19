@@ -67,7 +67,7 @@ export default function FincaWeb() {
                   ? 'd-flex align-items-center rounded text-decoration-none p-2'
                   : 'd-flex align-items-center rounded text-decoration-none p-2'
               }
-              href='https://dall-e-clone-blog.netlify.app/'
+              href='https://finca-el-boleado.netlify.app/'
               target={ '_blank' }
               rel='noreferrer'>
               <p
