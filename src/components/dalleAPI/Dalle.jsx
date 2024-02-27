@@ -29,14 +29,6 @@ export default function Dalle() {
             }>
             #Dalle clone
           </h2>
-          <h5
-            className={
-              theme === 'darkSide'
-                ? 'text-light p-2 text-center my-1 rounded'
-                : 'p-2 text-center my-1 rounded  fw-bold'
-            }>
-            {language === 'es' ? es.description.description : en.description.description}
-          </h5>
           <p
             className={
               theme === 'darkSide'

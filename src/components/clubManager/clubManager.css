@@ -38,3 +38,7 @@
 .gap-space {
   gap: 5rem;
 }
+
+.functionalities-list-style {
+ list-style: decimal;
+}

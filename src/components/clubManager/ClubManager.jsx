@@ -29,28 +29,96 @@ export default function ClubManager() {
               }>
               #Club Manager
             </h2>
-            <img
+            {/* <img
               className={theme === 'darkSide' ? 'img-underConst-d' : 'img-underConst-l'}
               src='https://res.cloudinary.com/marangadev/image/upload/v1705612164/underConstruction.com_x96ysy.webp'
               alt='Image work in progress'
-            />
+            /> */}
           </div>
-          <h5
-            className={
-              theme === 'darkSide'
-                ? 'text-light p-2 text-center my-1 rounded'
-                : 'p-2 text-center my-1 rounded  fw-bold'
-            }>
-            {language === 'es' ? es.description.description : en.description.description}
-          </h5>
           <p
             className={
               theme === 'darkSide'
                 ? 'text-light p-2 text-center my-1 rounded'
                 : 'p-2 text-center my-1 rounded  fw-bold'
             }>
-            {language === 'es' ? es.description.clubManager : en.description.clubManager}
+            {language === 'es'
+              ? es.description.clubManager.description
+              : en.description.clubManager.description}
           </p>
+          <ul className='functionalities-list-style'>
+            <b>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.user.title
+                : en.description.clubManager.functionalities.user.title}
+            </b>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.user.createAccount
+                : en.description.clubManager.functionalities.user.createAccount}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.user.createReservation
+                : en.description.clubManager.functionalities.user.createReservation}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.user.deleteReservation
+                : en.description.clubManager.functionalities.user.deleteReservation}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.user.viewProfile
+                : en.description.clubManager.functionalities.user.viewProfile}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.user.editProfile
+                : en.description.clubManager.functionalities.user.editProfile}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.user.reservationHistory
+                : en.description.clubManager.functionalities.user.reservationHistory}
+            </li>
+          </ul>
+          <ul className='functionalities-list-style'>
+            <b>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.admin.title
+                : en.description.clubManager.functionalities.admin.title}
+            </b>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.admin.createUser
+                : en.description.clubManager.functionalities.admin.createUser}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.admin.getAllUsers
+                : en.description.clubManager.functionalities.admin.getAllUsers}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.admin.manageReservation
+                : en.description.clubManager.functionalities.admin.manageReservation}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.user.viewProfile
+                : en.description.clubManager.functionalities.user.viewProfile}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.admin.createEvents
+                : en.description.clubManager.functionalities.admin.createEvents}
+            </li>
+            <li>
+              {language === 'es'
+                ? es.description.clubManager.functionalities.admin.activities
+                : en.description.clubManager.functionalities.admin.activities}
+            </li>
+          </ul>
         </div>
 
         <div
