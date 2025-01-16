@@ -6,7 +6,6 @@ import FincaWeb from "../fincaWeb/FincaWeb";
 import EcommerceAPI from "../ecommerceAPI/EcommerceAPI.jsx";
 import "./Main.css";
 import Footer from "../footer/Footer";
-import ProductsAndMessages from "../productsAndMessages/ProductsAndMessages";
 import ClubManager from "../clubManager/ClubManager.jsx";
 import TrelloJsonToCsv from "../trelloJsonToCsv/TrelloJsonToCsv.jsx";
 export default function Main() {
@@ -23,7 +22,6 @@ export default function Main() {
       <TrelloJsonToCsv />
       <ClubManager />
       <EcommerceAPI />
-      <ProductsAndMessages />
       {/* <FincaStore /> */}
       <FincaWeb />
       {/* <Consultora /> */}
