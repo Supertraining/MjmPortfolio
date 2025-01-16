@@ -24,7 +24,6 @@ export default function Main() {
       <EcommerceAPI />
       {/* <FincaStore /> */}
       <FincaWeb />
-      {/* <Consultora /> */}
 
       <div className="col 12 d-flex justify-content-end my-3">
         <a
