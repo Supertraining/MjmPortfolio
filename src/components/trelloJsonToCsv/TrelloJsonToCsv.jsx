@@ -1,15 +1,16 @@
 import { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import "./ProductsAndMessages.css";
+import "./trelloJsonToCsv.css";
 import { LanguageContext } from "../../context/languageContext";
-import Mongo from "../skills/mongo/Mongo.jsx";
+import Ejs from "../skills/ejs/Ejs.jsx";
 import Express from "../skills/express/Express.jsx";
 import Node from "../skills/Node/Node.jsx";
-import Ejs from "../skills/ejs/Ejs.jsx";
+import Typescript from "../skills/typescript/Typescript.jsx";
+import RepoLink from "../repoLink/RepoLink.jsx";
 
-export default function ProductsAndMessages() {
+export default function TrelloJsonToCsv() {
   const { theme } = useContext(ThemeContext);
-  const { es, en, language } = useContext(LanguageContext);
+  const { language, es, en } = useContext(LanguageContext);
 
   return (
     <div
@@ -28,33 +29,16 @@ export default function ProductsAndMessages() {
                 : "p-2 text-center my-1 rounded  fw-bold"
             }
           >
-            #Products handle and chat
+            #Trello Board Json to Csv
           </h2>
           <p
             className={
               theme === "darkSide"
-                ? "text-light p-2 text-center my-0 rounded"
+                ? "text-light p-2 text-center my-1 rounded"
                 : "p-2 text-center my-1 rounded  fw-bold"
             }
           >
-            {language === "es" ? es.description.productsAndMssgs : en.description.productsAndMssgs}
-
-            <a
-              className="text-decoration-none mx-3"
-              href="https://productsandmssgs.onrender.com/api/productos-test"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Mock <i className="bi bi-box-arrow-up-right text-primary "></i>
-            </a>
-            <a
-              className="text-decoration-none mx-3"
-              href="https://productsandmssgs.onrender.com/api/info"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Server_Info <i className="bi bi-box-arrow-up-right text-primary "></i>
-            </a>
+            {language === "es" ? es.description.trelloJsonToCsv : en.description.trelloJsonToCsv}
           </p>
         </div>
 
@@ -66,9 +50,9 @@ export default function ProductsAndMessages() {
           }
         >
           <img
-            src="https://res.cloudinary.com/marangadev/image/upload/v1696626923/portfolio/LoginMssgAndProd_bfenfz.webp"
-            alt="Products_and_messages_API"
-            className="col-12 rounded"
+            src="https://res.cloudinary.com/marangadev/image/upload/v1737037818/portfolio/trelloJsonToCsv_wx4oja.webp"
+            alt="TrelloJsonToCsv"
+            className="col-10 rounded "
           />
 
           <div className="d-flex align-items-center justify-content-center">
@@ -78,7 +62,7 @@ export default function ProductsAndMessages() {
                   ? "d-flex align-items-center rounded text-decoration-none p-2"
                   : "d-flex align-items-center rounded text-decoration-none p-2"
               }
-              href="https://dall-e-clone-blog.netlify.app/"
+              href="https://trello-json-to-csv.onrender.com/"
               target={"_blank"}
               rel="noreferrer"
             >
@@ -86,7 +70,7 @@ export default function ProductsAndMessages() {
                 className={
                   theme === "darkSide"
                     ? "text-decoration-none text-white"
-                    : "text-decoration-none text-dark"
+                    : "text-decoration-none text-dark m-auto"
                 }
               >
                 {language === "es" ? es.links.app : en.links.app}
@@ -99,28 +83,32 @@ export default function ProductsAndMessages() {
                 }
               ></i>
             </a>
+            <RepoLink
+              theme={theme}
+              href="https://github.com/Supertraining/Trello-Json-To-Csv"
+            />
           </div>
         </div>
       </div>
 
-      <div>
+      <div className="col-12">
         <div className="p-3 col-12 rounded d-flex justify-content-evenly align-items-center">
           <Node theme={theme} />
           <Express theme={theme} />
-          <Mongo theme={theme} />
           <Ejs theme={theme} />
+          <Typescript theme={theme} />
           <div className="col-2">
             {theme === "darkSide" ? (
               <img
-                className="img-size"
-                src="https://res.cloudinary.com/marangadev/image/upload/v1696600625/portfolio/vaderToy_uojbtf_xzpzrd.webp"
-                alt="LegoVader"
+                className="img-fluid"
+                src="https://res.cloudinary.com/marangadev/image/upload/v1696600596/portfolio/blackSoldier_so4ido_puefvs.webp"
+                alt="blackSoldier"
               />
             ) : (
               <img
-                className="img-size ShadowImg"
-                src="https://res.cloudinary.com/marangadev/image/upload/v1696600616/portfolio/Lego-Luke_wkyka2_dyunqs.webp"
-                alt="LegoLuke"
+                className="img-fluid fincaStore_ShadowImg"
+                src="https://res.cloudinary.com/marangadev/image/upload/v1696600617/portfolio/lightSoldier_g0kxp7_ham8ch.webp"
+                alt="lightSoldier"
               />
             )}
           </div>
@@ -137,10 +125,7 @@ export default function ProductsAndMessages() {
             {language === "es" ? es.dependencies.dep : en.dependencies.dep}
           </h6>
           <p>
-            <strong>backend:</strong> axios | bcrypt | compression | connect-mongo | cors | dotenv |
-            ejs | express | express-session | knex | minimist | mongoose | mysql | normalizr |
-            passport | passport-local | socket.io | util | winston | faker-js/faker | autocannon |
-            chai | mocha
+            <strong>Backend:</strong> Express | EJS | Cors | Helmet | Multer
           </p>
         </div>
       </div>
