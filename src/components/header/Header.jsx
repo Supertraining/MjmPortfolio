@@ -4,7 +4,7 @@ import ThemeContext from "../../context/ThemeContext";
 import ContactMe from "../contactMe/ContactMe";
 import { useState } from "react";
 import { LanguageContext } from "../../context/languageContext";
-import Node from "../skills/Node/Node";
+import Node from "../skills/node/Node";
 import Express from "../skills/express/Express";
 import ReactSkill from "../skills/react/ReactSkill";
 import Next from "../skills/next/Next";
