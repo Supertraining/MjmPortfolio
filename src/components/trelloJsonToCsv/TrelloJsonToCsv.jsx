@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import "./trelloJsonToCsv.css";
+import "./trello.css";
 import { LanguageContext } from "../../context/languageContext";
 import Ejs from "../skills/ejs/Ejs.jsx";
 import Express from "../skills/express/Express.jsx";
