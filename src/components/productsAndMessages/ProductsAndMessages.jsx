@@ -4,7 +4,7 @@ import "./ProductsAndMessages.css";
 import { LanguageContext } from "../../context/languageContext";
 import Mongo from "../skills/mongo/Mongo.jsx";
 import Express from "../skills/express/Express.jsx";
-import Node from "../skills/Node/Node.jsx";
+import Node from "../skills/node/Node.jsx";
 import Ejs from "../skills/ejs/Ejs.jsx";
 
 export default function ProductsAndMessages() {

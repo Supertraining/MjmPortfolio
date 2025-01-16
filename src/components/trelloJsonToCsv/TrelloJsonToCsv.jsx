@@ -4,7 +4,7 @@ import "./trelloJsonToCsv.css";
 import { LanguageContext } from "../../context/languageContext";
 import Ejs from "../skills/ejs/Ejs.jsx";
 import Express from "../skills/express/Express.jsx";
-import Node from "../skills/Node/Node.jsx";
+import Node from "../skills/node/Node.jsx";
 import Typescript from "../skills/typescript/Typescript.jsx";
 import RepoLink from "../repoLink/RepoLink.jsx";
 

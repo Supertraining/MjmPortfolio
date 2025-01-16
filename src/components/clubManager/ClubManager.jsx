@@ -7,7 +7,7 @@ import RepoLink from "../repoLink/RepoLink.jsx";
 import Mongo from "../skills/mongo/Mongo.jsx";
 import Express from "../skills/express/Express.jsx";
 import ReactSkill from "../skills/react/ReactSkill.jsx";
-import Node from "../skills/Node/Node.jsx";
+import Node from "../skills/node/Node.jsx";
 export default function ClubManager() {
   const { theme } = useContext(ThemeContext);
   const { language, es, en } = useContext(LanguageContext);
@@ -216,7 +216,7 @@ export default function ClubManager() {
           <Express theme={theme} />
           <ReactSkill theme={theme} />
           <Node theme={theme} />
-          
+
           <div
             className="col-2"
             ref={ref}

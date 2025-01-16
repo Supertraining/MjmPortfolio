@@ -5,7 +5,7 @@ import { LanguageContext } from "../../context/languageContext";
 import { useInView } from "react-intersection-observer";
 import RepoLink from "../repoLink/RepoLink.jsx";
 import Mongo from "../skills/mongo/Mongo.jsx";
-import Node from "../skills/Node/Node.jsx";
+import Node from "../skills/node/Node.jsx";
 import Express from "../skills/express/Express.jsx";
 export default function EcommerceAPI() {
   const { theme } = useContext(ThemeContext);
