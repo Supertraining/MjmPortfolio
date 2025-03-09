@@ -2,15 +2,15 @@
   font-family: 'Roboto Mono', monospace;
 }
 
-.aboutMeTitle {
+.aboutMe_title {
   font-size: 3.5vw;
 }
 
-.aboutMeBorder {
+.aboutMe_border {
   border: 2px solid black;
 }
 
-.aboutMe-description {
+.aboutMe_description {
   font-size: clamp(1rem, 2vw, 2rem);
 }
 

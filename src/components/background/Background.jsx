@@ -1,16 +1,15 @@
-import { useContext, useEffect, useState, lazy, Suspense } from 'react';
-import ThemeContext from '../../context/ThemeContext';
-import './background.css';
+import { useContext, useEffect, useState, lazy, Suspense } from "react";
+import ThemeContext from "../../context/ThemeContext";
 
-// const BackgroundLight = lazy(() => import('../backGroundLight/BackgroundLight'));
-const BackgroundDark = lazy(() => import('../backgroundDark/BackgroundDark'));
+const BackgroundLight = lazy(() => import("../backGroundLight/BackgroundLight"));
+const BackgroundDark = lazy(() => import("../backgroundDark/BackgroundDark"));
 
 const Background = () => {
   const { theme } = useContext(ThemeContext);
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    if (theme === 'darkSide') {
+    if (theme === "darkSide") {
       setDark(true);
     } else {
       setDark(false);
@@ -18,8 +17,8 @@ const Background = () => {
   }, [theme]);
 
   return (
-    <Suspense fallback={<div className='dark-bg'></div>}>
-      {dark && <BackgroundDark/> }
+    <Suspense fallback={<div className="dark-bg"></div>}>
+      {dark ? <BackgroundDark /> : <BackgroundLight />}
     </Suspense>
   );
 };

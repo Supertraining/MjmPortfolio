@@ -10,6 +10,9 @@ const en = {
     name: "Maranga Matías",
     profession: "Full Stack Developer",
   },
+  contactTextArea: "Start typing and receive an AI text suggestion",
+  textAreaPrompt:
+    "Suggest a single message to write in a portfolio contact form to get in touch with Matías, the message should not have more than 140 characters, starting with: Hello Matías and ending with these three lines that are not within the 140 characters that say greetings!, Email: [yourEmail] and Phone [yourPhone] (optional). If you can add emojis to the message",
   contactBtn: "Contact me",
   formSubmit: "Send",
   formClose: "Close",
@@ -78,6 +81,9 @@ const es = {
     name: "Maranga Matías",
     profession: "Desarrollador Full Stack",
   },
+  contactTextArea: "Comienza a escribir y recibe un texto sugerido por IA",
+  textAreaPrompt:
+    "Sugiere un único mensaje para escribir en un formulario de contacto de un portfolio para ponerse en contacto con Matías, el mensaje no debe tener mas de 140 caracteres, comenzando con: Hola Matías y finalizando con estas tres lineas que no estan dentro de los 140 caracteres que digan saludos!, Email: [tuEmail] y Teléfono[tuTeléfono](opcional). Si puedes agrega emojis al mensaje",
   contactBtn: "Contactame",
   formSubmit: "Enviar",
   formClose: "Cerrar",
@@ -133,7 +139,8 @@ const es = {
       "Esta API RESTful incluye un front sencillo realizado en el motor de plantillas EJS y Bootstrap que permite probar algunas de sus funcionalidades como crear un usuario, agregar, consultar, actualizar y eliminar productos a la base de datos MySQL o dejar un mensaje en la sala de chat, cuyo historial se almacenara en MongoDB. Esta API utiliza WebSockets para la comunicación entre el cliente y el servidor. También, permite realizar estas acciones mediante peticiones HTTP y ademas algunos extras, como acceder a un mock muy sencillo realizado con Faker o a información del servidor.",
     fincaStore:
       "Este proyecto incluyo realizar el frontend con React y utilizar Firebase como base de datos para almacenar los productos y Firestore para almacenar las imágenes.",
-    trelloJsonToCsv: "¡Descarga tu tablero en Trello en formato Json y conviertelo en CSV para poder importarlo en Excel o Google Sheets!",
+    trelloJsonToCsv:
+      "¡Descarga tu tablero en Trello en formato Json y conviertelo en CSV para poder importarlo en Excel o Google Sheets!",
     fincaWeb:
       "Sitio web estático, más abajo podrás observar las tecnologías utilizadas para desarrollarlo.",
     consultora:

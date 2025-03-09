@@ -22,7 +22,7 @@ export default function FincaWeb() {
       className={
         theme === "darkSide"
           ? "my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
-          : "bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
+          : " my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
       }
     >
       <div className="col-12 d-flex flex-column flex-xl-row justify-content-evenly">

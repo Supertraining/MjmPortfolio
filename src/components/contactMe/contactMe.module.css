@@ -1,0 +1,159 @@
+.form_ContactMe {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  font-size: 1.6vw;
+  background-color: rgb(228 228 228);
+}
+.form_ContactMe input,
+textarea {
+  margin: 1px;
+  background-color: transparent;
+  border: 1px solid;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 576px) {
+  .form_ContactMe {
+    font-size: 1.4vw;
+  }
+  .geminiSuggestionText {
+    font-size: 1.4vw;
+  }
+}
+@media (min-width: 992px) {
+  .form_ContactMe {
+    font-size: 1.3vw;
+  }
+  .geminiSuggestionText {
+    font-size: 1.3vw;
+  }
+}
+@media (min-width: 1200px) {
+  .form_ContactMe {
+    font-size: 1.1vw;
+    font-family: "Roboto Mono", monospace;
+  }
+  .geminiSuggestionText {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.1vw;
+    color: #202124;
+    line-height: 1.6;
+  }
+}
+.form_HideForm {
+  padding: 1px 6px;
+  color: black;
+}
+
+.form_Div_Img {
+  max-width: 16px;
+  max-height: 16px;
+}
+.Linkedin {
+  width: fit-content;
+}
+.Linkedin:hover {
+  color: #0a66c2 !important;
+}
+.Linkedin:hover img {
+  background-color: #0a66c263;
+}
+.whatsapp {
+  width: fit-content;
+}
+.whatsapp:hover {
+  color: #46c756 !important;
+}
+.whatsapp:hover img {
+  background-color: #46c75563;
+  border-radius: 200px 200px 200px 0px;
+}
+
+.geminiSuggestionContainer {
+  border: 1px solid #e0e0e0;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-family: "Roboto", sans-serif;
+  animation-name: geminiSuggestionFadeIn;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes geminiSuggestionFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.geminiSuggestionTitle {
+  display: flex;
+  align-items: center;
+  font-weight: bold; /* Semi-bold */
+  color: #3c4043; /* Gris oscuro para el título */
+  margin-bottom: 10px;
+}
+
+.geminiSuggestionTitle img {
+  width: 24px; /* Ajusta el tamaño del logo según necesites */
+  height: 24px;
+  margin-right: 8px;
+}
+
+.geminiSuggestionButtons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+/* .geminiSuggestionButton {
+  background-color: #1a73e8; 
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 8px; 
+  transition: background-color 0.2s ease-in-out; 
+} */
+
+/* .geminiSuggestionButton:hover {
+  background-color: #0d47a1; 
+} */
+
+/* .geminiSuggestionButton.clear {
+  background-color: #f8f9fa; 
+  color: #3c4043;
+  border: 1px solid #e0e0e0;
+} */
+
+/* .geminiSuggestionButton.clear:hover {
+  background-color: #e8eaed; 
+} */
+
+.geminiLogoIcon {
+  width: 24px; 
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle; 
+}

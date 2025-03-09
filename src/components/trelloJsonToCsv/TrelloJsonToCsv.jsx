@@ -17,7 +17,7 @@ export default function TrelloJsonToCsv() {
       className={
         theme === "darkSide"
           ? "my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
-          : "bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
+          : " my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
       }
     >
       <div className="col-12 d-flex flex-column flex-xl-row justify-content-evenly">
@@ -46,13 +46,13 @@ export default function TrelloJsonToCsv() {
           className={
             theme === "darkSide"
               ? "col-12 col-xl-7 rounded d-flex flex-column"
-              : "col-12 col-xl-7 rounded border border-dark d-flex flex-column"
+              : "col-12 col-xl-7 rounded d-flex flex-column border border-dark "
           }
         >
           <img
             src="https://res.cloudinary.com/marangadev/image/upload/v1737037818/portfolio/trelloJsonToCsv_wx4oja.webp"
             alt="TrelloJsonToCsv"
-            className="col-10 rounded "
+            className="col-12 rounded "
           />
 
           <div className="d-flex align-items-center justify-content-center">

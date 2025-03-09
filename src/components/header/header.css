@@ -93,9 +93,9 @@ header small {
 	letter-spacing: 1px;
 	font-size: 3.5vw;
 }
-.header_LinkStyle {
-	background-color: #cd8694;
-	border: none;
+.header_LinkStyle_light {
+	background-color: transparent;
+	border: 1px solid;
 	margin-left: 5px;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 2vw;
@@ -103,8 +103,21 @@ header small {
 	color: black;
 	padding: 10px;
 }
-.header_LinkStyle:hover {
+.header_LinkStyle_dark {
+	background-color: transparent;
+	border: 1px solid;
+	margin-left: 5px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2vw;
+	text-decoration: none;
 	color: white;
+	padding: 10px;
+}
+.header_LinkStyle_light:hover {
+	color: white;
+}
+.header_LinkStyle_dark:hover {
+	color: black;
 }
 @media (min-width: 882px) {
 	header p,

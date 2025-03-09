@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import { useInView } from "react-intersection-observer";
 import ThemeContext from "../../context/ThemeContext";
-import "./clubManager.css";
 import { LanguageContext } from "../../context/languageContext";
 import RepoLink from "../repoLink/RepoLink.jsx";
 import Mongo from "../skills/mongo/Mongo.jsx";
 import Express from "../skills/express/Express.jsx";
 import ReactSkill from "../skills/react/ReactSkill.jsx";
 import Node from "../skills/node/Node.jsx";
+import styles from "./clubManager.module.css";
+
 export default function ClubManager() {
   const { theme } = useContext(ThemeContext);
   const { language, es, en } = useContext(LanguageContext);
@@ -21,7 +22,7 @@ export default function ClubManager() {
       className={
         theme === "darkSide"
           ? "my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
-          : "bg-light my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
+          : " my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
       }
     >
       <div className="col-12 d-flex flex-column flex-xl-row justify-content-evenly">
@@ -37,7 +38,7 @@ export default function ClubManager() {
               #Club Manager
             </h2>
             {/* <img
-              className={theme === 'darkSide' ? 'img-underConst-d' : 'img-underConst-l'}
+              className={theme === 'darkSide' ? `${styles.img-underConst-d}` : `${styles.img-underConst-l}`}
               src='https://res.cloudinary.com/marangadev/image/upload/v1705612164/underConstruction.com_x96ysy.webp'
               alt='Image work in progress'
             /> */}
@@ -53,7 +54,7 @@ export default function ClubManager() {
               ? es.description.clubManager.description
               : en.description.clubManager.description}
           </p>
-          <ul className="functionalities-list-style">
+          <ul className={`${styles.functionalities_list_style}`}>
             <b>
               {language === "es"
                 ? es.description.clubManager.functionalities.user.title
@@ -90,7 +91,7 @@ export default function ClubManager() {
                 : en.description.clubManager.functionalities.user.reservationHistory}
             </li>
           </ul>
-          <ul className="functionalities-list-style">
+          <ul className={`${styles.functionalities_list_style}`}>
             <b>
               {language === "es"
                 ? es.description.clubManager.functionalities.admin.title
@@ -132,8 +133,8 @@ export default function ClubManager() {
         <div
           className={
             theme === "darkSide"
-              ? "col-12 col-xl-7 rounded d-flex flex-column gap-space"
-              : "col-12 col-xl-7 rounded border border-dark d-flex flex-column gap-space"
+              ? `col-12 col-xl-7 rounded d-flex flex-column ${styles.gap_space}`
+              : `col-12 col-xl-7 rounded border border-dark d-flex flex-column ${styles.gap_space}`
           }
         >
           <img
@@ -142,7 +143,9 @@ export default function ClubManager() {
             className="col-12 rounded"
           />
 
-          <div className="d-flex flex-column flex-lg-row p-1 align-items-center justify-content-center  gap-1 links-font-size">
+          <div
+            className={`d-flex flex-column flex-lg-row p-1 align-items-center justify-content-center  gap-1 ${styles.links_font_size}`}
+          >
             <a
               className={
                 theme === "darkSide"
@@ -229,7 +232,7 @@ export default function ClubManager() {
               />
             ) : (
               <img
-                className={inView ? "dalleShipTakeOff img-size" : "img-size"}
+                className={inView ? `${styles.dalleShipTakeOff} img-size` : "img-size"}
                 src="https://res.cloudinary.com/marangadev/image/upload/v1696600615/portfolio/Imperial_Star_Destroyer_t3jovq_zl17x8.webp"
                 alt="imperialStar"
               />

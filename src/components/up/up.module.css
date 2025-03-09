@@ -1,0 +1,83 @@
+
+
+.arrow {
+  font-weight: bold;
+  font-size: clamp(2rem, 1vw, 2rem);
+  color: black;
+}
+.arrow_light_one,
+.arrow_light_two,
+.arrow_light_three,
+.arrow_light_four {
+  animation-name: arrowTilt;
+  animation-iteration-count: infinite;
+}
+.arrow_light_one {
+  animation-duration: 1.5s;
+}
+.arrow_light_two {
+  animation-duration: 2s;
+}
+.arrow_light_three {
+  animation-duration: 3s;
+}
+.arrow_light_four {
+  animation-duration: 4s;
+}
+
+@keyframes arrowTilt {
+  0% {
+    color: black;
+  }
+  100% {
+    color: yellow;
+  }
+}
+.arrow_dark_one,
+.arrow_dark_two,
+.arrow_dark_three,
+.arrow_dark_four {
+  animation-name: arrowTiltDark;
+  animation-iteration-count: infinite;
+}
+.arrow_dark_one {
+  animation-duration: 1.5s;
+}
+.arrow_dark_two {
+  animation-duration: 2s;
+}
+.arrow_dark_three {
+  animation-duration: 3s;
+}
+.arrow_dark_four {
+  animation-duration: 4s;
+}
+
+@keyframes arrowTiltDark {
+  0% {
+    color: black;
+  }
+  100% {
+    color: rgb(3, 253, 3);
+  }
+}
+.arrow_text_dark {
+  color: rgb(3, 253, 3);
+}
+.arrow_text_light {
+  color: black;
+}
+
+.arrows_shadow {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.skillsLogoShadow {
+  filter: drop-shadow(0px 4px 6px white);
+}
+.skillsDarkLogoShadow {
+  filter: drop-shadow(0px 4px 6px black);
+}
+div div span.fw-bold {
+  font-size: 0.8rem !important;
+}

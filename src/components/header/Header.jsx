@@ -131,7 +131,7 @@ export default function Header() {
         </div>
         <br />
         <button
-          className="header_LinkStyle my-2 rounded"
+          className={`my-2 rounded ${theme === "darkSide" ? "header_LinkStyle_dark" : "header_LinkStyle_light"}`}
           onClick={() => {
             setRenderForm(true);
           }}
@@ -152,7 +152,7 @@ export default function Header() {
       </div>
       <div
         className={
-          renderForm === true ? "position-absolute col-7 col-sm-6 col-md-5 col-xl-5" : "d-none"
+          renderForm === true ? "position-absolute col-10 col-sm-8 col-md-5 col-xl-5" : "d-none"
         }
       >
         <ContactMe setRenderForm={setRenderForm} />
