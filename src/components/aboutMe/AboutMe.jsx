@@ -19,7 +19,7 @@ export default function AboutMe() {
         className={
           theme === "darkSide"
             ? `${styles.aboutMe_description} border border-2 border-white rounded`
-            : ` ${styles.aboutMe_description} ${styles.aboutMe_border} rounded`
+            : `${styles.aboutMe_description} ${styles.aboutMe_border} rounded`
         }
       >
         {language === "es" ? es.aboutMe.text : en.aboutMe.text}{" "}
