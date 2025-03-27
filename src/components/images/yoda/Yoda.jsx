@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./Yoda.module.css";
+import styles from "./yoda.module.css";
 export default function Yoda({ theme }) {
   return (
     <img
