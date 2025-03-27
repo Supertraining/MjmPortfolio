@@ -1,0 +1,13 @@
+.Linkedin {
+  width: fit-content;
+}
+
+.Linkedin:hover img {
+  background-color: #0a66c263;
+}
+.img {
+    width: 100%;
+    min-height: 1vw;
+    min-width: 2vw;
+    max-width: 7vw;
+}

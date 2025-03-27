@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import "./trello.css";
+import styles from "./trelloJsonToCsv.module.css";
 import { LanguageContext } from "../../context/languageContext";
 import Ejs from "../skills/ejs/Ejs.jsx";
 import Express from "../skills/express/Express.jsx";
@@ -16,8 +16,8 @@ export default function TrelloJsonToCsv() {
     <div
       className={
         theme === "darkSide"
-          ? "my-1 border border-light text-white col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
-          : " my-1 border border-dark col-12 rounded align-items-center d-flex flex-column p-3 gap-2"
+          ? "my-1 border border-light text-white  rounded align-items-center d-flex flex-column p-3 gap-2"
+          : " my-1 border border-dark col-12 rounded  align-items-center d-flex flex-column p-3 gap-2"
       }
     >
       <div className="col-12 d-flex flex-column flex-xl-row justify-content-evenly">
@@ -97,6 +97,7 @@ export default function TrelloJsonToCsv() {
           <Express theme={theme} />
           <Ejs theme={theme} />
           <Typescript theme={theme} />
+        </div>
           <div className="col-2">
             {theme === "darkSide" ? (
               <img
@@ -106,13 +107,12 @@ export default function TrelloJsonToCsv() {
               />
             ) : (
               <img
-                className="img-fluid fincaStore_ShadowImg"
+                className={`img-fluid ${styles.fincaStore_ShadowImg}`}
                 src="https://res.cloudinary.com/marangadev/image/upload/v1696600617/portfolio/lightSoldier_g0kxp7_ham8ch.webp"
                 alt="lightSoldier"
               />
             )}
           </div>
-        </div>
 
         <div
           className={
@@ -121,9 +121,9 @@ export default function TrelloJsonToCsv() {
               : "text-dark p-2 text-center my-1 rounded  fw-bold"
           }
         >
-          <h6 className="text-center col-12 fw-bold">
+          <p className="text-center col-12 fw-bold">
             {language === "es" ? es.dependencies.dep : en.dependencies.dep}
-          </h6>
+          </p>
           <p>
             <strong>Backend:</strong> Express | EJS | Cors | Helmet | Multer
           </p>

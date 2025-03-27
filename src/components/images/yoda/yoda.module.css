@@ -1,0 +1,26 @@
+.yodaShadow {
+  animation-name: blackened;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes blackened {
+  from {
+    filter: brightness(100%);
+  }
+  to {
+    filter: brightness(0%);
+  }
+}
+.yodaLight {
+  animation-name: lightened;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes lightened {
+  from {
+    filter: brightness(0%);
+  }
+  to {
+    filter: brightness(100%);
+  }
+}

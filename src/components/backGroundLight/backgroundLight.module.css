@@ -1,4 +1,4 @@
-#bg-video {
+.bg_video {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -6,17 +6,18 @@
   top: 0;
   left: 0;
   z-index: -1;
-  animation-name: darkness;
+  animation-name: lightness;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in; 
   background-color: black;
 }
-@keyframes darkness {
-  0% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+@keyframes lightness {
+0% {
+  opacity: 0;
 }
+100%{
+  opacity: 1;
+}
+}
+

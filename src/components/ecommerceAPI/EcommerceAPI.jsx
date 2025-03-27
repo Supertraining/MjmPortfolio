@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import "./ecommerceAPI.css";
+import styles from "./ecommerceAPI.module.css"
 import { LanguageContext } from "../../context/languageContext";
 import { useInView } from "react-intersection-observer";
 import RepoLink from "../repoLink/RepoLink.jsx";
@@ -100,24 +100,24 @@ export default function EcommerceAPI() {
           <Mongo theme={theme} />
           <Node theme={theme} />
           <Express theme={theme} />
-          <div
-            className="col-2"
-            ref={ref}
-          >
-            {theme === "darkSide" ? (
-              <img
-                className="img-size"
-                src="https://res.cloudinary.com/marangadev/image/upload/v1696600623/portfolio/Tie_Defender_v0kguq_r0c4se.webp"
-                alt="tieDefender"
-              />
-            ) : (
-              <img
-                className={inView ? "img-size falconTakeOff" : "img-size"}
-                src="https://res.cloudinary.com/marangadev/image/upload/v1696600618/portfolio/Millenium_Falcon_cwqypk_g1a5az.webp"
-                alt="Falcon"
-              />
-            )}
-          </div>
+        </div>
+        <div
+          className={`col-5 ${inView ? `${styles.falconTakeOff}` : ""}`}
+          ref={ref}
+        >
+          {theme === "darkSide" ? (
+            <img
+              className="img-fluid"
+              src="https://res.cloudinary.com/marangadev/image/upload/v1696600623/portfolio/Tie_Defender_v0kguq_r0c4se.webp"
+              alt="tieDefender"
+            />
+          ) : (
+            <img
+              className="img-fluid"
+              src="https://res.cloudinary.com/marangadev/image/upload/v1696600618/portfolio/Millenium_Falcon_cwqypk_g1a5az.webp"
+              alt="Falcon"
+            />
+          )}
         </div>
 
         <div
@@ -127,9 +127,9 @@ export default function EcommerceAPI() {
               : "text-dark p-2 text-center my-1 rounded  fw-bold"
           }
         >
-          <h6 className="text-center col-12 fw-bold">
+          <p className="text-center col-12 fw-bold">
             {language === "es" ? es.dependencies.dep : en.dependencies.dep}
-          </h6>
+          </p>
           <p>
             <strong>backend:</strong> bcrypt | connect-mongo | dotenv | ejs | express |
             express-fileupload | express-session | mongoose | nodemailer | nodemon | jsonwebtoken |

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useInView } from "react-intersection-observer";
-import "./fincaWeb.css";
+import styles from "./FincaWeb.module.css";
 import ThemeContext from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/languageContext";
 import Html from "../skills/html/Html.jsx";
@@ -99,8 +99,9 @@ export default function FincaWeb() {
         <Scss theme={theme} />
         <Bootstrap theme={theme} />
 
+      </div>
         <div
-          className="col-3 col-lg-2"
+          className={`col-5 col-lg-2 ${inView && theme === "lightSide" ? `${styles.fincaWebTakeOff}` : ""}`}
           ref={ref}
         >
           {theme === "darkSide" ? (
@@ -111,13 +112,12 @@ export default function FincaWeb() {
             />
           ) : (
             <img
-              className={inView ? "img-fluid fincaWebTakeOff" : "img-fluid"}
+              className={inView ? "img-fluid " : "img-fluid"}
               src="https://res.cloudinary.com/marangadev/image/upload/v1696600628/portfolio/X-Wing_-_02_35411_ifnjwx_zksdvb.webp"
               alt="xWing"
             />
           )}
         </div>
-      </div>
     </div>
   );
 }

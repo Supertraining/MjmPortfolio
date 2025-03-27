@@ -10,19 +10,27 @@ const en = {
     name: "Maranga Matías",
     profession: "Full Stack Developer",
   },
+  inputPlaceholder: "Write your name",
   contactTextArea: "Start typing and receive an AI text suggestion",
-  textAreaPrompt:
-    "Suggest a single message to write in a portfolio contact form to get in touch with Matías, the message should not have more than 140 characters, starting with: Hello Matías and ending with these three lines that are not within the 140 characters that say greetings!, Email: [yourEmail] and Phone [yourPhone] (optional). If you can add emojis to the message",
+  use: "Use",
+  dismiss: "Dismiss",
+  prompt: {
+    textArea:
+      "Suggest a single message to write in a portfolio contact form to get in touch with Matías, the message should not have more than 140 characters, starting with: Hello Matías and ending with these three lines that are not within the 140 characters that say greetings!, Email: [yourEmail] and Phone [yourPhone] (optional). If you can add emojis to the message",
+    greet: (name) => `say a nice greet short (max 10 words) to ${name}, and add emojis please`,
+    forgotEnterName: `say one friendly short (max 10 words) message letting the user know that user didn't enter their name, use emojis please.`,
+    suggestYourMssg: (aiSuggestion) =>
+      `you have just suggested this text: "${aiSuggestion}", say one short (max 10 words) friendly message suggesting the user to use your suggestion, dont refer to it as "that text" for example, as its your text, use emojis please`,
+    congratulateUsingSuggestion: (name) =>
+      `congratulate ${name} for using your suggestion (max 10 words), and add emojis please`,
+    msgSent:
+      "say one short (max 10 words) message thanking the user for sending the message and goodbye, use emojis please",
+  },
   contactBtn: "Contact me",
   formSubmit: "Send",
   formClose: "Close",
   aboutMe: {
-    text: "Here you can find some projects in which I have worked, below each one you can see the technologies used to develop them. The backend deploys where made on render.com free service so they may take a moment to load. Feel free to contact me if you have any questions or comments.",
-  },
-  r2D2: {
-    hello: "¡¡Hello",
-    msgThx: "thx for texting me!!",
-    msgSent: "¡¡Msg sent! thank you!!",
+    text: "Full Stack Developer with experience in JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MySQL, and MongoDB. I have worked on fintech applications and freelance projects, implementing secure APIs, efficient databases, and scalable applications. I am looking for a team where I can continue to grow and contribute my knowledge.",
   },
   links: {
     app: "Try the App.",
@@ -81,19 +89,29 @@ const es = {
     name: "Maranga Matías",
     profession: "Desarrollador Full Stack",
   },
+  inputPlaceholder: "Escribe tu nombre",
   contactTextArea: "Comienza a escribir y recibe un texto sugerido por IA",
-  textAreaPrompt:
-    "Sugiere un único mensaje para escribir en un formulario de contacto de un portfolio para ponerse en contacto con Matías, el mensaje no debe tener mas de 140 caracteres, comenzando con: Hola Matías y finalizando con estas tres lineas que no estan dentro de los 140 caracteres que digan saludos!, Email: [tuEmail] y Teléfono[tuTeléfono](opcional). Si puedes agrega emojis al mensaje",
+  use: "Usar",
+  dismiss: "Descartar",
+  prompt: {
+    textArea:
+      "Sugiere un único mensaje para escribir en un formulario de contacto de un portfolio para ponerse en contacto con Matías, el mensaje no debe tener mas de 140 caracteres, comenzando con: Hola Matías y finalizando con estas tres lineas que no estan dentro de los 140 caracteres que digan saludos!, Email: [tuEmail] y Teléfono[tuTeléfono](opcional). Si puedes agrega emojis al mensaje",
+    greet: (name) =>
+      `Dí un lindo corto (max 10 palabras) mensaje de bienvenida a ${name} y agrega emojis por favor`,
+    forgotEnterName:
+      "Dí un mensaje amistoso corto (max 10 palabras) diciendo que el usuario no ingreso su nombre, usa emojis por favor.",
+    suggestYourMssg: (aiSuggestion) =>
+      `acabas de sugerir este texto: "${aiSuggestion}", di un mensaje corto (máximo 10 palabras) sugiriendo amablemente al usuario que use tu sugerencia, no te refieras a él como "ese texto", por ejemplo, ya que es tu texto, usa emojis por favor`,
+    congratulateUsingSuggestion: (name) =>
+      `festeja (max 10 palabras) que ${name} uso tu sugerencia, usa emojis por favor`,
+    msgSent:
+      "Dí un mensaje corto (max 10 palabras) agradeciendo al usuario por enviar el mensaje y despidete, usa emojis por favor",
+  },
   contactBtn: "Contactame",
   formSubmit: "Enviar",
   formClose: "Cerrar",
   aboutMe: {
-    text: "Aquí podrás encontrar algunos proyectos en los que he trabajado, debajo de cada uno de ellos se pueden observar las tecnologías utilizadas para desarrollarlos. Los deploys de backend fueron realizados en el servicio gratuito de render.com por lo que pueden tomar un momento para cargar. Siéntete libre de contactarme si tienes alguna pregunta o comentario.",
-  },
-  r2D2: {
-    hello: "¡¡Hola",
-    msgThx: "gracias por escribirme!!",
-    msgSent: "¡¡Msj enviado!! Gracias!!",
+    text: "Desarrollador Full Stack con experiencia en JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MySQL y MongoDB. He trabajado en aplicaciones fintech y proyectos freelance, implementando APIs seguras, bases de datos eficientes y aplicaciones escalables. Busco un equipo donde pueda seguir creciendo y aportar mis conocimientos.",
   },
   links: {
     app: "Probar la App.",

@@ -3,16 +3,26 @@ const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: import.meta.env.VITE_GEMINI_MODEL });
 import { useState } from "react";
 
-export default function useAI({ prompt }) {
-  const [geminiSuggestion, setGeminiSuggestion] = useState("");
+export default function useAI() {
+  const [aiSuggestion, setAiSuggestion] = useState("");
+  const [aiStreamSuggestion, setAiStreamSuggestion] = useState("");
   const [loadingSuggestion, setLoadingSuggestion] = useState(false);
-  const getGeminiSuggestion = async (currentText) => {
-    if (!currentText) {
-      setGeminiSuggestion("");
-      return;
-    } else if (currentText.length <= 4 || currentText.length > 5 || geminiSuggestion.length > 0) {
-      return;
+
+  const getAiFormSuggestion = async (prompt) => {
+    
+    setLoadingSuggestion(true);
+
+    try {
+      getAiSuggestion(prompt);
+    } catch (error) {
+      console.error("Error al obtener sugerencia de AI:", error);
+      setAiSuggestion("Error al obtener sugerencia.");
+    } finally {
+      setLoadingSuggestion(false);
     }
+  };
+
+  const getAiSuggestion = async (prompt) => {
     setLoadingSuggestion(true);
 
     try {
@@ -32,14 +42,43 @@ export default function useAI({ prompt }) {
         },
       });
       const responseText = result.response.text();
-
-      setGeminiSuggestion(responseText);
+      setAiSuggestion(responseText);
     } catch (error) {
-      console.error("Error al obtener sugerencia de Gemini:", error);
-      setGeminiSuggestion("Error al obtener sugerencia.");
+      console.error("Error al obtener sugerencia de AI:", error);
+      setAiSuggestion("Error al obtener sugerencia.");
     } finally {
       setLoadingSuggestion(false);
     }
   };
-  return { geminiSuggestion, setGeminiSuggestion, loadingSuggestion, getGeminiSuggestion };
+
+  const getAiStreamSuggestion = async (prompt) => {
+    setLoadingSuggestion(true);
+
+    try {
+      const result = await model.generateContentStream(prompt);
+      let chunkText = "";
+      for await (const chunk of result.stream) {
+        if(chunk.text()){
+          chunkText += chunk.text();
+          setAiStreamSuggestion(chunkText);
+        }
+      }
+    } catch (error) {
+      console.error("Error al obtener sugerencia de AI:", error);
+      setAiStreamSuggestion("Error al obtener sugerencia.");
+    } finally {
+      setLoadingSuggestion(false);
+    }
+  };
+
+  return {
+    aiSuggestion,
+    setAiSuggestion,
+    aiStreamSuggestion,
+    setAiStreamSuggestion,
+    loadingSuggestion,
+    getAiSuggestion,
+    getAiStreamSuggestion,
+    getAiFormSuggestion,
+  };
 }

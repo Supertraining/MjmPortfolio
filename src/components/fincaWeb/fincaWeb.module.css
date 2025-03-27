@@ -1,0 +1,20 @@
+.fincaWebTakeOff {
+  animation-name: xWingtakeOff;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes xWingtakeOff {
+  0% {
+    filter: drop-shadow(11px 22px 0px #212529);
+    transform: translateY(0px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -50, -100, 0, 1.1);
+  }
+  50% {
+    filter: drop-shadow(11px 52px 10px #212529);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -50, 100, 0, 0.8);
+  }
+  100% {
+    filter: drop-shadow(11px 32px 1px #21252967);
+    transform: translate(-50px, -50px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 200, 0, 1);
+  }
+}

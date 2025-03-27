@@ -14,8 +14,8 @@ export default function Main() {
     <div
       className={
         theme === "darkSide"
-          ? `${theme} p-4 d-flex row p-3 rounded justify-content-center`
-          : "lightSide p-3  d-flex row justify-content-center"
+          ? `${theme} p-4 d-flex row col-12 p-3 rounded justify-content-center`
+          : "lightSide p-3  d-flex row col-12 justify-content-center"
       }
     >
       <TrelloJsonToCsv />

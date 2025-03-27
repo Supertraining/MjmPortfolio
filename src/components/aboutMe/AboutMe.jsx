@@ -11,8 +11,8 @@ export default function AboutMe() {
     <div
       className={
         theme === "darkSide"
-          ? `text-center p-3 text-white row justify-content-center`
-          : "lightSide p-3 row justify-content-center"
+          ? `text-center p-3 col-12 text-white row justify-content-center`
+          : "lightSide p-3 row col-12 justify-content-center"
       }
     >
       <p
@@ -23,12 +23,6 @@ export default function AboutMe() {
         }
       >
         {language === "es" ? es.aboutMe.text : en.aboutMe.text}{" "}
-        <a
-          className="text-decoration-none"
-          href="https://render.com/"
-        >
-          render <i className="bi bi-box-arrow-up-right text-primary "></i>
-        </a>
       </p>
     </div>
   );

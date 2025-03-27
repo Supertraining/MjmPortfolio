@@ -1,0 +1,15 @@
+.img {
+  /* width: 100%; */
+  min-height: 1vw;
+  min-width: 2vw;
+  max-width: 7vw;
+}
+
+.gmail {
+  width: fit-content;
+  /* cursor: pointer; */
+}
+
+.gmail:hover img {
+  background-color: #ea433563;
+}

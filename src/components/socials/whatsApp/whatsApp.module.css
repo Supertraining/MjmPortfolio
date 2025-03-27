@@ -1,0 +1,13 @@
+.img {
+  width: 100%;
+  min-height: 1vw;
+  min-width: 2vw;
+  max-width: 7vw;
+}
+.whatsapp {
+  width: fit-content;
+}
+.whatsapp:hover img {
+  background-color: #46c75563;
+  border-radius: 200px 200px 200px 0px;
+}

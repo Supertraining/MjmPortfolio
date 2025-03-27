@@ -1,0 +1,34 @@
+.r2d2_fadeout {
+  animation: r2d2FadeOut 2s ease-in-out forwards;
+}
+
+.r2d2_fadein {
+  animation: r2d2FadeIn 2s ease-in-out forwards;
+}
+
+.r2d2_text {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+@keyframes r2d2FadeOut {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes r2d2FadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -54,12 +54,12 @@ export default function ClubManager() {
               ? es.description.clubManager.description
               : en.description.clubManager.description}
           </p>
-          <ul className={`${styles.functionalities_list_style}`}>
             <b>
               {language === "es"
                 ? es.description.clubManager.functionalities.user.title
                 : en.description.clubManager.functionalities.user.title}
             </b>
+          <ul className={`${styles.functionalities_list_style}`}>
             <li>
               {language === "es"
                 ? es.description.clubManager.functionalities.user.createAccount
@@ -91,12 +91,12 @@ export default function ClubManager() {
                 : en.description.clubManager.functionalities.user.reservationHistory}
             </li>
           </ul>
-          <ul className={`${styles.functionalities_list_style}`}>
             <b>
               {language === "es"
                 ? es.description.clubManager.functionalities.admin.title
                 : en.description.clubManager.functionalities.admin.title}
             </b>
+          <ul className={`${styles.functionalities_list_style}`}>
             <li>
               {language === "es"
                 ? es.description.clubManager.functionalities.admin.createUser
@@ -219,25 +219,23 @@ export default function ClubManager() {
           <Express theme={theme} />
           <ReactSkill theme={theme} />
           <Node theme={theme} />
-
-          <div
-            className="col-2"
-            ref={ref}
-          >
-            {theme === "darkSide" ? (
-              <img
-                className="img-size"
-                src="https://res.cloudinary.com/marangadev/image/upload/v1696600598/portfolio/Death_Star_256_cd9pam_w2p37h.webp"
-                alt="deathStar"
-              />
-            ) : (
-              <img
-                className={inView ? `${styles.dalleShipTakeOff} img-size` : "img-size"}
-                src="https://res.cloudinary.com/marangadev/image/upload/v1696600615/portfolio/Imperial_Star_Destroyer_t3jovq_zl17x8.webp"
-                alt="imperialStar"
-              />
-            )}
-          </div>
+        </div>
+        <div
+          className={`col-5 ${inView ? `${styles.dalleShipTakeOff}` : ""}`}
+          ref={ref}
+        >
+          {theme === "darkSide" ? (
+            <img
+              src="https://res.cloudinary.com/marangadev/image/upload/v1696600598/portfolio/Death_Star_256_cd9pam_w2p37h.webp"
+              alt="deathStar"
+            />
+          ) : (
+            <img
+              className="img-fluid"
+              src="https://res.cloudinary.com/marangadev/image/upload/v1696600615/portfolio/Imperial_Star_Destroyer_t3jovq_zl17x8.webp"
+              alt="imperialStar"
+            />
+          )}
         </div>
 
         <div
@@ -247,9 +245,9 @@ export default function ClubManager() {
               : "text-dark p-2 text-center my-1 rounded  fw-bold"
           }
         >
-          <h6 className="text-center col-12 fw-bold">
+          <p className="text-center col-12 fw-bold">
             {language === "es" ? es.dependencies.dep : en.dependencies.dep}
-          </h6>
+          </p>
           <p>
             <strong>Backend:</strong> bcrypt | connect-mongo | cors| dotenv | express |
             express-validator | helmet | jsonwebtoken | mongoose | node-cron | nodemailer |
