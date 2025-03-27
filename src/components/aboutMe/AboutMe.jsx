@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { LanguageContext } from "../../context/languageContext";
 import ThemeContext from "../../context/ThemeContext";
-import styles from "./AboutMe.module.css";
+import styles from "./aboutMe.module.css";
 
 export default function AboutMe() {
   const { theme } = useContext(ThemeContext);

@@ -16,6 +16,23 @@ textarea:focus {
   border-color: transparent;
 }
 
+@media (min-width: 576px) {
+  .form_ContactMe {
+    font-size: 1.4vw;
+  } 
+}
+@media (min-width: 992px) {
+  .form_ContactMe {
+    font-size: 1.3vw;
+  }
+}
+@media (min-width: 1200px) {
+  .form_ContactMe {
+    font-size: 1.1vw;
+    font-family: "Roboto Mono", monospace;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

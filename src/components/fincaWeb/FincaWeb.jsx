@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useInView } from "react-intersection-observer";
-import styles from "./FincaWeb.module.css";
+import styles from "./fincaWeb.module.css";
 import ThemeContext from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/languageContext";
 import Html from "../skills/html/Html.jsx";
@@ -98,26 +98,27 @@ export default function FincaWeb() {
         <JavaScript theme={theme} />
         <Scss theme={theme} />
         <Bootstrap theme={theme} />
-
       </div>
-        <div
-          className={`col-5 col-lg-2 ${inView && theme === "lightSide" ? `${styles.fincaWebTakeOff}` : ""}`}
-          ref={ref}
-        >
-          {theme === "darkSide" ? (
-            <img
-              className="img-fluid"
-              src="https://res.cloudinary.com/marangadev/image/upload/v1696600594/portfolio/AT-AT_35441_iqpelv_acaieh.webp"
-              alt="AT-AT"
-            />
-          ) : (
-            <img
-              className={inView ? "img-fluid " : "img-fluid"}
-              src="https://res.cloudinary.com/marangadev/image/upload/v1696600628/portfolio/X-Wing_-_02_35411_ifnjwx_zksdvb.webp"
-              alt="xWing"
-            />
-          )}
-        </div>
+      <div
+        className={`col-5 col-lg-2 ${
+          inView && theme === "lightSide" ? `${styles.fincaWebTakeOff}` : ""
+        }`}
+        ref={ref}
+      >
+        {theme === "darkSide" ? (
+          <img
+            className="img-fluid"
+            src="https://res.cloudinary.com/marangadev/image/upload/v1696600594/portfolio/AT-AT_35441_iqpelv_acaieh.webp"
+            alt="AT-AT"
+          />
+        ) : (
+          <img
+            className={inView ? "img-fluid " : "img-fluid"}
+            src="https://res.cloudinary.com/marangadev/image/upload/v1696600628/portfolio/X-Wing_-_02_35411_ifnjwx_zksdvb.webp"
+            alt="xWing"
+          />
+        )}
+      </div>
     </div>
   );
 }
