@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext.jsx";
 import styles from "./up.module.css";
+import ChevronUp from "../icons/chevrons/ChevronUp.jsx";
 
 export default function Up() {
   const { theme } = useContext(ThemeContext);
@@ -11,34 +12,35 @@ export default function Up() {
         href="#header"
       >
         <div className={`d-flex flex-column align-items-center ${styles.arrows_shadow}`}>
-          <i
-            className={
+          <ChevronUp
+            classname={
               theme === "darkSide"
-                ? `bi bi-chevron-compact-up ${styles.arrow} ${styles.arrow_dark_one}`
-                : `bi bi-chevron-compact-up ${styles.arrow} ${styles.arrow_light_one}`
+                ? `${styles.arrow} ${styles.arrow_dark_one}`
+                : `${styles.arrow} ${styles.arrow_light_one}`
             }
-          ></i>
-          <i
-            className={
+          />
+          <ChevronUp
+            classname={
               theme === "darkSide"
-                ? `bi bi-chevron-compact-up ${styles.arrow} ${styles.arrow_dark_two}`
-                : `bi bi-chevron-compact-up ${styles.arrow} ${styles.arrow_light_two}`
+                ? `${styles.arrow} ${styles.arrow_dark_two}`
+                : `${styles.arrow} ${styles.arrow_light_two}`
             }
-          ></i>
-          <i
-            className={
+          />
+          <ChevronUp
+            classname={
               theme === "darkSide"
-                ? `bi bi-chevron-compact-up ${styles.arrow} ${styles.arrow_dark_three}`
-                : `bi bi-chevron-compact-up ${styles.arrow} ${styles.arrow_light_three}`
+                ? `${styles.arrow} ${styles.arrow_dark_three}`
+                : `${styles.arrow} ${styles.arrow_light_three}`
             }
-          ></i>
-          <i
-            className={
+          />
+          <ChevronUp
+            classname={
               theme === "darkSide"
-                ? `bi bi-chevron-compact-up ${styles.arrow} ${styles.arrow_dark_four}`
-                : `bi bi-chevron-compact-up ${styles.arrow} ${styles.arrow_light_four}`
+                ? `${styles.arrow} ${styles.arrow_dark_four}`
+                : `${styles.arrow} ${styles.arrow_light_four}`
             }
-          ></i>
+          />
+
           <span
             className={
               theme === "darkSide" ? `${styles.arrow_text_dark}` : `${styles.arrow_text_light}`

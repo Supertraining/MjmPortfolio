@@ -1,6 +1,8 @@
 import Proptypes from "prop-types";
+import ChevronLeft from "../icons/chevrons/ChevronLeft.jsx";
+import ChevronRight from "../icons/chevrons/ChevronRight.jsx";
 
-export default function RepoLink({theme, href}) {
+export default function RepoLink({ theme, href }) {
   return (
     <a
       className={
@@ -19,9 +21,9 @@ export default function RepoLink({theme, href}) {
             : "text-decoration-none text-dark d-flex align-items-center m-0 f-4"
         }
       >
-        <i className="bi bi-chevron-left fs-2"></i>
+        <ChevronLeft theme={theme} />
         Repo
-        <i className="bi bi-chevron-right fs-2"></i>
+        <ChevronRight theme={theme} />
       </p>
     </a>
   );
@@ -29,5 +31,5 @@ export default function RepoLink({theme, href}) {
 
 RepoLink.propTypes = {
   theme: Proptypes.string,
-  href: Proptypes.string
+  href: Proptypes.string,
 };

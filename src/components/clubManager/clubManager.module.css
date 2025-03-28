@@ -31,9 +31,6 @@
   font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
-.under-construction-img {
-  width: 30%;
-}
 
 .gap_space {
   gap: 5rem;

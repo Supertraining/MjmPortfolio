@@ -7,6 +7,7 @@ import RepoLink from "../repoLink/RepoLink.jsx";
 import Mongo from "../skills/mongo/Mongo.jsx";
 import Node from "../skills/node/Node.jsx";
 import Express from "../skills/express/Express.jsx";
+import LinkIcon from "../icons/link/LinkIcon.jsx";
 export default function EcommerceAPI() {
   const { theme } = useContext(ThemeContext);
   const { language, es, en } = useContext(LanguageContext);
@@ -58,7 +59,7 @@ export default function EcommerceAPI() {
             className="col-12 rounded"
           />
 
-          <div className="d-flex align-items-center justify-content-center">
+          <div className="d-flex align-items-center justify-content-center gap-1">
             <a
               className={
                 theme === "darkSide"
@@ -78,13 +79,7 @@ export default function EcommerceAPI() {
               >
                 Docs
               </p>
-              <i
-                className={
-                  theme === "darkSide"
-                    ? "bi bi-link-45deg text-white fs-2"
-                    : "bi bi-link-45deg fs-2 text-dark"
-                }
-              ></i>
+              <LinkIcon theme={theme} />
             </a>
 
             <RepoLink

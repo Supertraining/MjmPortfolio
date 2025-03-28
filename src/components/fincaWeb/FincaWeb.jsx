@@ -8,6 +8,7 @@ import Css from "../skills/css/Css.jsx";
 import JavaScript from "../skills/javaScript/JavaScript.jsx";
 import Scss from "../skills/scss/Scss.jsx";
 import Bootstrap from "../skills/bootstrap/Bootstrap.jsx";
+import LinkIcon from "../icons/link/LinkIcon.jsx";
 
 export default function FincaWeb() {
   const { theme } = useContext(ThemeContext);
@@ -80,13 +81,7 @@ export default function FincaWeb() {
               >
                 {language === "es" ? es.links.web : en.links.web}
               </p>
-              <i
-                className={
-                  theme === "darkSide"
-                    ? "bi bi-link-45deg text-white fs-2"
-                    : "bi bi-link-45deg fs-2 text-dark"
-                }
-              ></i>
+              <LinkIcon theme={theme} />
             </a>
           </div>
         </div>

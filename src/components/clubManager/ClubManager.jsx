@@ -8,6 +8,7 @@ import Express from "../skills/express/Express.jsx";
 import ReactSkill from "../skills/react/ReactSkill.jsx";
 import Node from "../skills/node/Node.jsx";
 import styles from "./clubManager.module.css";
+import LinkIcon from "../icons/link/LinkIcon.jsx";
 
 export default function ClubManager() {
   const { theme } = useContext(ThemeContext);
@@ -54,11 +55,11 @@ export default function ClubManager() {
               ? es.description.clubManager.description
               : en.description.clubManager.description}
           </p>
-            <b>
-              {language === "es"
-                ? es.description.clubManager.functionalities.user.title
-                : en.description.clubManager.functionalities.user.title}
-            </b>
+          <b>
+            {language === "es"
+              ? es.description.clubManager.functionalities.user.title
+              : en.description.clubManager.functionalities.user.title}
+          </b>
           <ul className={`${styles.functionalities_list_style}`}>
             <li>
               {language === "es"
@@ -91,11 +92,11 @@ export default function ClubManager() {
                 : en.description.clubManager.functionalities.user.reservationHistory}
             </li>
           </ul>
-            <b>
-              {language === "es"
-                ? es.description.clubManager.functionalities.admin.title
-                : en.description.clubManager.functionalities.admin.title}
-            </b>
+          <b>
+            {language === "es"
+              ? es.description.clubManager.functionalities.admin.title
+              : en.description.clubManager.functionalities.admin.title}
+          </b>
           <ul className={`${styles.functionalities_list_style}`}>
             <li>
               {language === "es"
@@ -165,13 +166,7 @@ export default function ClubManager() {
               >
                 Admin Mode
               </p>
-              <i
-                className={
-                  theme === "darkSide"
-                    ? "bi bi-link-45deg text-white fs-2"
-                    : "bi bi-link-45deg fs-2 text-dark"
-                }
-              ></i>
+                <LinkIcon theme={theme} />
             </a>
             <a
               className={
@@ -192,13 +187,7 @@ export default function ClubManager() {
               >
                 User Mode
               </p>
-              <i
-                className={
-                  theme === "darkSide"
-                    ? "bi bi-link-45deg text-white fs-2"
-                    : "bi bi-link-45deg fs-2 text-dark"
-                }
-              ></i>
+                <LinkIcon theme={theme} />
             </a>
             <RepoLink
               theme={theme}

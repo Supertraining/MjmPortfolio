@@ -7,6 +7,7 @@ import Express from "../skills/express/Express.jsx";
 import Node from "../skills/node/Node.jsx";
 import Typescript from "../skills/typescript/Typescript.jsx";
 import RepoLink from "../repoLink/RepoLink.jsx";
+import LinkIcon from "../icons/link/LinkIcon.jsx";
 
 export default function TrelloJsonToCsv() {
   const { theme } = useContext(ThemeContext);
@@ -75,13 +76,7 @@ export default function TrelloJsonToCsv() {
               >
                 {language === "es" ? es.links.app : en.links.app}
               </p>
-              <i
-                className={
-                  theme === "darkSide"
-                    ? "bi bi-link-45deg text-white fs-2"
-                    : "bi bi-link-45deg fs-2 text-dark"
-                }
-              ></i>
+             <LinkIcon theme={theme} />
             </a>
             <RepoLink
               theme={theme}
