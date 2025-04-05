@@ -1,11 +1,10 @@
-import { useContext, useEffect, useState, lazy, Suspense } from "react";
-import ThemeContext from "../../context/ThemeContext";
+import PropTypes from "prop-types";
+import { useEffect, useState, lazy, Suspense } from "react";
 
-const BackgroundLight = lazy(() => import("../backGroundLight/BackgroundLight"));
-const BackgroundDark = lazy(() => import("../backgroundDark/BackgroundDark"));
+const BackgroundLight = lazy(() => import("./backGroundLight/BackgroundLight"));
+const BackgroundDark = lazy(() => import("./backgroundDark/BackgroundDark"));
 
-const Background = () => {
-  const { theme } = useContext(ThemeContext);
+const Background = ({ theme }) => {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
@@ -21,6 +20,10 @@ const Background = () => {
       {dark ? <BackgroundDark /> : <BackgroundLight />}
     </Suspense>
   );
+};
+
+Background.propTypes = {
+  theme: PropTypes.string,
 };
 
 export default Background;

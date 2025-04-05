@@ -1,0 +1,30 @@
+.lang_select {
+  font-weight: bold;
+  font-size: 4vw;
+  outline: none;
+  border: none;
+}
+@media (min-width: 478px) and (max-width: 767px) {
+  .lang_select {
+    font-size: 2.5vw;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .lang_select {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 991px) {
+  .lang_select {
+    font-size: 1.5vw;
+  }
+}
+@media (min-width: 1200px) {
+  .lang_select {
+    font-size: 1.2vw;
+  }
+}
+
+.lang_select_background {
+  background-color: #a8caecbd;
+}

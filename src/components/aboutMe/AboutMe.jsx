@@ -1,29 +1,41 @@
-import { useContext } from "react";
-import { LanguageContext } from "../../context/languageContext";
-import ThemeContext from "../../context/ThemeContext";
+import PropTypes from "prop-types";
 import styles from "./aboutMe.module.css";
 
-export default function AboutMe() {
-  const { theme } = useContext(ThemeContext);
-  const { language, es, en } = useContext(LanguageContext);
-
+export default function AboutMe({ theme, language, es, en }) {
   return (
     <div
-      className={
-        theme === "darkSide"
-          ? `text-center p-3 col-12 text-white row justify-content-center`
-          : "lightSide p-3 row col-12 justify-content-center"
-      }
+      className={`text-center p-3 col-12 row justify-content-center ${
+        theme === "darkSide" ? "text-white" : "text-dark"
+      }`}
     >
+      <h2
+        className={`${styles.aboutMe_title} ${
+          theme === "darkSide" ? styles.aboutMe_dark_description : ""
+        }`}
+      >
+        {language === "es" ? es.aboutMe.title : en.aboutMe.title}
+      </h2>
       <p
-        className={
-          theme === "darkSide"
-            ? `${styles.aboutMe_description} border border-2 border-white rounded`
-            : `${styles.aboutMe_description} ${styles.aboutMe_border} rounded`
-        }
+        className={`${styles.aboutMe_description} ${
+          theme === "darkSide" ? styles.aboutMe_dark_description : ""
+        }`}
       >
         {language === "es" ? es.aboutMe.text : en.aboutMe.text}{" "}
       </p>
     </div>
   );
 }
+
+AboutMe.propTypes = {
+  theme: PropTypes.string,
+  language: PropTypes.string,
+  es: PropTypes.object,
+  en: PropTypes.object,
+};
+
+AboutMe.defaultProps = {
+  theme: "",
+  language: "",
+  es: {},
+  en: {},
+};

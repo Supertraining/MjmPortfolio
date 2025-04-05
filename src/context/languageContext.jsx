@@ -6,8 +6,7 @@ const en = {
   side: "Choose a side",
   greet: {
     hello: "¡¡Welcome to my portfolio!!",
-    myNameIs: "My name is...",
-    name: "Maranga Matías",
+    myNameIs: "My name is Maranga Matías",
     profession: "Full Stack Developer",
   },
   inputPlaceholder: "Write your name",
@@ -30,10 +29,11 @@ const en = {
   formSubmit: "Send",
   formClose: "Close",
   aboutMe: {
-    text: "Full Stack Developer with experience in JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MySQL, and MongoDB. I have worked on fintech applications and freelance projects, implementing secure APIs, efficient databases, and scalable applications. I am looking for a team where I can continue to grow and contribute my knowledge.",
+    title: "About me",
+    text: "Full Stack Developer with experience in JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MySQL, and MongoDB. I have worked on fintech applications and freelance projects, implementing secure APIs, efficient databases, and scalable applications.",
   },
   links: {
-    app: "Try the App.",
+    app: "App.",
     web: "Go to the website",
     doc: "Try the API with Swagger",
     api: "Try the API",
@@ -45,7 +45,7 @@ const en = {
     description: "Description",
     clubManager: {
       description:
-        "¡Manage your club! Allow your users to stay updated on the latest news and reserve courts anytime, anywhere.",
+        "Allow your users to stay updated on the latest news and reserve courts anytime, anywhere.",
       functionalities: {
         title: "Functionalities",
         user: {
@@ -70,13 +70,12 @@ const en = {
       },
     },
     ecommerceBack:
-      "This RESTful API allows creating, querying, updating, and deleting users, products, and shopping carts. It is documented in Swagger, which allows testing its functionality in the browser.",
+      "This RESTful API allows creating, querying, updating, and deleting users, products, and shopping carts.",
     productsAndMssgs:
       "This RESTful API includes a simple front-end built with the EJS template engine and Bootstrap, which allows testing some of its functionalities such as creating a user, adding, querying, updating, and deleting products from MySQL database, or leaving a message in the chat room, whose history will be stored in MongoDB. This API uses WebSockets for communication between the client and the server. Also, it allows performing these actions through HTTP requests and additionally provides some extras, such as accessing a very simple mock created with Faker or server information.",
     fincaStore:
       "This project involved creating the front-end with React and using Firebase as the database to store the products, and Firestore to store the images.",
-    trelloJsonToCsv:
-      "¡Download your Trello board in Json and convert it to CSV to be able to import it into Excel or Google Sheets!",
+    trelloJsonToCsv: "¡Download your Trello board in JSON and convert it to CSV!",
     fincaWeb: "Static website, below you can see the technologies used to develop it.",
     consultora: "Static website, below you can see the technologies used to develop it.",
   },
@@ -85,8 +84,7 @@ const es = {
   side: "Elige un bando",
   greet: {
     hello: "¡¡Bienvenid@ a mi portfolio!!",
-    myNameIs: "Mi nombre es...",
-    name: "Maranga Matías",
+    myNameIs: "Mi nombre es Maranga Matías",
     profession: "Desarrollador Full Stack",
   },
   inputPlaceholder: "Escribe tu nombre",
@@ -111,10 +109,11 @@ const es = {
   formSubmit: "Enviar",
   formClose: "Cerrar",
   aboutMe: {
-    text: "Desarrollador Full Stack con experiencia en JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MySQL y MongoDB. He trabajado en aplicaciones fintech y proyectos freelance, implementando APIs seguras, bases de datos eficientes y aplicaciones escalables. Busco un equipo donde pueda seguir creciendo y aportar mis conocimientos.",
+    title: "Sobre mi",
+    text: "Desarrollador Full Stack con experiencia en JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MySQL y MongoDB. He trabajado en aplicaciones fintech y proyectos freelance, implementando APIs seguras, bases de datos eficientes y aplicaciones escalables.",
   },
   links: {
-    app: "Probar la App.",
+    app: "App.",
     web: "Ir al sitio web",
     doc: "Probar la API con Swagger",
     api: "Probar la API",
@@ -126,7 +125,7 @@ const es = {
     description: "Descripción",
     clubManager: {
       description:
-        "¡Manage your club! Allow your users to stay updated on the latest news and reserve courts anytime, anywhere.",
+        "Permite a tus usuarios mantenerse actualizados con las actividades del club y reservar canchas desde cualquier lugar",
       functionalities: {
         title: "Functionalities",
         user: {
@@ -152,13 +151,12 @@ const es = {
       },
     },
     ecommerceBack:
-      "Esta API restful permite crear, consultar, actualizar y eliminar usuarios, productos y carritos. La misma esta documentada en Swagger lo que permite probar su funcionalidad en el navegador.",
+      "Esta API restful permite crear, consultar, actualizar y eliminar usuarios, productos y carritos.",
     productsAndMssgs:
       "Esta API RESTful incluye un front sencillo realizado en el motor de plantillas EJS y Bootstrap que permite probar algunas de sus funcionalidades como crear un usuario, agregar, consultar, actualizar y eliminar productos a la base de datos MySQL o dejar un mensaje en la sala de chat, cuyo historial se almacenara en MongoDB. Esta API utiliza WebSockets para la comunicación entre el cliente y el servidor. También, permite realizar estas acciones mediante peticiones HTTP y ademas algunos extras, como acceder a un mock muy sencillo realizado con Faker o a información del servidor.",
     fincaStore:
       "Este proyecto incluyo realizar el frontend con React y utilizar Firebase como base de datos para almacenar los productos y Firestore para almacenar las imágenes.",
-    trelloJsonToCsv:
-      "¡Descarga tu tablero en Trello en formato Json y conviertelo en CSV para poder importarlo en Excel o Google Sheets!",
+    trelloJsonToCsv: "¡Descarga tu tablero en Trello en formato JSON y conviertelo en CSV!",
     fincaWeb:
       "Sitio web estático, más abajo podrás observar las tecnologías utilizadas para desarrollarlo.",
     consultora:

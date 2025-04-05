@@ -1,7 +1,0 @@
-.span_ejs {
-  font-size: clamp(0.5rem, 2vw, 2rem);
-  height: 48px;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-}

@@ -1,101 +1,23 @@
-.header_select {
-	font-family: 'Roboto Mono', monospace;
-	font-weight: bold;
-	font-size: 4vw;
-	outline: none;
-	border: none;
-}
-@media (min-width:478px) and (max-width: 767px) {
-	.header_select { 
-		font-size: 2.5vw;
-	}
-}
-@media (min-width:767px) and (max-width: 991px) {
-	.header_select { 
-		font-size: 2vw;
-	}
-}
-@media (min-width:991px) {
-	.header_select {
-		font-size: 1.5vw;
-	}
-}
-@media (min-width:1200px) {
-	.header_select {
-		font-size: 1.2vw;
-	}
-}
 
-.darthWithSword {
-	animation-name: darkforce;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-}
-@keyframes darkforce {
-	from {
-		opacity: 0.1;
-		filter: drop-shadow(500px 0px 2px);
-	}
-	to {
-		opacity: 1;
-		filter: drop-shadow(22px 0px 2px);
-	}
-}
-.svgWhite {
-	filter: invert(1);
-	width: 500px;
-	max-height: 507px;
-}
+
 header p {
-	font-family: 'Roboto Mono', monospace;
-	font-size: 3vw;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 header h1 {
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 600;
-	font-size: 5vw;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
 header small {
-	font-family: 'Fasthand', cursive;
-	letter-spacing: 1px;
-	font-size: 3.5vw;
+  font-family: "Fasthand", cursive;
+  letter-spacing: 1px;
+  font-size: clamp(1rem, 5vw, 1.5rem);
 }
-.header_LinkStyle_light {
-	background-color: transparent;
-	border: 1px solid;
-	margin-left: 5px;
-	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(2vw, 3vw, 2rem);
-	text-decoration: none;
-	color: black;
-	padding: 10px;
-}
-.header_LinkStyle_dark {
-	background-color: transparent;
-	border: 1px solid;
-	margin-left: 5px;
-	font-family: 'Roboto Mono', monospace;
-	font-size: 2vw;
-	text-decoration: none;
-	color: white;
-	padding: 10px;
-}
-.header_LinkStyle_light:hover {
-	color: white;
-}
-.header_LinkStyle_dark:hover {
-	color: black;
-}
-@media (min-width: 882px) {
-	header p,
-	header small {
-		font-size: 1.5vw;
-	}
-	header h1 {
-		font-size: 3vw;
-	}
+
+.header_contactMe_btn {
+  font-size: clamp(2vw, 4vw, 2rem);
+  padding: 10px;
 }
 
 .header_blur {
-	filter: blur(10px);
+  filter: blur(10px);
 }

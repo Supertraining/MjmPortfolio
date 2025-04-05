@@ -1,12 +1,9 @@
+
 html,
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif; /* Set default font */
+  font-family: "Roboto Mono", monospace;
 }
 
-.lightSide {
-  background: #a8caecbd;
-  transition: 1s;
-}

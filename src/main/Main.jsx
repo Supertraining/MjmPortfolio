@@ -1,29 +1,106 @@
-import { useContext } from "react";
-import ThemeContext from "../context/ThemeContext.jsx";
-import FincaWeb from "../components/fincaWeb/FincaWeb.jsx";
-import EcommerceAPI from "../components/ecommerceAPI/EcommerceAPI.jsx";
-import "./Main.css";
-import Footer from "../components/footer/Footer.jsx";
-import ClubManager from "../components/clubManager/ClubManager.jsx";
-import TrelloJsonToCsv from "../components/trelloJsonToCsv/TrelloJsonToCsv.jsx";
-import Up from "../components/up/Up.jsx";
-export default function Main() {
-  const { theme } = useContext(ThemeContext);
+import PropTypes from "prop-types";
+import styles from "./main.module.css";
+import Card from "../components/card/Card.jsx";
+import { CARD_CONSTANTS, SKILLS_CONSTANTS } from "../constants/index.js";
 
+export default function Main({ theme, language, es, en }) {
   return (
     <div
-      className={
-        theme === "darkSide"
-          ? `${theme} p-4 d-flex row col-12 p-3 rounded justify-content-center`
-          : "lightSide p-3  d-flex row col-12 justify-content-center"
-      }
+      className={`p-3 d-flex flex-nowrap flex-md-wrap col-12 justify-content-start justify-content-sm-evenly gap-4 ${
+        styles.container
+      }`}
     >
-      <TrelloJsonToCsv />
-      <ClubManager />
-      <EcommerceAPI />
-      <FincaWeb />
-      <Up />
-      <Footer />
+      <Card
+        className={styles.card}
+        title="Trello Board Json to Csv"
+        titleClassName={styles.card_title}
+        // mainImageAnimation={styles.card_flip}
+        mainImage={CARD_CONSTANTS.TRELLO_TO_JSON.mainImage}
+        description={
+          language === "es" ? es.description.trelloJsonToCsv : en.description.trelloJsonToCsv
+        }
+        appUrl={CARD_CONSTANTS.TRELLO_TO_JSON.appUrl}
+        repoUrl={CARD_CONSTANTS.TRELLO_TO_JSON.repoUrl}
+        appText={language === "es" ? es.links.app : en.links.app}
+        technologies={[
+          SKILLS_CONSTANTS.node,
+          SKILLS_CONSTANTS.express,
+          SKILLS_CONSTANTS.ejs,
+          SKILLS_CONSTANTS.typescript,
+        ]}
+        theme={theme}
+      />
+      <Card
+        className={styles.card}
+        title="Club Manager"
+        titleClassName={styles.card_title}
+        // mainImageAnimation={styles.card_flip}
+        mainImage={CARD_CONSTANTS.CLUB_MANAGER.mainImage}
+        description={
+          language === "es"
+            ? es.description.clubManager.description
+            : en.description.clubManager.description
+        }
+        appUrl={CARD_CONSTANTS.CLUB_MANAGER.appUrl}
+        repoUrl={CARD_CONSTANTS.CLUB_MANAGER.repoUrl}
+        appText={language === "es" ? es.links.app : en.links.app}
+        technologies={[
+          SKILLS_CONSTANTS.node,
+          SKILLS_CONSTANTS.express,
+          SKILLS_CONSTANTS.react,
+          SKILLS_CONSTANTS.mongo,
+        ]}
+        theme={theme}
+      />
+      <Card
+        className={styles.card}
+        title="Ecommerce API"
+        titleClassName={styles.card_title}
+        // mainImageAnimation={styles.card_flip}
+        mainImage={CARD_CONSTANTS.ECOMMERCE_API.mainImage}
+        description={
+          language === "es" ? es.description.ecommerceBack : en.description.ecommerceBack
+        }
+        appUrl={CARD_CONSTANTS.ECOMMERCE_API.appUrl}
+        repoUrl={CARD_CONSTANTS.ECOMMERCE_API.repoUrl}
+        appText={language === "es" ? es.links.app : en.links.app}
+        technologies={[
+          SKILLS_CONSTANTS.node,
+          SKILLS_CONSTANTS.express,
+          SKILLS_CONSTANTS.mongo,
+          SKILLS_CONSTANTS.swagger,
+        ]}
+        theme={theme}
+      />
+
+      <Card
+        className={styles.card}
+        title="Finca El Boleado"
+        titleClassName={styles.card_title}
+        // mainImageAnimation={styles.card_flip}
+        mainImage={CARD_CONSTANTS.FINCA_WEB.mainImage}
+        description={language === "es" ? es.description.fincaWeb : en.description.fincaWeb}
+        appUrl={CARD_CONSTANTS.FINCA_WEB.appUrl}
+        repoUrl={CARD_CONSTANTS.FINCA_WEB.repoUrl}
+        appText={language === "es" ? es.links.web : en.links.web}
+        technologies={[
+          SKILLS_CONSTANTS.html,
+          SKILLS_CONSTANTS.css,
+          SKILLS_CONSTANTS.js,
+          SKILLS_CONSTANTS.bootstrap,
+        ]}
+        theme={theme}
+      />
+
+      {/* <FincaWeb />
+      <Up />   */}
     </div>
   );
 }
+
+Main.propTypes = {
+  theme: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
+  es: PropTypes.object.isRequired,
+  en: PropTypes.object.isRequired,
+};

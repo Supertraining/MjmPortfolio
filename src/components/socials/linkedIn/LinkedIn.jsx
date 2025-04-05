@@ -1,3 +1,4 @@
+import { CONTACT_ME_CONSTANTS } from "../../../constants/index.js";
 import styles from "./linkedIn.module.css";
 
 export default function LinkedIn() {
@@ -10,8 +11,10 @@ export default function LinkedIn() {
         rel="noreferrer"
       >
         <img
-          className={`${styles.img} mx-1 rounded-5`}
-          src={import.meta.env.VITE_IMG_LINKEDIN}
+          className={`mx-1 rounded-5`}
+          width={32}
+          height={32}
+          src={CONTACT_ME_CONSTANTS.LINKEDIN.src}
           alt="Linkedin"
         />
         Linkedin

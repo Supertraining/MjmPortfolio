@@ -1,12 +1,10 @@
-* {
-  font-family: 'Roboto Mono', monospace;
-}
-
-.aboutMe_border {
-  border: 2px solid black;
-}
-
 .aboutMe_description {
   font-size: clamp(1rem, 2vw, 2rem);
 }
+.aboutMe_title {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
 
+.aboutMe_dark_description {
+  filter: drop-shadow(0px 4px 6px black);
+}

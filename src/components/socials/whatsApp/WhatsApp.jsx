@@ -1,3 +1,4 @@
+import { CONTACT_ME_CONSTANTS } from "../../../constants/index.js";
 import styles from "./whatsApp.module.css";
 import PropTypes from "prop-types";
 export default function WhatsApp({ celNumber }) {
@@ -10,8 +11,10 @@ export default function WhatsApp({ celNumber }) {
         rel="noreferrer"
       >
         <img
-          className={`${styles.img} mx-1`}
-          src={import.meta.env.VITE_IMG_WHATSAPP}
+          className={`mx-1`}
+          width={32}
+          height={32}
+          src={CONTACT_ME_CONSTANTS.WHATSAPP.src}
           alt="whapp"
         />{" "}
         {celNumber}
