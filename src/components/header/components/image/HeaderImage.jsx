@@ -1,5 +1,5 @@
 import { HEADER_CONSTANTS } from "../../../../constants/index.js";
-import styles from "./HeaderImage.module.css";
+import styles from "./headerImage.module.css";
 import PropTypes from "prop-types";
 
 export default function HeaderImage({ theme }) {
