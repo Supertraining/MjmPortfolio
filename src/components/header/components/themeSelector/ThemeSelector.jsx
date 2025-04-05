@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import LightIcon from "../../../icons/light/LightIcon.jsx";
 import DarkIcon from "../../../icons/dark/DarkIcon.jsx";
-import SelectorInput from "./SelectorInput/SelectorInput.jsx";
+import SelectorInput from "./selectorInput/SelectorInput.jsx";
 
 export default function ThemeSelector({ handleTheme, theme, defaultChecked }) {
   return (
