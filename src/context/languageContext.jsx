@@ -69,6 +69,8 @@ const en = {
         },
       },
     },
+    cleanArchitectureApi:
+      "RESTful API built with TypeScript following the principles of Clean Architecture.",
     ecommerceBack:
       "This RESTful API allows creating, querying, updating, and deleting users, products, and shopping carts.",
     productsAndMssgs:
@@ -150,6 +152,8 @@ const es = {
         },
       },
     },
+    cleanArchitectureApi:
+      "RESTful API construida con TypeScript siguiendo los principios de Clean Architecture.",
     ecommerceBack:
       "Esta API restful permite crear, consultar, actualizar y eliminar usuarios, productos y carritos.",
     productsAndMssgs:

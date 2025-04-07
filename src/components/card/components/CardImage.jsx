@@ -16,8 +16,8 @@ const CardImage = ({ mainImageAnimation, mainImg, mainImgClassname }) => {
         className={`${mainImgClassname} col-12  img-fluid shadow rounded ${
           inView && mainImageAnimation
         }`}
-        width={937}
-        height={419}
+        width={430}
+        height={192}
         style={{ maxHeight: "190px", minHeight: "117px" }}
       />
     </div>

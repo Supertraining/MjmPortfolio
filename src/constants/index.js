@@ -8,46 +8,53 @@ export const HEADER_CONSTANTS = Object.freeze({
 });
 
 export const CONTACT_ME_CONSTANTS = Object.freeze({
-R2D2: {
-  src: "https://res.cloudinary.com/marangadev/image/upload/v1696600621/portfolio/r2d2_128_bnldyd_yw4qmi.webp",
-},
-LINKEDIN: {
-  src: "https://res.cloudinary.com/marangadev/image/upload/v1696600602/portfolio/icons/linkedin_o993nl_xhn58x.png",
-},
-EMAIL: {
-  src: "https://res.cloudinary.com/marangadev/image/upload/v1696600602/portfolio/icons/emailx32_nis0ny_lttytm.png",
-},
-WHATSAPP: {
-  src: "https://res.cloudinary.com/marangadev/image/upload/v1696600614/portfolio/icons/whatsappx32_abgwck_i1nptm.png",
-},
+  R2D2: {
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1696600621/portfolio/r2d2_128_bnldyd_yw4qmi.webp",
+  },
+  LINKEDIN: {
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1696600602/portfolio/icons/linkedin_o993nl_xhn58x.png",
+  },
+  EMAIL: {
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1696600602/portfolio/icons/emailx32_nis0ny_lttytm.png",
+  },
+  WHATSAPP: {
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1696600614/portfolio/icons/whatsappx32_abgwck_i1nptm.png",
+  },
 });
 
 export const CARD_CONSTANTS = Object.freeze({
+  CLEAN_ARQUITECTURE_API: {
+    mainImage:
+      "https://res.cloudinary.com/marangadev/image/upload/v1744061456/portfolio/Auth_API_lsjza8.webp",
+    appUrl: "",
+    repoUrl: "https://github.com/Supertraining/node-auth.git",
+  },
   TRELLO_TO_JSON: {
     mainImage:
-      "https://res.cloudinary.com/marangadev/image/upload/v1737037818/portfolio/trelloJsonToCsv_wx4oja.webp",
+      "https://res.cloudinary.com/marangadev/image/upload/c_scale,w_430/v1737037818/portfolio/trelloJsonToCsv_wx4oja.webp",
     appUrl: "https://trello-json-to-csv.onrender.com/",
     repoUrl: "https://github.com/Supertraining/Trello-Json-To-Csv",
   },
   CLUB_MANAGER: {
     mainImage:
-      "https://res.cloudinary.com/marangadev/image/upload/v1705344036/Club-Manager_gdk7ea.webp",
+      "https://res.cloudinary.com/marangadev/image/upload/c_pad,w_430/v1705344036/Club-Manager_gdk7ea.webp",
     appUrl: "https://club-manager-client.netlify.app/",
     repoUrl: "https://github.com/Supertraining/ClubManager",
   },
   ECOMMERCE_API: {
     mainImage:
-      "https://res.cloudinary.com/marangadev/image/upload/v1696626918/portfolio/Swagger-UI_y88j5q.webp",
+      "https://res.cloudinary.com/marangadev/image/upload/c_pad,w_430/v1696626918/portfolio/Swagger-UI_y88j5q.webp",
     appUrl: "https://backend-32190.onrender.com/docs/",
     repoUrl: "https://github.com/Supertraining/ecommerceAPI",
   },
   FINCA_WEB: {
     mainImage:
-      "https://res.cloudinary.com/marangadev/image/upload/v1696626922/portfolio/Finca-El-Boleado-web_wbgnyf.webp",
+      "https://res.cloudinary.com/marangadev/image/upload/c_pad,w_430/v1696626922/portfolio/Finca-El-Boleado-web_wbgnyf.webp",
     appUrl: "https://finca-el-boleado.netlify.app/",
     repoUrl: "https://github.com/Supertraining/FincaElBoleado.git",
   },
 });
+// https://res.cloudinary.com/marangadev/image/upload/c_pad,w_430/v1709135446/consultora/trabajo_1_riaqiy.webp
 
 export const SKILLS_CONSTANTS = Object.freeze({
   js: Object.freeze({
@@ -65,6 +72,14 @@ export const SKILLS_CONSTANTS = Object.freeze({
   express: Object.freeze({
     name: "Express.js",
     src: "https://res.cloudinary.com/marangadev/image/upload/v1696600605/portfolio/icons/skills/express_original_wordmark_logo_icon_146528_harl5b_tkfzkd.png",
+  }),
+  docker: Object.freeze({
+    name: "Docker",
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1744060197/portfolio/icons/skills/docker-mark-blue_kufezr.png",
+  }),
+  jwt: Object.freeze({
+    name: "JWT",
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1744063315/portfolio/icons/skills/JWT_icon_X48_bcaxzo.png",
   }),
   ejs: Object.freeze({
     name: "EJS",

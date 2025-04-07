@@ -6,10 +6,33 @@ import { CARD_CONSTANTS, SKILLS_CONSTANTS } from "../constants/index.js";
 export default function Main({ theme, language, es, en }) {
   return (
     <div
-      className={`p-3 d-flex flex-nowrap flex-md-wrap col-12 justify-content-start justify-content-sm-evenly gap-4 ${
-        styles.container
-      }`}
+      className={`p-3 d-flex flex-nowrap flex-md-wrap col-12 justify-content-start justify-content-sm-evenly gap-4 ${styles.container}`}
     >
+      <Card
+        className={styles.card}
+        title="Clean Architecture RESTfull API"
+        titleClassName={styles.card_title}
+        // mainImageAnimation={styles.card_flip}
+        mainImage={CARD_CONSTANTS.CLEAN_ARQUITECTURE_API.mainImage}
+        description={
+          language === "es"
+            ? es.description.cleanArchitectureApi
+            : en.description.cleanArchitectureApi
+        }
+        appUrl={CARD_CONSTANTS.CLEAN_ARQUITECTURE_API.appUrl}
+        repoUrl={CARD_CONSTANTS.CLEAN_ARQUITECTURE_API.repoUrl}
+        appText={language === "es" ? es.links.app : en.links.app}
+        technologies={[
+          SKILLS_CONSTANTS.typescript,
+          SKILLS_CONSTANTS.node,
+          SKILLS_CONSTANTS.express,
+          SKILLS_CONSTANTS.jwt,
+          SKILLS_CONSTANTS.mongo,
+          SKILLS_CONSTANTS.docker,
+          SKILLS_CONSTANTS.swagger,
+        ]}
+        theme={theme}
+      />
       <Card
         className={styles.card}
         title="Trello Board Json to Csv"
@@ -23,10 +46,10 @@ export default function Main({ theme, language, es, en }) {
         repoUrl={CARD_CONSTANTS.TRELLO_TO_JSON.repoUrl}
         appText={language === "es" ? es.links.app : en.links.app}
         technologies={[
+          SKILLS_CONSTANTS.typescript,
           SKILLS_CONSTANTS.node,
           SKILLS_CONSTANTS.express,
           SKILLS_CONSTANTS.ejs,
-          SKILLS_CONSTANTS.typescript,
         ]}
         theme={theme}
       />
@@ -47,6 +70,7 @@ export default function Main({ theme, language, es, en }) {
         technologies={[
           SKILLS_CONSTANTS.node,
           SKILLS_CONSTANTS.express,
+          SKILLS_CONSTANTS.jwt,
           SKILLS_CONSTANTS.react,
           SKILLS_CONSTANTS.mongo,
         ]}
@@ -88,6 +112,7 @@ export default function Main({ theme, language, es, en }) {
           SKILLS_CONSTANTS.css,
           SKILLS_CONSTANTS.js,
           SKILLS_CONSTANTS.bootstrap,
+          SKILLS_CONSTANTS.scss,
         ]}
         theme={theme}
       />
