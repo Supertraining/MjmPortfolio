@@ -18,7 +18,7 @@ const CardImage = ({ mainImageAnimation, mainImg, mainImgClassname }) => {
         }`}
         width={430}
         height={192}
-        style={{ maxHeight: "190px", minHeight: "117px" }}
+        // style={{ maxHeight: "190px", minHeight: "117px" }}
       />
     </div>
   );

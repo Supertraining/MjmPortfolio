@@ -4,7 +4,7 @@ import Skills from "../../skills/Skill.jsx";
 const CardTechnologies = ({ theme, technologies, className }) => {
   return (
     <div
-      style={{ minHeight: "80px" }}
+      style={{ minHeight: "140px" }}
       className={`p-3 col-12 rounded d-flex justify-content-evenly align-items-center flex-wrap gap-2 ${className}`}
     >
       <Skills

@@ -18,7 +18,6 @@ export default function Header({ theme, handleTheme, language, handleLanguage, e
         className={`d-flex flex-column align-items-center justify-content-evenly gap-4 col-12 p-1 p-sm-3  ${
           renderForm ? `${styles.header_blur}` : ""
         }`}
-        style={{ minHeight: "500px" }}
         id="header"
       >
         <div className="d-flex justify-content-end align-items-center col-12 gap-4">
@@ -37,14 +36,12 @@ export default function Header({ theme, handleTheme, language, handleLanguage, e
           </div>
         </div>
 
-        {/* <div> */}
           <Introduction
             language={language}
             es={es}
             en={en}
             theme={theme}
           />
-        {/* </div> */}
 
         <PrimaryButton
           classname={`rounded w-100 ${styles.header_contactMe_btn} 

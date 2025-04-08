@@ -8,10 +8,10 @@ export default function HeaderImage({ theme }) {
       <img
         loading="eager"
         src={theme === "darkSide" ? HEADER_CONSTANTS.darkImg.src : HEADER_CONSTANTS.lightImg.src}
-        className={` img-fluid ${theme === "darkSide" ? styles.svgWhite : ""} `}
+        className={`${styles.imageWrapper} ${theme === "darkSide" ? styles.svgWhite : ""} `}
         alt="marangaDev"
-        width={400}
-        height={406}
+        width={305}
+        height={310}
       />
     </>
   );

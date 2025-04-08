@@ -2,7 +2,7 @@
   font-size: clamp(1rem, 2vw, 2rem);
 }
 .aboutMe_title {
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
 }
 
 .aboutMe_dark_description {

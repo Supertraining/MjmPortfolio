@@ -30,17 +30,11 @@ export default function AppLink({ theme, href, text, classname }) {
         </a>
       ) : (
         <div
-          className={`opacity-50 d-flex align-items-center justify-content-center rounded text-decoration-none p-2 border ${classname} ${
-            theme === "darkSide" ? "border-white" : "border-dark"
+          className={`d-flex align-items-center justify-content-center rounded p-2 ${classname} ${
+            theme === "darkSide" ? "btn btn-outline-light disabled" : "border border-dark pointer-events-none"
           }`}
         >
-          <p
-            className={`text-decoration-none m-0
-            ${theme === "darkSide" ? "text-white" : "text-dark"}
-          `}
-          >
-            disabled
-          </p>
+          <p className="m-0 text-dark">disabled</p>
           <LinkIcon
             theme={theme}
             width={24}

@@ -1,9 +1,9 @@
 export const HEADER_CONSTANTS = Object.freeze({
   darkImg: Object.freeze({
-    src: "https://res.cloudinary.com/marangadev/image/upload/v1743536411/portfolio/myImg_fd22ng_c7cfzf_500x507_wmlz6t.png",
+    src: "https://res.cloudinary.com/marangadev/image/upload/c_pad,w_305,h_310/v1743536411/portfolio/myImg_fd22ng_c7cfzf_500x507_wmlz6t.png",
   }),
   lightImg: Object.freeze({
-    src: "https://res.cloudinary.com/marangadev/image/upload/c_crop,w_400/v1696600619/portfolio/myImg_dkc8tx_xj0trs.webp",
+    src: "https://res.cloudinary.com/marangadev/image/upload/c_pad,w_305,h_310/v1696600619/portfolio/myImg_dkc8tx_xj0trs.webp",
   }),
 });
 
@@ -37,19 +37,19 @@ export const CARD_CONSTANTS = Object.freeze({
   },
   CLUB_MANAGER: {
     mainImage:
-      "https://res.cloudinary.com/marangadev/image/upload/c_pad,w_430/v1705344036/Club-Manager_gdk7ea.webp",
+      "https://res.cloudinary.com/marangadev/image/upload/c_pad,w_430,h_192/v1705344036/portfolio/Club-Manager_gdk7ea.webp",
     appUrl: "https://club-manager-client.netlify.app/",
     repoUrl: "https://github.com/Supertraining/ClubManager",
   },
   ECOMMERCE_API: {
     mainImage:
-      "https://res.cloudinary.com/marangadev/image/upload/c_pad,w_430/v1696626918/portfolio/Swagger-UI_y88j5q.webp",
+      "https://res.cloudinary.com/marangadev/image/upload/c_pad,b_gen_fill,w_430,h_192/v1696626918/portfolio/Swagger-UI_y88j5q.webp",
     appUrl: "https://backend-32190.onrender.com/docs/",
     repoUrl: "https://github.com/Supertraining/ecommerceAPI",
   },
   FINCA_WEB: {
     mainImage:
-      "https://res.cloudinary.com/marangadev/image/upload/c_pad,w_430/v1696626922/portfolio/Finca-El-Boleado-web_wbgnyf.webp",
+      "https://res.cloudinary.com/marangadev/image/upload/c_pad,b_gen_fill,w_430,h_192/v1696626922/portfolio/Finca-El-Boleado-web_wbgnyf.webp",
     appUrl: "https://finca-el-boleado.netlify.app/",
     repoUrl: "https://github.com/Supertraining/FincaElBoleado.git",
   },
@@ -75,7 +75,7 @@ export const SKILLS_CONSTANTS = Object.freeze({
   }),
   docker: Object.freeze({
     name: "Docker",
-    src: "https://res.cloudinary.com/marangadev/image/upload/v1744060197/portfolio/icons/skills/docker-mark-blue_kufezr.png",
+    src: "https://res.cloudinary.com/marangadev/image/upload/c_crop,w_48,h_48/v1744060197/portfolio/icons/skills/docker-mark-blue_kufezr.png",
   }),
   jwt: Object.freeze({
     name: "JWT",

@@ -2,15 +2,16 @@ import PropTypes from "prop-types";
 import styles from "./skill.module.css";
 
 export default function Skills({ theme, skills, name }) {
+  
   return (
     <>
       {skills.map((skill) => (
         <div
-          className="mx-1 col-2 text-center d-flex flex-column align-items-center justify-content-center"
+          className="mx-1  text-center d-flex flex-column align-items-center justify-content-center"
           key={skill.name}
         >
           <img
-            className={`img-fluid
+            className={`
               ${
                 theme === "darkSide"
                   ? `${styles.skillsLogoShadow} `
