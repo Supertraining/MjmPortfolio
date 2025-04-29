@@ -9,6 +9,28 @@ export default function Main({ theme, language, es, en }) {
       className={`p-3 d-flex flex-nowrap flex-md-wrap col-12 justify-content-start justify-content-sm-evenly gap-4 ${styles.container}`}
     >
       <Card
+        title="Typescript RESTfull API"
+        titleClassName={styles.card_title}
+        mainImage={CARD_CONSTANTS.TYPESCRYPT_RESTFULL_API.mainImage}
+        description={
+          language === "es"
+            ? es.description.typescriptRestfullApi
+            : en.description.typescriptRestfullApi
+        }
+        appUrl={CARD_CONSTANTS.TYPESCRYPT_RESTFULL_API.appUrl}
+        repoUrl={CARD_CONSTANTS.TYPESCRYPT_RESTFULL_API.repoUrl}
+        appText={language === "es" ? es.links.doc : en.links.doc}
+        technologies={[
+          SKILLS_CONSTANTS.typescript,
+          SKILLS_CONSTANTS.node,
+          SKILLS_CONSTANTS.express,
+          SKILLS_CONSTANTS.supabase,
+          SKILLS_CONSTANTS.postman,
+          SKILLS_CONSTANTS.redis,
+        ]}
+      />
+
+      <Card
         className={styles.card}
         title="Clean Architecture RESTfull API"
         titleClassName={styles.card_title}

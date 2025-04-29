@@ -35,7 +35,7 @@ const en = {
   links: {
     app: "App.",
     web: "Go to the website",
-    doc: "Try the API with Swagger",
+    doc: "Docs",
     api: "Try the API",
   },
   dependencies: {
@@ -71,6 +71,8 @@ const en = {
     },
     cleanArchitectureApi:
       "RESTful API built with TypeScript following the principles of Clean Architecture.",
+    typescriptRestfullApi:
+      "This is a production-ready scalable and modular REST API built with TypeScript and Express.js that implements advanced features like worker threads, cancelable asynchronous requests, and caching. The API uses Supabase as the main database and Redis for caching. It includes user management, authentication, and PDF generation.",
     ecommerceBack:
       "This RESTful API allows creating, querying, updating, and deleting users, products, and shopping carts.",
     productsAndMssgs:
@@ -117,7 +119,7 @@ const es = {
   links: {
     app: "App.",
     web: "Ir al sitio web",
-    doc: "Probar la API con Swagger",
+    doc: "Docs",
     api: "Probar la API",
   },
   dependencies: {
@@ -154,6 +156,8 @@ const es = {
     },
     cleanArchitectureApi:
       "RESTful API construida con TypeScript siguiendo los principios de Clean Architecture.",
+    typescriptRestfullApi:
+      "Esta es una API REST escalable y modular lista para producción, construida con TypeScript y Express.js que implementa características avanzadas como worker threads, solicitudes asincrónicas cancelables y caché. La API utiliza Supabase como base de datos principal y Redis para caché. Incluye gestión de usuarios, autenticación y generación de PDF.",
     ecommerceBack:
       "Esta API restful permite crear, consultar, actualizar y eliminar usuarios, productos y carritos.",
     productsAndMssgs:

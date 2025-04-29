@@ -24,7 +24,7 @@ export default function Card({
 
   return (
     <div
-      className={`my-1 border col-12 col-sm-6 col-md-5 col-xl-4 col-xxl-3 rounded align-items-center justify-content-center d-flex flex-column p-3 gap-2 
+      className={`my-1 border col-12 col-sm-9 col-md-5 col-xl-4 col-xxl-3 rounded align-items-center justify-content-center d-flex flex-column p-3 gap-2 
         ${theme === "darkSide" ? "border-light text-white" : "border-dark"} ${className}`}
     >
       <CardTitle

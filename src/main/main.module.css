@@ -1,9 +1,8 @@
-
 .container {
   overflow-x: auto !important;
   overflow: hidden;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
+  /* scroll-snap-type: x mandatory; */
   -webkit-overflow-scrolling: touch;
 }
 .card {
@@ -24,11 +23,10 @@
   0% {
     transform: rotateY(90deg);
   }
-   50% {
+  50% {
     transform: rotateY(-20deg);
   }
   100% {
     transform: rotateY(0deg);
   }
 }
-

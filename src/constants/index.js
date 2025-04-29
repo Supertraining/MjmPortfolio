@@ -23,6 +23,12 @@ export const CONTACT_ME_CONSTANTS = Object.freeze({
 });
 
 export const CARD_CONSTANTS = Object.freeze({
+  TYPESCRYPT_RESTFULL_API: {
+    mainImage:
+      "https://res.cloudinary.com/marangadev/image/upload/c_scale,w_430/v1745889129/portfolio/Typescript_api_restfull_eqshcy.png",
+    appUrl: "https://documenter.getpostman.com/view/37912837/2sB2ixiYrA",
+    repoUrl: "https://github.com/Supertraining/typescript-CRUD.git",
+  },
   CLEAN_ARQUITECTURE_API: {
     mainImage:
       "https://res.cloudinary.com/marangadev/image/upload/v1744061456/portfolio/Auth_API_lsjza8.webp",
@@ -89,6 +95,10 @@ export const SKILLS_CONSTANTS = Object.freeze({
     name: "Swagger",
     src: "https://res.cloudinary.com/marangadev/image/upload/v1743522180/portfolio/icons/skills/Swagger_48x48_hghptz.png",
   }),
+  postman: Object.freeze({
+    name: "Postman",
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1745885593/portfolio/icons/skills/postman-icon_x48_uxizkc.png",
+  }),
   mySql: Object.freeze({
     name: "MySQL",
     src: "https://res.cloudinary.com/marangadev/image/upload/v1743869864/portfolio/icons/skills/mySql_yjta4j.png",
@@ -104,6 +114,14 @@ export const SKILLS_CONSTANTS = Object.freeze({
   firebase: Object.freeze({
     name: "Firebase",
     src: "https://res.cloudinary.com/marangadev/image/upload/v1696600606/portfolio/icons/skills/firebase_gk3cy2_uzywsn.png",
+  }),
+  supabase: Object.freeze({
+    name: "Supabase",
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1745885921/portfolio/icons/skills/supabase-logo-iconx48_c6lbkl.png",
+  }),
+  redis: Object.freeze({
+    name: "Redis",
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1745890345/portfolio/icons/skills/Redis_logo_48x48_wv9tuh.png",
   }),
   html: Object.freeze({
     name: "HTML",
