@@ -2,13 +2,14 @@ import PropTypes from "prop-types";
 import styles from "./main.module.css";
 import Card from "../components/card/Card.jsx";
 import { CARD_CONSTANTS, SKILLS_CONSTANTS } from "../constants/index.js";
-
 export default function Main({ theme, language, es, en }) {
+
   return (
     <div
       className={`p-3 d-flex flex-nowrap flex-md-wrap col-12 justify-content-start justify-content-sm-evenly gap-4 ${styles.container}`}
     >
       <Card
+        className={styles.card}
         title="Typescript RESTfull API"
         titleClassName={styles.card_title}
         mainImage={CARD_CONSTANTS.TYPESCRYPT_RESTFULL_API.mainImage}
@@ -17,9 +18,22 @@ export default function Main({ theme, language, es, en }) {
             ? es.description.typescriptRestfullApi
             : en.description.typescriptRestfullApi
         }
-        appUrl={CARD_CONSTANTS.TYPESCRYPT_RESTFULL_API.appUrl}
+        appUrl="https://deepwiki.com/Supertraining/typescript-CRUD"
+        appText={
+          <a
+            href="https://deepwiki.com/Supertraining/typescript-CRUD"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://deepwiki.com/badge.svg"
+              alt="Ask DeepWiki"
+            />
+          </a>
+        }
         repoUrl={CARD_CONSTANTS.TYPESCRYPT_RESTFULL_API.repoUrl}
-        appText={language === "es" ? es.links.doc : en.links.doc}
+        // appUrl={CARD_CONSTANTS.TYPESCRYPT_RESTFULL_API.appUrl}
+        // appText={language === "es" ? es.links.doc : en.links.doc}
         technologies={[
           SKILLS_CONSTANTS.typescript,
           SKILLS_CONSTANTS.node,
@@ -92,7 +106,7 @@ export default function Main({ theme, language, es, en }) {
         technologies={[
           SKILLS_CONSTANTS.node,
           SKILLS_CONSTANTS.express,
-          SKILLS_CONSTANTS.jwt,
+          SKILLS_CONSTANTS.aws,
           SKILLS_CONSTANTS.react,
           SKILLS_CONSTANTS.mongo,
         ]}

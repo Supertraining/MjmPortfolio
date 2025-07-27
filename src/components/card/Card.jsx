@@ -19,6 +19,7 @@ export default function Card({
   appText,
   technologies,
   className,
+  cardLinksChildren,
 }) {
   const { theme } = useContext(ThemeContext);
 
@@ -47,7 +48,9 @@ export default function Card({
         appUrl={appUrl}
         repoUrl={repoUrl}
         appText={appText}
-      />
+      >
+        {cardLinksChildren}
+      </CardLinks>
       <CardTechnologies
         theme={theme}
         technologies={technologies}
@@ -73,6 +76,7 @@ Card.propTypes = {
     })
   ),
   className: PropTypes.string,
+  cardLinksChildren: PropTypes.node,
 };
 
 Card.defaultProps = {

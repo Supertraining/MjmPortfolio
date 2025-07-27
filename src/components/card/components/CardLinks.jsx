@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import AppLink from "../../links/appLink/AppLink.jsx";
 import RepoLink from "../../links/repoLink/RepoLink.jsx";
 
-const CardLinks = ({ theme, appUrl, repoUrl, appText, className }) => {
+const CardLinks = ({ theme, appUrl, repoUrl, appText, className, children }) => {
   return (
     <div className={`col-12 rounded d-flex justify-content-evenly gap-1 ${className}`}>
       <AppLink
@@ -16,6 +16,7 @@ const CardLinks = ({ theme, appUrl, repoUrl, appText, className }) => {
         theme={theme}
         href={repoUrl}
       />
+      {children}
     </div>
   );
 };
@@ -26,6 +27,7 @@ CardLinks.propTypes = {
   repoUrl: PropTypes.string.isRequired,
   appText: PropTypes.string.isRequired,
   className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 CardLinks.defaultProps = {

@@ -83,6 +83,10 @@ export const SKILLS_CONSTANTS = Object.freeze({
     name: "Docker",
     src: "https://res.cloudinary.com/marangadev/image/upload/c_crop,w_48,h_48/v1744060197/portfolio/icons/skills/docker-mark-blue_kufezr.png",
   }),
+  aws: Object.freeze({
+    name: "AWS",
+    src: "https://res.cloudinary.com/marangadev/image/upload/v1753646924/portfolio/icons/skills/aws_mnmqjl.png",
+  }),
   jwt: Object.freeze({
     name: "JWT",
     src: "https://res.cloudinary.com/marangadev/image/upload/v1744063315/portfolio/icons/skills/JWT_icon_X48_bcaxzo.png",
