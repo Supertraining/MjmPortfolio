@@ -9,16 +9,14 @@
   animation-name: lightness;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in; 
-  background-color: black;
-  background: #a8caecbd;
+  animation-timing-function: ease-in;
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
 }
 @keyframes lightness {
-0% {
-  opacity: 0.5;
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-100%{
-  opacity: 1;
-}
-}
-

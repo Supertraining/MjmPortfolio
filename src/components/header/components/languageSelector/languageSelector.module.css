@@ -26,5 +26,6 @@
 }
 
 .lang_select_background {
-  background-color: #a8caecbd;
+  /* background-color: #a8caecbd; */
+  background: linear-gradient(290deg, #d9dadb 0%, #e9ecef 100%);
 }
